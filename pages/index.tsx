@@ -1,4 +1,5 @@
 import Head from 'next/head'
+import Windmill from './windmill'
 
 export default function Home() {
   return (
@@ -10,7 +11,14 @@ export default function Home() {
       </Head>
 
       <main className=''>
-        <div className="w-screen h-screen bg-cover bg-right bg-[url('/background.svg')]"></div>
+        <div className="w-screen h-screen bg-cover bg-right bg-[url('/background.svg')]">
+          {/* absolute left-8 bottom-16 */}
+          <div className='flex h-[15%] absolute bottom-8 left-8 cursor-pointer'>
+            <Windmill />
+            <Windmill />
+            <Windmill />
+          </div>
+        </div>
       </main>
     </div>
   )
