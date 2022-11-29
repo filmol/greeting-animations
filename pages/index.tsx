@@ -10,11 +10,7 @@ export default function Home() {
       </Head>
 
       <main className=''>
-        <img
-          src='/background.svg'
-          alt=''
-          className='w-screen h-screen object-cover object-right'
-        />
+        <div className="w-screen h-screen bg-cover bg-right bg-[url('/background.svg')]"></div>
       </main>
     </div>
   )
