@@ -28,3 +28,29 @@ a {
     background: black;
   }
 }
+.animation-cloud1 {
+  animation-name: cloud1;
+  animation-duration: 10000ms;
+  animation-iteration-count: infinite;
+  animation-timing-function: ease-in-out;
+  transform: translate(1vw, 0);
+  animation-direction: normal;
+}
+
+@keyframes cloud1 {
+  0% {
+    transform: translate(1vw, 0);
+  }
+  25% {
+    transform: translate(25vw, 0);
+  }
+  50% {
+    transform: translate(50vw, 0);
+  }
+  75% {
+    transform: translate(70vw, 0);
+  }
+  100% {
+    transform: translate(100vw, 0);
+  }
+}
