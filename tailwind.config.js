@@ -10,6 +10,7 @@ module.exports = {
         could1: "could1 100s infinite ",
         could2: "could2 60s infinite ",
         could3: "could3 120s infinite ",
+        "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
         could1: {
@@ -49,13 +50,6 @@ module.exports = {
             transform: "translate(102vw, 4vh)",
           },
         },
-      },
-    },
-  },
-  variants: {
-    extend: {
-      animation: ["hover", "group-hover"],
-        'spin-slow': 'spin 5s linear infinite',
       },
     },
   },
