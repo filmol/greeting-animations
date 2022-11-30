@@ -55,6 +55,8 @@ module.exports = {
   variants: {
     extend: {
       animation: ["hover", "group-hover"],
+        'spin-slow': 'spin 5s linear infinite',
+      },
     },
   },
   plugins: [],
