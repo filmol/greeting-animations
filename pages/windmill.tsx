@@ -41,9 +41,10 @@ export default function Windmill() {
           viewBox='0 0 24 24'
           d='M443.66 620.067c-21.91 5.87-110.53-282.22-126.57-298.26-16.033-16.03-304.12-104.66-298.25-126.56 5.87-21.91 299.67 45.39 321.58 39.52 21.905-5.87 242.7-211.05 258.73-195.02 16.04 16.04-189.14 236.83-195.01 258.74-5.87 21.907 61.425 315.71 39.518 321.58z'
           opacity='0.99'
+          className='windmill animate-spin-slow group-hover:[animation-play-state:paused]'
           //   className='group-hover:scale-[100%]' // Hack to stop turbine from spinning on hover
         >
-          <animateTransform
+          {/* <animateTransform
             attributeType='xml'
             attributeName='transform'
             type='rotate'
@@ -52,7 +53,8 @@ export default function Windmill() {
             dur='4s'
             additive='sum'
             repeatCount='indefinite'
-          />
+            style={{ animationPlayState: 'paused' }}
+          /> */}
         </path>
         <path
           fill='#ccc'
