@@ -15,15 +15,15 @@ export default function Home() {
         {/* absolute left-8 bottom-16 */}
         <AwsClouldSVG
           onClick={() => console.log('object')}
-          cssClass={'animate-could1 w-[25%] hover:w-[26%]'}
+          cssClass={'animate-could1 w-[25%] xl:hover:w-[26%]'}
         />
         <AwsClouldSVG
           onClick={() => console.log('object')}
-          cssClass={'animate-could2  w-[20%] hover:w-[21%]'}
+          cssClass={'animate-could2  w-[20%] xl:hover:w-[21%]'}
         />
         <AwsClouldSVG
           onClick={() => console.log('object')}
-          cssClass={'animate-could3 w-[15%] hover:w-[16%]'}
+          cssClass={'animate-could3 w-[15%] xl:hover:w-[16%]'}
         />
         <div className='absolute flex bottom-14 right-4 lg:right-0 lg:left-8 h-[15%]'>
           <Windmill />

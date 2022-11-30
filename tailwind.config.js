@@ -7,7 +7,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        could1: 'could1 100s infinite ',
+        could1: 'could1 10s infinite ',
         could2: 'could2 60s infinite ',
         could3: 'could3 120s infinite ',
         'spin-slow': 'spin 5s linear infinite',
