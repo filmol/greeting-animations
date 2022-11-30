@@ -29,7 +29,20 @@ a {
   }
 }
 
-
 .windmill {
   transform-origin: 358px 283px;
+}
+
+.testAnimation {
+  -webkit-animation: testSpin 5s linear infinite;
+  animation: testSpin 5s linear infinite;
+}
+
+@keyframes testSpin {
+  0% {
+    transform: rotate(0deg);
+  }
+  100% {
+    transform: rotate(360deg);
+  }
 }
