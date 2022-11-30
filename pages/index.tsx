@@ -10,7 +10,7 @@ export default function Home() {
       </Head>
 
       <main className="">
-        <div className="w-screen h-screen bg-cover bg-right bg-[url('/background.svg')]"></div>
+        <div className="max-w-screen overflow-hidden scroll-x-none max-h-screen bg-cover bg-right bg-[url('/background.svg')]"></div>
       </main>
     </div>
   );

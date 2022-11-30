@@ -7,9 +7,9 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        could1: "could1 80s infinite ",
-        could2: "could2 8s infinite ",
-        could3: "could3 80s infinite ",
+        could1: "could1 100s infinite ",
+        could2: "could2 60s infinite ",
+        could3: "could3 120s infinite ",
       },
       keyframes: {
         could1: {
@@ -43,10 +43,10 @@ module.exports = {
             transform: "translate(-4vw,8vh)",
           },
           "50%": {
-            transform: "translate(120vw,-8vh)",
+            transform: "translate(87vw,-8vh)",
           },
           "100%": {
-            transform: "translate(125vw, 1vh)",
+            transform: "translate(102vw, 4vh)",
           },
         },
       },
