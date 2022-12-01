@@ -1,7 +1,7 @@
 import Head from 'next/head'
 import AwsClouldSVG from './svgComponents/cloud'
 import Windmill from './svgComponents/windmill'
-import { useRef, useState } from 'react'
+import { useRef } from 'react'
 import ToggleButton from './components/toggleButton'
 import MyModal from './components/modal'
 import Bike from './svgComponents/bike'
@@ -10,10 +10,16 @@ import Cloud2 from './svgComponents/cloud2'
 import Cloud3 from './svgComponents/cloud3'
 import Cloud4 from './svgComponents/cloud4'
 import Moon from './svgComponents/moon'
+import dynamic from 'next/dynamic'
+const LazyLoadSnowfall = dynamic(
+  () => import('./components/lazyLoadSnowfall'),
+  {
+    loading: () => <header />,
+  }
+)
 
 export default function Home() {
   const main = useRef<HTMLHeadingElement>(null)
-
   return (
     <div>
       <Head>
@@ -22,12 +28,13 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main ref={main} className="dark">
+      <main ref={main} id="main" className="dark">
         <div
           className={
             'max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right bg-[url("/background.svg")] dark:bg-[url("/darkBackground.svg")]'
           }
         >
+          <LazyLoadSnowfall />
           <div className="flex justify-center ">
             <ToggleButton
               onClick={() => main.current?.classList.toggle('dark')}
