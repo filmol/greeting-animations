@@ -1,22 +1,16 @@
-import { useState } from "react";
-import MyModal from "../components/modal";
+import { useState } from 'react'
+import MyModal from '../components/modal'
 
-const Moon = ({
-  cssClass,
-  onClick,
-}: {
-  cssClass: string;
-  onClick: () => void;
-}) => {
+const Moon = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         width="147"
@@ -33,6 +27,6 @@ const Moon = ({
         />
       </svg>
     </>
-  );
-};
-export default Moon;
+  )
+}
+export default Moon
