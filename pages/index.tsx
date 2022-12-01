@@ -4,6 +4,7 @@ import Windmill from "./svgComponents/windmill";
 import { useState } from "react";
 import ToggleButton from "./components/toggleButton";
 import MyModal from "./components/modal";
+import Bike from "./svgComponents/bike";
 
 export default function Home() {
   const [nightMood, setNightMood] = useState(false);
@@ -25,7 +26,7 @@ export default function Home() {
       </Head>
 
       <main
-        className={`max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover bg-right ${
+        className={`max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right ${
           nightMood ? "bg-[url('/background.svg')]" : "bg-[url('/BG.svg')]"
         }`}
       >
@@ -46,10 +47,14 @@ export default function Home() {
           onClick={() => setModalOpen(true)}
           cssClass={"animate-could3 w-[15%] xl:hover:w-[16%]"}
         />
-        <div className="absolute flex bottom-14 right-4 lg:right-0 lg:left-8 h-[15%]">
+        <div className="absolute flex bottom-[25%] right-4 lg:right-0 lg:left-8 h-[20%]">
           <Windmill />
           <Windmill hideOnMobile={true} />
           <Windmill hideOnMobile={true} />
+        </div>
+
+        <div className="h-[12%] absolute bottom-0 left-0">
+          <Bike />
         </div>
       </main>
     </div>
