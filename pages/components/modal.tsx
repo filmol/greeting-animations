@@ -9,7 +9,6 @@ export default function MyModal({
   setModalOpen: any;
 }) {
   let [isOpen, setIsOpen] = useState(isModalOpen);
-  console.log("isModalOpen", isModalOpen);
 
   function closeModal() {
     setModalOpen(!isModalOpen);

@@ -5,6 +5,11 @@ import { useState } from "react";
 import ToggleButton from "./components/toggleButton";
 import MyModal from "./components/modal";
 import Bike from "./svgComponents/bike";
+import Cloud1 from "./svgComponents/cloud1";
+import Cloud2 from "./svgComponents/cloud2";
+import Cloud3 from "./svgComponents/cloud3";
+import Cloud4 from "./svgComponents/cloud4";
+import Moon from "./svgComponents/moon";
 
 export default function Home() {
   const [nightMood, setNightMood] = useState(false);
@@ -35,17 +40,29 @@ export default function Home() {
           <ToggleButton onClick={() => ToggleNightMood()} />
           <MyModal isModalOpen={modalOpen} />
         </div>
+        <Moon
+          onClick={() => setModalOpen(true)}
+          cssClass={"animate-moon w-[25%] xl:hover:w-[26%]"}
+        />
         <AwsClouldSVG
           onClick={() => setModalOpen(true)}
           cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
         />
-        <AwsClouldSVG
+        <Cloud1
           onClick={() => setModalOpen(true)}
-          cssClass={"animate-could2  w-[20%] xl:hover:w-[21%]"}
+          cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
         />
-        <AwsClouldSVG
+        <Cloud2
           onClick={() => setModalOpen(true)}
-          cssClass={"animate-could3 w-[15%] xl:hover:w-[16%]"}
+          cssClass={"animate-could2 w-[25%] xl:hover:w-[26%]"}
+        />
+        <Cloud3
+          onClick={() => setModalOpen(true)}
+          cssClass={"animate-could3 w-[25%] xl:hover:w-[26%]"}
+        />
+        <Cloud4
+          onClick={() => setModalOpen(true)}
+          cssClass={"animate-coud4 w-[25%] xl:hover:w-[26%]"}
         />
         <div className="absolute flex bottom-[25%] right-4 lg:right-0 lg:left-8 h-[20%]">
           <Windmill />
