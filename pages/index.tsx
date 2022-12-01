@@ -3,9 +3,11 @@ import AwsClouldSVG from "./svgComponents/cloud";
 import Windmill from "./svgComponents/windmill";
 import { useState } from "react";
 import ToggleButton from "./components/toggleButton";
+import MyModal from "./components/modal";
 
 export default function Home() {
   const [nightMood, setNightMood] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false);
 
   const ToggleNightMood = () => {
     if (nightMood === false) {
@@ -30,17 +32,18 @@ export default function Home() {
         {/* absolute left-8 bottom-16 */}
         <div className="flex justify-center ">
           <ToggleButton onClick={() => ToggleNightMood()} />
+          <MyModal isModalOpen={modalOpen} />
         </div>
         <AwsClouldSVG
-          onClick={() => console.log("object")}
+          onClick={() => setModalOpen(true)}
           cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
         />
         <AwsClouldSVG
-          onClick={() => console.log("object")}
+          onClick={() => setModalOpen(true)}
           cssClass={"animate-could2  w-[20%] xl:hover:w-[21%]"}
         />
         <AwsClouldSVG
-          onClick={() => console.log("object")}
+          onClick={() => setModalOpen(true)}
           cssClass={"animate-could3 w-[15%] xl:hover:w-[16%]"}
         />
         <div className="absolute flex bottom-14 right-4 lg:right-0 lg:left-8 h-[15%]">
