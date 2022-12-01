@@ -1,6 +1,6 @@
 import Head from 'next/head'
 import AwsClouldSVG from './svgComponents/cloud'
-import Windmill from './windmill'
+import Windmill from './svgComponents/windmill'
 
 export default function Home() {
   return (
