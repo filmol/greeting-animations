@@ -11,6 +11,10 @@ import Cloud3 from './svgComponents/cloud3'
 import Cloud4 from './svgComponents/cloud4'
 import Moon from './svgComponents/moon'
 import dynamic from 'next/dynamic'
+import Bg from './svgComponents/bg'
+import Desk from './svgComponents/desk'
+import SvgBgDesktop from './svgComponents/svgBgDesktop'
+import SvgBgMobile from './svgComponents/svgBgMobile'
 const LazyLoadSnowfall = dynamic(
   () => import('./components/lazyLoadSnowfall'),
   {
@@ -20,6 +24,7 @@ const LazyLoadSnowfall = dynamic(
 
 export default function Home() {
   const main = useRef<HTMLHeadingElement>(null)
+
   return (
     <div>
       <Head>
@@ -29,39 +34,18 @@ export default function Home() {
       </Head>
 
       <main ref={main} id="main" className="dark">
-        <div
-          className={
-            'max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right bg-[url("/background.svg")] dark:bg-[url("/darkBackground.svg")]'
-          }
-        >
-          <LazyLoadSnowfall />
-          <div className="flex justify-center ">
-            <ToggleButton
-              onClick={() => main.current?.classList.toggle('dark')}
-            />
-          </div>
-          <Moon
-            cssClass={
-              'hidden dark:inline animate-moon w-[25%] xl:hover:w-[26%]'
-            }
-          />
-          {/* <AwsClouldSVG
-         
-          cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
-        /> */}
-          <Cloud1 cssClass={'animate-could1 w-[25%] xl:hover:w-[26%]'} />
-          <Cloud2 cssClass={'animate-could2 w-[25%] xl:hover:w-[26%]'} />
-          <Cloud3 cssClass={'animate-could3 w-[25%] xl:hover:w-[26%]'} />
-          <Cloud4 cssClass={'animate-could4 w-[25%] xl:hover:w-[26%]'} />
-          <div className="absolute flex bottom-[25%] right-4 lg:right-0 lg:left-8 h-[20%]">
-            <Windmill />
-            <Windmill hideOnMobile={true} />
-            <Windmill hideOnMobile={true} />
-          </div>
+        <LazyLoadSnowfall />
 
-          <div className="h-[12%] absolute bottom-0 left-0">
-            <Bike />
-          </div>
+        <div className=" lg:hidden">
+          <SvgBgMobile />
+        </div>
+        <div className="hidden lg:inline">
+          {/* <div className="flex justify-center ">
+          <ToggleButton
+            onClick={() => main.current?.classList.toggle('dark')}
+          />
+        </div> */}
+          <SvgBgDesktop />
         </div>
       </main>
     </div>

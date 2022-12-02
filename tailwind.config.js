@@ -9,7 +9,7 @@ module.exports = {
     extend: {
       animation: {
         bike: "bike 8s linear infinite",
-        could1: "could1 10s infinite ",
+        could1: "could1 20s infinite ",
         could2: "could2 60s infinite ",
         could3: "could3 120s infinite ",
         could4: "could4 120s infinite ",
