@@ -1,7 +1,6 @@
-import Bike from "./bike";
-import AwsClouldSVG from "./cloud";
-import Cloud1 from "./cloud1";
-import Moon from "./moon";
+import AwsClouldSVG from './cloud'
+import Cloud1 from './cloud1'
+import Moon from './moon'
 
 const Background = ({ cssClass }: { cssClass: string }) => {
   return (
@@ -98,13 +97,11 @@ const Background = ({ cssClass }: { cssClass: string }) => {
             <rect width="1440" height="1024" fill="white" />
           </clipPath>
         </defs>
-        <Moon cssClass={"animate-moon w-[25%] lg:hover:w-[26%]"} />
-        <Cloud1 cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"} />
-        <div className="h-[12%] absolute bottom-0 left-0">
-          <Bike />
-        </div>
+        <Moon cssClass={'animate-moon w-[25%] lg:hover:w-[26%]'} />
+        <Cloud1 cssClass={'animate-could1 w-[25%] xl:hover:w-[26%]'} />
+        <div className="h-[12%] absolute bottom-0 left-0"></div>
       </svg>
     </>
-  );
-};
-export default Background;
+  )
+}
+export default Background
