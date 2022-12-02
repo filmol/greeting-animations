@@ -1,4 +1,5 @@
-<svg width="1440" height="768" viewBox="0 0 1440 768" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
+<svg viewBox="0 0 1920 1080"
+preserveAspectRatio="xMinYMin slice" viewBox="0 0 1440 768" fill="none" xmlns="http://www.w3.org/2000/svg" xmlns:xlink="http://www.w3.org/1999/xlink">
 <g clip-path="url(#clip0_220_24344)">
 <rect width="1440" height="768" fill="#223B6C"/>
 <path d="M269.686 59.7244C123.878 50.649 30.1134 129.081 1.41803 169.952C-126.176 285.876 -146.063 500.222 -140.057 592.904L1470.89 596C1470.89 596 1484.6 494.214 1483 409.5C1481.4 324.786 1488.24 243.17 1384 179C1295.77 124.688 1225.18 83.8757 1101.85 86.3528C978.528 88.8298 904.381 228.862 772 244.5C564.414 269.021 598.015 80.1602 269.686 59.7244Z" fill="#1E2F55"/>

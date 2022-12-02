@@ -1,29 +1,31 @@
-import Head from "next/head";
-import AwsClouldSVG from "./svgComponents/cloud";
-import Windmill from "./svgComponents/windmill";
-import { useState } from "react";
-import ToggleButton from "./components/toggleButton";
-import MyModal from "./components/modal";
-import Bike from "./svgComponents/bike";
-import Cloud1 from "./svgComponents/cloud1";
-import Cloud2 from "./svgComponents/cloud2";
-import Cloud3 from "./svgComponents/cloud3";
-import Cloud4 from "./svgComponents/cloud4";
-import Moon from "./svgComponents/moon";
-import Bg from "./svgComponents/bg";
-import Desk from "./svgComponents/desk";
+import Head from 'next/head'
+import AwsClouldSVG from './svgComponents/cloud'
+import Windmill from './svgComponents/windmill'
+import { useState } from 'react'
+import ToggleButton from './components/toggleButton'
+import MyModal from './components/modal'
+import Bike from './svgComponents/bike'
+import Cloud1 from './svgComponents/cloud1'
+import Cloud2 from './svgComponents/cloud2'
+import Cloud3 from './svgComponents/cloud3'
+import Cloud4 from './svgComponents/cloud4'
+import Moon from './svgComponents/moon'
+import Bg from './svgComponents/bg'
+import Desk from './svgComponents/desk'
+import SvgBgDesktop from './svgComponents/svgBgDesktop'
+import SvgBgMobile from './svgComponents/svgBgMobile'
 
 export default function Home() {
-  const [nightMood, setNightMood] = useState(false);
-  let [modalOpen, setModalOpen] = useState(false);
+  const [nightMood, setNightMood] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false)
 
   const ToggleNightMood = () => {
     if (nightMood === false) {
-      setNightMood(true);
+      setNightMood(true)
     } else {
-      setNightMood(false);
+      setNightMood(false)
     }
-  };
+  }
   return (
     <div>
       <Head>
@@ -32,54 +34,18 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main
+      <div className=" lg:hidden">
+        <SvgBgMobile />
+      </div>
+      <div className="hidden lg:inline">
+        <SvgBgDesktop />
+      </div>
+
+      {/* <main
         className={`max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right `}
       >
-        {/* <Bg
-          cssClass={
-            "max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right"
-          }
-        /> */}
         <Desk />
-        {/* absolute left-8 bottom-16 */}
-        <div className="flex justify-center ">
-          <ToggleButton onClick={() => ToggleNightMood()} />
-          <MyModal isModalOpen={modalOpen} />
-        </div>
-        <Moon
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-moon w-[25%] xl:hover:w-[26%]"}
-        />
-        <AwsClouldSVG
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
-        />
-        <Cloud1
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-could1 w-[25%] xl:hover:w-[26%]"}
-        />
-        <Cloud2
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-could2 w-[25%] xl:hover:w-[26%]"}
-        />
-        <Cloud3
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-could3 w-[25%] xl:hover:w-[26%]"}
-        />
-        <Cloud4
-          onClick={() => setModalOpen(true)}
-          cssClass={"animate-coud4 w-[25%] xl:hover:w-[26%]"}
-        />
-        <div className="absolute flex bottom-[25%] right-4 lg:right-0 lg:left-8 h-[20%]">
-          <Windmill />
-          <Windmill hideOnMobile={true} />
-          <Windmill hideOnMobile={true} />
-        </div>
-
-        <div className="h-[12%] absolute bottom-0 left-0">
-          <Bike />
-        </div>
-      </main>
+      </main> */}
     </div>
-  );
+  )
 }
