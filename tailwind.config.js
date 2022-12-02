@@ -8,82 +8,89 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bike: "bike 8s linear infinite",
-        could1: "could1 20s infinite ",
-        could2: "could2 60s infinite ",
-        could3: "could3 120s infinite ",
-        could4: "could4 120s infinite ",
-        moon: "moon 120s infinite ",
+        bike: "bike 12s linear infinite",
+        bikeScale: "bikeScale 10s infinite",
+        cloud1: "cloud1 20s infinite ",
+        cloud2: "cloud2 69s infinite ",
+        cloud3: "cloud3 100s infinite ",
+        cloud4: "cloud4 90s infinite ",
+        moon: "moon 110s infinite ",
         "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
         bike: {
           "0%": {
-            transform: "translate(-0vw, -4vh)",
-            scale: "1",
+            transform: "translate(0vw, 0vh)",
           },
           "100%": {
-            transform: "translate(110vw, -35vh)",
-            scale: "0.9",
+            transform: "translate(0vw, 0vh)",
           },
         },
-        could1: {
+        bikeScale: {
           "0%": {
-            transform: "translate(-18vw, 40px)",
+            scale: "1.0",
+          },
+          "100%": {
+            scale: "0.1",
+          },
+        },
+        cloud1: {
+          "0%": {
+            transform: "translate(0vw, 0vh)",
           },
           "50%": {
-            transform: "translate(80vw, 150px)",
+            transform: "translate(-2vw, 0vh)",
           },
 
           "100%": {
-            transform: "translate(102vw, 50px)",
+            transform: "translate(0vw, 0vh)",
           },
         },
-        could2: {
+        cloud2: {
           "0%": {
-            transform: "translate(-4vw, -8vh)",
+            transform: "translate(0vw, -4vh)",
           },
           "50%": {
-            transform: "translate(3vw, 5vh)",
+            transform: "translate(6vw, -5vh)",
+          },
+          "100%": {
+            transform: "translate(0vw, -4vh)",
+          },
+        },
+        cloud3: {
+          "0%": {
+            transform: "translate(0vw,0vh)",
+          },
+          "25%": {
+            transform: "translate(2vw,0vh)",
           },
           "75%": {
-            transform: "translate(2vw, 4vh)",
+            transform: "translate(-6vw,-2vh)",
           },
           "100%": {
-            transform: "translate(-4vw, -8vh)",
+            transform: "translate(0vw, 0vh)",
           },
         },
-        could3: {
+        cloud4: {
           "0%": {
-            transform: "translate(-4vw,8vh)",
+            transform: "translate(0vw,0vh)",
           },
           "50%": {
-            transform: "translate(87vw,-8vh)",
+            transform: "translate(-10vw,2vh)",
           },
           "100%": {
-            transform: "translate(102vw, 4vh)",
-          },
-        },
-        could4: {
-          "0%": {
-            transform: "translate(-4vw,8vh)",
-          },
-          "50%": {
-            transform: "translate(87vw,-8vh)",
-          },
-          "100%": {
-            transform: "translate(102vw, 4vh)",
+            transform: "translate(0vw, 0vh)",
           },
         },
         moon: {
           "0%": {
-            transform: "translate(45vw,12vh)",
+            transform: "translate(2vw,0vh)",
           },
           "50%": {
-            transform: "translate(47vw,5vh)",
+            transform: "translate(6vw,2vh)",
           },
           "100%": {
-            transform: "translate(45vw, 12vh)",
+            transform: "translate(2vw, 0vh)",
           },
         },
       },
