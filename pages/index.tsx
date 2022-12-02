@@ -10,6 +10,8 @@ import Cloud2 from "./svgComponents/cloud2";
 import Cloud3 from "./svgComponents/cloud3";
 import Cloud4 from "./svgComponents/cloud4";
 import Moon from "./svgComponents/moon";
+import Bg from "./svgComponents/bg";
+import Desk from "./svgComponents/desk";
 
 export default function Home() {
   const [nightMood, setNightMood] = useState(false);
@@ -31,10 +33,14 @@ export default function Home() {
       </Head>
 
       <main
-        className={`max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right ${
-          nightMood ? "bg-[url('/background.svg')]" : "bg-[url('/BG.svg')]"
-        }`}
+        className={`max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right `}
       >
+        {/* <Bg
+          cssClass={
+            "max-w-screen relative overflow-hidden h-screen w-screen max-h-screen bg-cover xl:bg-bottom bg-right"
+          }
+        /> */}
+        <Desk />
         {/* absolute left-8 bottom-16 */}
         <div className="flex justify-center ">
           <ToggleButton onClick={() => ToggleNightMood()} />

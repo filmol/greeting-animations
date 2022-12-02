@@ -1,13 +1,7 @@
 import { useState } from "react";
 import MyModal from "../components/modal";
 
-const Cloud1 = ({
-  cssClass,
-  onClick,
-}: {
-  cssClass: string;
-  onClick: () => void;
-}) => {
+const Cloud1 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
