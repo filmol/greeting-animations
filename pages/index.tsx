@@ -1,29 +1,29 @@
-import Head from 'next/head'
-import AwsClouldSVG from './svgComponents/cloud'
-import Windmill from './svgComponents/windmill'
-import { useRef } from 'react'
-import ToggleButton from './components/toggleButton'
-import MyModal from './components/modal'
-import Bike from './svgComponents/bike'
-import Cloud1 from './svgComponents/cloud1'
-import Cloud2 from './svgComponents/cloud2'
-import Cloud3 from './svgComponents/cloud3'
-import Cloud4 from './svgComponents/cloud4'
-import Moon from './svgComponents/moon'
-import dynamic from 'next/dynamic'
-import Bg from './svgComponents/bg'
-import Desk from './svgComponents/desk'
-import SvgBgDesktop from './svgComponents/svgBgDesktop'
-import SvgBgMobile from './svgComponents/svgBgMobile'
+import Head from "next/head";
+import AwsClouldSVG from "./svgComponents/cloud";
+import Windmill from "./svgComponents/windmill";
+import { useRef } from "react";
+import ToggleButton from "./components/toggleButton";
+import MyModal from "./components/modal";
+import Bike from "./svgComponents/bike";
+import Cloud1 from "./svgComponents/cloud1";
+import Cloud2 from "./svgComponents/cloud2";
+import Cloud3 from "./svgComponents/cloud3";
+import Cloud4 from "./svgComponents/cloud4";
+import Moon from "./svgComponents/moon";
+import dynamic from "next/dynamic";
+import Bg from "./svgComponents/bg";
+import Desk from "./svgComponents/desk";
+import SvgBgDesktop from "./svgComponents/svgBgDesktop";
+import SvgBgMobile from "./svgComponents/svgBgMobile";
 const LazyLoadSnowfall = dynamic(
-  () => import('./components/lazyLoadSnowfall'),
+  () => import("./components/lazyLoadSnowfall"),
   {
     loading: () => <header />,
   }
-)
+);
 
 export default function Home() {
-  const main = useRef<HTMLHeadingElement>(null)
+  const main = useRef<HTMLHeadingElement>(null);
 
   return (
     <div>
@@ -49,5 +49,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-  )
+  );
 }
