@@ -1,7 +1,6 @@
-import Bike from "./bike";
-import AwsClouldSVG from "./cloud";
-import Cloud1 from "./cloud1";
-import Moon from "./moon";
+import AwsClouldSVG from './cloud'
+import Cloud1 from './cloud1'
+import Moon from './moon'
 
 const Desk = ({ cssClass }: { cssClass: string }) => {
   return (
@@ -1763,6 +1762,6 @@ const Desk = ({ cssClass }: { cssClass: string }) => {
         </defs>
       </svg>
     </>
-  );
-};
-export default Desk;
+  )
+}
+export default Desk
