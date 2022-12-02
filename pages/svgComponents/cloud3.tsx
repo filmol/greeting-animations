@@ -1,31 +1,22 @@
-import { useState } from 'react'
-import MyModal from '../components/modal'
+import { useState } from "react";
+import MyModal from "../components/modal";
 
 const Cloud3 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
-      <svg
+      <path
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
-        width="135"
-        height="57"
-        viewBox="0 0 135 57"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-      >
-        <path
-          d="M131.056 48.4459L6.83847 56.8257C-0.0882508 45.7668 -7.57204 20.0121 17.9066 5.46424C43.3851 -9.08366 64.7855 11.9904 72.3008 24.3459C82.1535 -7.89036 112.103 12.6403 106.236 37.0908C129.496 10.4647 140.064 40.8223 131.056 48.4459Z"
-          fill="white"
-          fillOpacity="0.93"
-        />
-      </svg>
+        d="M1368.75 255.356L1261.24 259.737C1254.07 257.493 1247.03 245.103 1252.41 239.679C1262.77 229.24 1276.76 237.887 1282.6 243.654C1276.54 203.067 1314.77 207.914 1316.95 231.846C1320 208.502 1348.17 192.542 1369 212.51C1385.67 228.485 1375.78 247.731 1368.75 255.356Z"
+        fill="#CFDEFC"
+      />
     </>
-  )
-}
-export default Cloud3
+  );
+};
+export default Cloud3;
