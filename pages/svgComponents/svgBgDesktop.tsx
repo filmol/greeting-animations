@@ -564,18 +564,18 @@ export default function SvgBgDesktop() {
           fill="#FEFFFF"
         />
         <Building />
-        <g className="animate-bike">
-          <svg x="-40%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
+          <svg x="0%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker1 />
           </svg>
         </g>
-        <g className="animate-bike">
-          <svg x="-80%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
+          <svg x="32%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker2 />
           </svg>
         </g>
-        <g className="animate-bike">
-          <svg x="0%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
+          <svg x="54%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker3 />
           </svg>
         </g>
