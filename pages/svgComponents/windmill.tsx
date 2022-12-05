@@ -6,7 +6,11 @@ export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{ title: 'AWS', description: 'hej', didYouKnow: 'hehehe' }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />{' '}
       <svg
         onClick={() => {
           setModalOpen(!modalOpen)

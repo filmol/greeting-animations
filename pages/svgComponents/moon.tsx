@@ -1,17 +1,9 @@
-import { useState } from 'react'
-import MyModal from '../components/modal'
-
 const Moon = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
       <path
-        // onClick={() => {
-        //   setModalOpen(!modalOpen);
-        // }}
         onClick={() =>
           document?.getElementById('main')?.classList.toggle('dark')
         }
