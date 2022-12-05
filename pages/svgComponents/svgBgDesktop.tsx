@@ -2,6 +2,7 @@ import React, { useEffect, useRef } from 'react'
 import Biker1 from './Bicycle1.svg'
 import Biker3 from './Bicycle3.svg'
 import Biker2 from './Bicycle2.svg'
+import Billboard from './Billboard.svg'
 import Building from './building'
 import Cloud1 from './cloud1'
 import Cloud2 from './cloud2'
@@ -265,7 +266,9 @@ export default function SvgBgDesktop() {
           stroke-linecap="round"
         />
         <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
-
+        <svg x="13%" y="44%" className="" clip-path="url(#clip0_228_650)">
+          <Billboard />
+        </svg>
         <Cloud1 cssClass={'animate-cloud1'} />
         <Cloud2 cssClass={'animate-cloud2'} />
         <Cloud3 cssClass={'animate-cloud3'} />
