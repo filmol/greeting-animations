@@ -253,7 +253,7 @@ export default function SvgBgDesktop() {
           stroke-linecap="round"
         />
         <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
-        <svg x="10%" y="20%" className="" clip-path="url(#clip0_228_646)">
+        <svg x="13%" y="44%" className="" clip-path="url(#clip0_228_650)">
           <Billboard />
         </svg>
         <Cloud1 cssClass={"animate-cloud1"} />
