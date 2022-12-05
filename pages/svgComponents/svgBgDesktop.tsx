@@ -1,13 +1,14 @@
-import React from 'react'
-import Biker1 from './Bicycle1.svg'
-import Biker3 from './Bicycle3.svg'
-import Biker2 from './Bicycle2.svg'
-import Building from './building'
-import Cloud1 from './cloud1'
-import Cloud2 from './cloud2'
-import Cloud3 from './cloud3'
-import Cloud4 from './cloud4'
-import Moon from './moon'
+import React from "react";
+import Biker1 from "./Bicycle1.svg";
+import Biker3 from "./Bicycle3.svg";
+import Biker2 from "./Bicycle2.svg";
+import Billboard from "./Billboard.svg";
+import Building from "./building";
+import Cloud1 from "./cloud1";
+import Cloud2 from "./cloud2";
+import Cloud3 from "./cloud3";
+import Cloud4 from "./cloud4";
+import Moon from "./moon";
 
 export default function SvgBgDesktop() {
   return (
@@ -252,13 +253,15 @@ export default function SvgBgDesktop() {
           stroke-linecap="round"
         />
         <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
-
-        <Cloud1 cssClass={'animate-cloud1'} />
-        <Cloud2 cssClass={'animate-cloud2'} />
-        <Cloud3 cssClass={'animate-cloud3'} />
-        <Cloud4 cssClass={'animate-cloud4'} />
+        <svg x="10%" y="20%" className="" clip-path="url(#clip0_228_646)">
+          <Billboard />
+        </svg>
+        <Cloud1 cssClass={"animate-cloud1"} />
+        <Cloud2 cssClass={"animate-cloud2"} />
+        <Cloud3 cssClass={"animate-cloud3"} />
+        <Cloud4 cssClass={"animate-cloud4"} />
         {/* the moon */}
-        <Moon cssClass={'animate-moon'} />
+        <Moon cssClass={"animate-moon"} />
         <path
           d="M-3.23441 619.903C-20.6887 627.903 4.64086 671.569 13.5498 688.478C20.111 700.931 39.3678 719.75 40.4587 727.023L63.0038 726.841C59.6066 723.781 49.8766 695.751 44.6403 678.296C30.0951 626.115 14.2199 611.903 -3.23441 619.903Z"
           fill="#004A59"
@@ -619,5 +622,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  )
+  );
 }
