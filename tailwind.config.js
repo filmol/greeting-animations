@@ -8,7 +8,8 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bike: 'bike 12s linear infinite',
+        bike: `bike 7s linear infinite`,
+        slowerBike: `bike 15s linear infinite`,
         bikeScale: 'bikeScale 10s infinite',
         cloud1: 'cloud1 20s infinite ',
         cloud2: 'cloud2 69s infinite ',
@@ -23,7 +24,7 @@ module.exports = {
             transform: 'translate(0vw, 0vh)',
           },
           '100%': {
-            transform: 'translate(100vw, -20vh)',
+            transform: 'translate(150vw, -18vw)',
           },
         },
         bikeScale: {

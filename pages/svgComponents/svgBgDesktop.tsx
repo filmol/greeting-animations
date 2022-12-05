@@ -1,4 +1,4 @@
-import React from 'react'
+import React, { useEffect, useRef } from 'react'
 import Biker1 from './Bicycle1.svg'
 import Biker3 from './Bicycle3.svg'
 import Biker2 from './Bicycle2.svg'
@@ -10,6 +10,19 @@ import Cloud4 from './cloud4'
 import Moon from './moon'
 
 export default function SvgBgDesktop() {
+  const bike1 = useRef<SVGGraphicsElement>(null)
+  const bike2 = useRef<SVGGraphicsElement>(null)
+  const bike3 = useRef<SVGGraphicsElement>(null)
+
+  useEffect(() => {
+    setTimeout(() => {
+      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 5000)
+    setTimeout(() => {
+      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 10000)
+  }, [])
+
   return (
     <svg
       viewBox="0 0 1440 768"
@@ -564,18 +577,27 @@ export default function SvgBgDesktop() {
           fill="#FEFFFF"
         />
         <Building />
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="0%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g
+          ref={bike1}
+          className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker1 />
           </svg>
         </g>
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="32%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g
+          ref={bike2}
+          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker2 />
           </svg>
         </g>
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="54%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g
+          ref={bike3}
+          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker3 />
           </svg>
         </g>
