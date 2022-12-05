@@ -3,6 +3,7 @@ import Biker1 from './Bicycle1.svg'
 import Biker3 from './Bicycle3.svg'
 import Biker2 from './Bicycle2.svg'
 import Billboard from './Billboard.svg'
+import BuildingSVG from './Building.svg'
 import Building from './building'
 import Cloud1 from './cloud1'
 import Cloud2 from './cloud2'
@@ -266,9 +267,10 @@ export default function SvgBgDesktop() {
           stroke-linecap="round"
         />
         <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
-        <svg x="13%" y="44%" className="" clip-path="url(#clip0_228_650)">
+        <svg x="13%" y="44%" clip-path="url(#clip0_228_650)">
           <Billboard />
         </svg>
+
         <Cloud1 cssClass={'animate-cloud1'} />
         <Cloud2 cssClass={'animate-cloud2'} />
         <Cloud3 cssClass={'animate-cloud3'} />
@@ -579,7 +581,11 @@ export default function SvgBgDesktop() {
           d="M1058.26 610.561C1058.19 609.608 1058.9 608.774 1059.85 608.678C1064.53 608.209 1077.84 606.759 1087.58 604.569C1096.79 602.498 1110.65 598.007 1116.71 595.991C1118.25 595.481 1119.85 596.551 1119.97 598.164V598.164C1120.06 599.308 1119.35 600.357 1118.25 600.693C1113.41 602.171 1100.2 606.149 1090.91 608.369C1081.33 610.658 1065.31 611.833 1060.09 612.17C1059.14 612.231 1058.33 611.512 1058.26 610.561V610.561Z"
           fill="#FEFFFF"
         />
-        <Building />
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01] hidden dark:inline">
+          <svg x="60%" y="26%" className="">
+            <BuildingSVG />
+          </svg>
+        </g>
         <g
           ref={bike1}
           className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
