@@ -1,7 +1,7 @@
 import { Dialog, Transition } from '@headlessui/react'
 import { Fragment, useEffect, useState } from 'react'
 
-export default function MyModal({
+export default function Modal({
   content,
   isModalOpen,
   setModalOpen,
@@ -63,27 +63,33 @@ export default function MyModal({
                       as="h3"
                       className="text-2xl font-medium leading-6 text-gray-900"
                     >
-                      {content.title}
+                      {content?.title}
                     </Dialog.Title>
                     <div className="mt-4">
-                      {content.didYouKnow && (
+                      {content?.didYouKnow && (
                         <p className="text-gray-500 ">{content.description}</p>
                       )}
-                      {content.didYouKnow && (
+                      {content?.didYouKnow && (
                         <p className="mt-2 text-gray-500">
                           {content.didYouKnow}
                         </p>
                       )}
                     </div>
                     <div className="mt-4 space-x-4">
-                      <button
-                        type="button"
-                        className="inline-flex justify-center px-4 py-2 font-medium text-blue-900 duration-300 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none "
-                      >
-                        <a target="_blank" href={content.link}>
-                          Read more
-                        </a>
-                      </button>
+                      {content?.link && (
+                        <button
+                          type="button"
+                          className="inline-flex justify-center px-4 py-2 font-medium text-blue-900 duration-300 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none "
+                        >
+                          <a
+                            target="_blank"
+                            rel="noreferrer"
+                            href={content?.link}
+                          >
+                            Read more
+                          </a>
+                        </button>
+                      )}
                       <button
                         type="button"
                         className="inline-flex justify-center px-4 py-2 font-medium text-blue-900 duration-300 bg-blue-100 border border-transparent rounded-md hover:bg-blue-200 focus:outline-none "

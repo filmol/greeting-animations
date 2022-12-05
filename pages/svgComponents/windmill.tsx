@@ -1,12 +1,12 @@
 import React, { useState } from 'react'
-import MyModal from '../components/modal'
+import Modal from '../components/modal'
 
 export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
   let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{ title: 'AWS', description: 'hej', didYouKnow: 'hehehe' }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

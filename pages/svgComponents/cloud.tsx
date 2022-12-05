@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MyModal from '../components/modal'
+import Modal from '../components/modal'
 
 const AwsClouldSVG = ({
   cssClass,
@@ -13,7 +13,7 @@ const AwsClouldSVG = ({
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
           title: 'Cloud Services',
           didYouKnow: 'Did you know that 54% of organisations use multi cloud?',

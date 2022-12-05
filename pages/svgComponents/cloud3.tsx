@@ -1,5 +1,5 @@
 import { useState } from 'react'
-import MyModal from '../components/modal'
+import Modal from '../components/modal'
 
 const Cloud3 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
@@ -7,7 +7,7 @@ const Cloud3 = ({ cssClass }: { cssClass: string }) => {
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
           title: 'Google Cloud',
           didYouKnow:

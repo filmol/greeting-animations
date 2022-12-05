@@ -1,6 +1,6 @@
 import { title } from 'process'
 import { useState } from 'react'
-import MyModal from '../components/modal'
+import Modal from '../components/modal'
 
 const Cloud1 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
@@ -8,7 +8,7 @@ const Cloud1 = ({ cssClass }: { cssClass: string }) => {
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
           title: 'Cloud Services',
           didYouKnow: 'Did you know that 54% of organisations use multi cloud?',
