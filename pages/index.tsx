@@ -22,8 +22,6 @@ const LazyLoadSnowfall = dynamic(
 )
 
 export default function Home() {
-  const main = useRef<HTMLHeadingElement>(null)
-
   return (
     <div>
       <Head>
@@ -32,7 +30,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main ref={main} id="main" className="dark">
+      <main id="main" className="dark">
         <LazyLoadSnowfall />
 
         <div className=" lg:hidden">
@@ -44,6 +42,7 @@ export default function Home() {
             onClick={() => main.current?.classList.toggle('dark')}
           />
         </div> */}
+
           <SvgBgDesktop />
         </div>
       </main>

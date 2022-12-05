@@ -1,17 +1,20 @@
-import { useState } from "react";
-import MyModal from "../components/modal";
+import { useState } from 'react'
+import MyModal from '../components/modal'
 
 const Moon = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
       <path
-        onClick={() => {
-          setModalOpen(!modalOpen);
-        }}
+        // onClick={() => {
+        //   setModalOpen(!modalOpen);
+        // }}
+        onClick={() =>
+          document?.getElementById('main')?.classList.toggle('dark')
+        }
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         fill-rule="evenodd"
         clip-rule="evenodd"
@@ -19,6 +22,6 @@ const Moon = ({ cssClass }: { cssClass: string }) => {
         fill="#EFF0F1"
       />
     </>
-  );
-};
-export default Moon;
+  )
+}
+export default Moon
