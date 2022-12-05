@@ -14,6 +14,7 @@ import Bg from './svgComponents/bg'
 import Desk from './svgComponents/desk'
 import SvgBgDesktop from './svgComponents/svgBgDesktop'
 import SvgBgMobile from './svgComponents/svgBgMobile'
+import Windmill2 from './svgComponents/windmill2'
 const LazyLoadSnowfall = dynamic(
   () => import('./components/lazyLoadSnowfall'),
   {
@@ -42,7 +43,6 @@ export default function Home() {
             onClick={() => main.current?.classList.toggle('dark')}
           />
         </div> */}
-
           <SvgBgDesktop />
         </div>
       </main>

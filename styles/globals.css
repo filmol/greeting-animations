@@ -32,6 +32,9 @@ a {
 .windmill {
   transform-origin: 358px 283px;
 }
+.windmill2 {
+  transform-origin: 69px 46px;
+}
 
 .testAnimation {
   -webkit-animation: testSpin 5s linear infinite;

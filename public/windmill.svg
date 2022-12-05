@@ -1,26 +1,7 @@
-import React, { useState } from 'react'
-import Modal from '../components/modal'
-
-export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
-  let [modalOpen, setModalOpen] = useState(false)
-
-  return (
-    <>
-      <Modal
-        content={{ title: 'AWS', description: 'hej', didYouKnow: 'hehehe' }}
-        isModalOpen={modalOpen}
-        setModalOpen={setModalOpen}
-      />{' '}
       <svg
-        onClick={() => {
-          setModalOpen(!modalOpen)
-        }}
         xmlns="http://www.w3.org/2000/svg"
         version="1.1"
         viewBox="0 0 750 1262.95"
-        className={`group duration-300 cursor-pointers hover:scale-105 bottom-8 cursor-pointer hover:[animation-play-state:paused] h-full ${
-          hideOnMobile && 'hidden lg:inline'
-        }`}
       >
         <defs>
           <linearGradient
@@ -43,7 +24,6 @@ export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
           strokeLinecap="round"
           strokeWidth="2"
           className="group"
-          // transform='translate(-17.756 -37.857)'
         >
           <path
             fill="#4BA9E2"
@@ -64,6 +44,3 @@ export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
           ></path>
         </g>
       </svg>
-    </>
-  )
-}
