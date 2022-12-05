@@ -2,7 +2,7 @@ import React from 'react'
 
 export default function Building() {
   return (
-    <g className="duration-300 cursor-pointer hover:scale-y-[1.01] dark:hidden">
+    <g className="duration-300 cursor-pointer hover:scale-y-[1.01] hidden dark:inline">
       <ellipse
         cx="1050.41"
         cy="588.969"
