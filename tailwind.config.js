@@ -8,9 +8,9 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bike: `bike 7s linear infinite`,
-        slowerBike: `bike 15s linear infinite`,
-        bikeScale: 'bikeScale 10s infinite',
+        bike: `bike 10s linear infinite`,
+        slowerBike: `bike 35s linear infinite`,
+        bikeScale: 'bikeScale 20s infinite',
         cloud1: 'cloud1 20s infinite ',
         cloud2: 'cloud2 69s infinite ',
         cloud3: 'cloud3 100s infinite ',
