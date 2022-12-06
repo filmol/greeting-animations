@@ -257,11 +257,10 @@ export default function SvgBgDesktop() {
           <Billboard />
         </svg>
 
-        <Cloud1 cssClass={'animate-cloud1'} />
-        <Cloud2 cssClass={'animate-cloud2'} />
-        <Cloud3 cssClass={'animate-cloud3'} />
-        <Cloud4 cssClass={'animate-cloud4'} />
-        {/* the moon */}
+        <Cloud1 />
+        <Cloud2 />
+        <Cloud3 />
+        <Cloud4 />
         <Moon cssClass={'animate-moon'} />
         <path
           d="M-3.23441 619.903C-20.6887 627.903 4.64086 671.569 13.5498 688.478C20.111 700.931 39.3678 719.75 40.4587 727.023L63.0038 726.841C59.6066 723.781 49.8766 695.751 44.6403 678.296C30.0951 626.115 14.2199 611.903 -3.23441 619.903Z"
@@ -596,7 +595,7 @@ export default function SvgBgDesktop() {
             <Biker3 />
           </svg>
         </g> */}
-        <g className="duration-300 cursor-pointer hover:scale-y-[1.005] hidden dark:inline">
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />
           </svg>

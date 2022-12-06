@@ -1,7 +1,7 @@
 import { useState } from 'react'
 import Modal from '../components/modal'
 
-const Cloud3 = ({ cssClass }: { cssClass: string }) => {
+const Cloud3 = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false)
 
@@ -16,14 +16,18 @@ const Cloud3 = ({ cssClass }: { cssClass: string }) => {
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
       />{' '}
-      <path
-        onClick={() => {
-          setModalOpen(!modalOpen)
-        }}
-        className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
-        d="M1368.75 255.356L1261.24 259.737C1254.07 257.493 1247.03 245.103 1252.41 239.679C1262.77 229.24 1276.76 237.887 1282.6 243.654C1276.54 203.067 1314.77 207.914 1316.95 231.846C1320 208.502 1348.17 192.542 1369 212.51C1385.67 228.485 1375.78 247.731 1368.75 255.356Z"
-        fill="#CFDEFC"
-      />
+      <g className="animate-cloud3 absolute cursor-pointer hover:[animation-play-state:paused] duration-300">
+        <svg x="80%" y="11">
+          <path
+            filter="url(#filter0_d_225_35725)"
+            onClick={() => {
+              setModalOpen(!modalOpen)
+            }}
+            d="M69.5187 51.0642L26.5933 52.6861C15.9623 53.0878 -0.25673 51.0911 0.947353 40.5208C1.70765 33.8464 14.6812 32.5403 23.2482 41.8526C15.6444 -7.03376 53.6456 -16.1061 53.2591 33.1721C58.5268 18.0959 69.1418 30.3908 67.117 38.0992C83.7308 24.3883 89.9899 33.3683 88.3579 41.7342C86.8552 49.4376 77.3617 50.7678 69.5187 51.0642Z"
+            fill="#CFDEFC"
+          />
+        </svg>
+      </g>
     </>
   )
 }
