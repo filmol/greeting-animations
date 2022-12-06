@@ -7,7 +7,14 @@ const MobileBiker = ({ cssClass }: { cssClass: string }) => {
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{
+          title: '',
+          didYouKnow: '',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <g
         onClick={() => {
           setModalOpen(!modalOpen)

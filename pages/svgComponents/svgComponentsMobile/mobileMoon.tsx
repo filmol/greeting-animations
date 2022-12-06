@@ -2,12 +2,18 @@ import { useState } from 'react'
 import MyModal from '../../components/modal'
 
 const MobileMoon = ({ cssClass }: { cssClass: string }) => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{
+          title: '',
+          didYouKnow: '',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <path
         onClick={() => {
           setModalOpen(!modalOpen)

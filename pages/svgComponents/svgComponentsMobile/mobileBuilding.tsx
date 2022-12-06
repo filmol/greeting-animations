@@ -7,7 +7,14 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{
+          title: '',
+          didYouKnow: '',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <svg
         x="240"
         y="375"

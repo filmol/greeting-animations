@@ -1,19 +1,25 @@
-import { useState } from "react";
-import MyModal from "../../components/modal";
+import { useState } from 'react'
+import MyModal from '../../components/modal'
 
 const MobileCloud3 = ({ cssClass }: { cssClass: string }) => {
-  //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{
+          title: '',
+          didYouKnow: '',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <g className="animate-cloud3">
         <svg
           x="300"
           y="170"
           onClick={() => {
-            setModalOpen(!modalOpen);
+            setModalOpen(!modalOpen)
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
           width="49"
@@ -29,6 +35,6 @@ const MobileCloud3 = ({ cssClass }: { cssClass: string }) => {
         </svg>
       </g>
     </>
-  );
-};
-export default MobileCloud3;
+  )
+}
+export default MobileCloud3
