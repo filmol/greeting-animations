@@ -11,10 +11,10 @@ module.exports = {
         bike: `bike 10s linear infinite`,
         slowerBike: `bike 35s linear infinite`,
         bikeScale: 'bikeScale 20s infinite',
-        cloud1: 'cloud1 20s infinite ',
-        cloud2: 'cloud2 69s infinite ',
-        cloud3: 'cloud3 100s infinite ',
-        cloud4: 'cloud4 90s infinite ',
+        cloud1: 'cloud1 10s infinite ',
+        cloud2: 'cloud2 15s infinite ',
+        cloud3: 'cloud3 30s infinite ',
+        cloud4: 'cloud4 15s infinite ',
         moon: 'moon 110s infinite ',
         'spin-slow': 'spin 5s linear infinite',
       },
@@ -63,10 +63,10 @@ module.exports = {
             transform: 'translate(0vw,0vh)',
           },
           '25%': {
-            transform: 'translate(2vw,0vh)',
+            transform: 'translate(10vw,0vh)',
           },
           '75%': {
-            transform: 'translate(-6vw,-2vh)',
+            transform: 'translate(-18vw,-4vh)',
           },
           '100%': {
             transform: 'translate(0vw, 0vh)',
