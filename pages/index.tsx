@@ -1,17 +1,5 @@
 import Head from 'next/head'
-import AwsClouldSVG from './svgComponents/cloud'
-import Windmill from './svgComponents/windmill'
-import { useRef } from 'react'
-import ToggleButton from './components/toggleButton'
-import MyModal from './components/modal'
-import Cloud1 from './svgComponents/cloud1'
-import Cloud2 from './svgComponents/cloud2'
-import Cloud3 from './svgComponents/cloud3'
-import Cloud4 from './svgComponents/cloud4'
-import Moon from './svgComponents/moon'
 import dynamic from 'next/dynamic'
-import Bg from './svgComponents/bg'
-import Desk from './svgComponents/desk'
 import SvgBgDesktop from './svgComponents/svgBgDesktop'
 import SvgBgMobile from './svgComponents/svgBgMobile'
 const LazyLoadSnowfall = dynamic(
@@ -22,8 +10,6 @@ const LazyLoadSnowfall = dynamic(
 )
 
 export default function Home() {
-  const main = useRef<HTMLHeadingElement>(null)
-
   return (
     <div>
       <Head>
@@ -32,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main ref={main} id="main" className="dark">
+      <main id="main" className="dark">
         <LazyLoadSnowfall />
 
         <div className=" lg:hidden">

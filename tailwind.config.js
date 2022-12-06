@@ -8,9 +8,10 @@ module.exports = {
   theme: {
     extend: {
       animation: {
-        bike: "bike 12s linear infinite",
+        bike: `bike 10s linear infinite`,
         mobileBiker: "mobileBiker 9s linear infinite",
-        bikeScale: "bikeScale 6s infinite",
+        slowerBike: `bike 35s linear infinite`,
+        bikeScale: "bikeScale 20s infinite",
         cloud1: "cloud1 20s infinite ",
         cloud2: "cloud2 69s infinite ",
         cloud3: "cloud3 100s infinite ",
@@ -24,7 +25,7 @@ module.exports = {
             transform: "translate(0vw, 0vh)",
           },
           "100%": {
-            transform: "translate(100vw, -20vh)",
+            transform: "translate(150vw, -18vw)",
           },
         },
         bikeScale: {

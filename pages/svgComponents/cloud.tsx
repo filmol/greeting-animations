@@ -1,22 +1,29 @@
-import { useState } from "react";
-import MyModal from "../components/modal";
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const AwsClouldSVG = ({
   cssClass,
   onClick,
 }: {
-  cssClass: string;
-  onClick: () => void;
+  cssClass: string
+  onClick: () => void
 }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <Modal
+        content={{
+          title: 'Cloud Services',
+          didYouKnow: 'Did you know that 54% of organisations use multi cloud?',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         viewBox="0 0 288 172"
@@ -94,6 +101,6 @@ const AwsClouldSVG = ({
         </defs>
       </svg>
     </>
-  );
-};
-export default AwsClouldSVG;
+  )
+}
+export default AwsClouldSVG

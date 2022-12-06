@@ -29,13 +29,20 @@ a {
   }
 }
 
-.windmill {
-  transform-origin: 358px 283px;
+.transFormSm {
+  transform-origin: 88px 94.5px;
+}
+.transFormXs {
+  transform-origin: 71px 71px;
+}
+.transFormMd {
+  transform-origin: 68px 76px;
 }
 
 .testAnimation {
   -webkit-animation: testSpin 5s linear infinite;
   animation: testSpin 5s linear infinite;
+  transition-timing-function: ease-in-out;
 }
 
 @keyframes testSpin {

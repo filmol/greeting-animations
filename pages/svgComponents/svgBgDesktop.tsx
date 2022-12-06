@@ -1,16 +1,34 @@
-import React from "react";
-import Biker1 from "./Bicycle1.svg";
-import Biker3 from "./Bicycle3.svg";
-import Biker2 from "./Bicycle2.svg";
-import Billboard from "./Billboard.svg";
-import Building from "./building";
-import Cloud1 from "./cloud1";
-import Cloud2 from "./cloud2";
-import Cloud3 from "./cloud3";
-import Cloud4 from "./cloud4";
-import Moon from "./moon";
+import React, { useEffect, useRef } from 'react'
+import Biker1 from './Bicycle1.svg'
+import Biker3 from './Bicycle3.svg'
+import Biker2 from './Bicycle2.svg'
+import Billboard from './Billboard.svg'
+import BuildingSVG from './Building.svg'
+import Building from './building'
+import Cloud1 from './cloud1'
+import Cloud2 from './cloud2'
+import Cloud3 from './cloud3'
+import Cloud4 from './cloud4'
+import Moon from './moon'
+import WindmillXs from './windmillXs'
+import WindmillMd from './windmillMd'
+import WindmillSm from './windmillSm'
+import Bikers from './bikers'
 
 export default function SvgBgDesktop() {
+  const bike1 = useRef<SVGGraphicsElement>(null)
+  const bike2 = useRef<SVGGraphicsElement>(null)
+  const bike3 = useRef<SVGGraphicsElement>(null)
+
+  useEffect(() => {
+    setTimeout(() => {
+      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 5000)
+    setTimeout(() => {
+      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 10000)
+  }, [])
+
   return (
     <svg
       viewBox="0 0 1440 768"
@@ -93,18 +111,12 @@ export default function SvgBgDesktop() {
           d="M27 466C5 463.6 -10.8333 476.667 -16 483.5L-52.5 533.5L351.5 533C341.5 476.2 287 472 261 477C264.5 471.5 266.5 456.1 246.5 438.5C226.5 420.9 204.167 435.833 195.5 445.5C190.167 423.5 169.1 379.4 127.5 379C34.3 379.4 21.6667 437.167 27 466Z"
           fill="#1F3560"
         />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M545.605 226.563L545.796 280.806C557.764 283.751 557.711 282.802 557.711 282.802C573.94 271.772 568.64 255.885 563.375 240.105C562.807 238.403 562.24 236.701 561.7 235.008C550.768 203.069 545.125 218.023 545.605 226.563ZM559.676 290.656L606.852 317.431C614.502 321.256 624.678 333.58 591.528 327.205C589.79 326.833 588.031 326.481 586.271 326.128C572.75 323.419 559.152 320.694 554.035 308.695L559.653 470.005L564.328 470.43L565.178 507.405L533.303 506.98L533.728 470.005L537.978 469.58L544.778 299.155H552.349C552.993 298.109 554.788 295.788 559.676 290.656ZM543.503 298.305L496.176 326.093C489.039 330.805 473.277 333.456 495.373 307.934C496.565 306.615 497.749 305.269 498.934 303.921C509.92 291.43 520.98 278.854 538.679 287.325C538.679 287.325 540.024 286.482 543.503 298.305Z"
-          fill="#4BA9E2"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M549.878 297.455C553.868 297.455 557.103 294.221 557.103 290.23C557.103 286.24 553.868 283.005 549.878 283.005C545.888 283.005 542.653 286.24 542.653 290.23C542.653 294.221 545.888 297.455 549.878 297.455ZM549.878 300.855C555.746 300.855 560.503 296.098 560.503 290.23C560.503 284.362 555.746 279.605 549.878 279.605C544.01 279.605 539.253 284.362 539.253 290.23C539.253 296.098 544.01 300.855 549.878 300.855Z"
-          fill="#4BA9E2"
-        />
+
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg x="31%" y="30%">
+            <WindmillSm />
+          </svg>
+        </g>
         <path
           d="M554.378 461C581.472 462.635 613.11 489.098 611.972 497.5C654.472 502 651.972 533.5 651.972 533.5L390.972 533.207C418.472 506 460.81 497.422 476.063 500.355C476.063 500.355 475.043 488.245 489.472 480C496.472 476 509.403 476.206 514.487 481.876C522.972 461 554.378 461 554.378 461Z"
           fill="#1E3E7C"
@@ -206,30 +218,18 @@ export default function SvgBgDesktop() {
           stroke-width="0.649943"
           stroke-linecap="round"
         />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M403.505 212.918L403.658 256.198C413.207 258.548 413.165 257.79 413.165 257.79C426.114 248.989 421.885 236.313 417.684 223.723L417.684 223.723C417.231 222.365 416.778 221.007 416.347 219.656C407.625 194.172 403.123 206.104 403.505 212.918ZM414.733 264.057L452.374 285.42C458.478 288.472 466.597 298.306 440.147 293.22C438.76 292.922 437.357 292.641 435.953 292.36C425.164 290.198 414.315 288.024 410.232 278.45L414.714 407.158L418.445 407.498L419.123 437L393.69 436.66L394.029 407.158L397.42 406.819L402.846 270.839H408.886C409.4 270.004 410.833 268.152 414.733 264.057ZM401.828 270.161L364.067 292.332C358.372 296.092 345.796 298.207 363.426 277.843C364.377 276.791 365.322 275.716 366.267 274.641C375.033 264.674 383.857 254.64 397.98 261.4C397.98 261.4 399.052 260.727 401.828 270.161Z"
-          fill="#4BA9E2"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M406.915 269.483C410.099 269.483 412.68 266.902 412.68 263.718C412.68 260.534 410.099 257.953 406.915 257.953C403.731 257.953 401.15 260.534 401.15 263.718C401.15 266.902 403.731 269.483 406.915 269.483ZM406.915 272.195C411.597 272.195 415.393 268.4 415.393 263.718C415.393 259.036 411.597 255.24 406.915 255.24C402.233 255.24 398.438 259.036 398.438 263.718C398.438 268.4 402.233 272.195 406.915 272.195Z"
-          fill="#4BA9E2"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M262.868 185.27L263.004 223.654C271.472 225.738 271.434 225.066 271.434 225.066C282.918 217.261 279.168 206.019 275.443 194.853L275.443 194.853C275.041 193.649 274.639 192.445 274.257 191.246C266.522 168.646 262.528 179.228 262.868 185.27ZM272.825 230.624L306.207 249.57C311.621 252.277 318.822 260.998 295.364 256.487C294.134 256.224 292.89 255.975 291.644 255.725C282.076 253.808 272.454 251.88 268.833 243.389L272.809 357.535L276.117 357.836L276.718 384L254.163 383.699L254.464 357.535L257.471 357.234L262.283 236.639H267.64C268.096 235.898 269.367 234.255 272.825 230.624ZM261.381 236.037L227.891 255.7C222.841 259.034 211.687 260.91 227.323 242.851C228.166 241.917 229.004 240.964 229.843 240.011C237.616 231.172 245.443 222.273 257.967 228.267C257.967 228.267 258.919 227.67 261.381 236.037Z"
-          fill="#4BA9E2"
-        />
-        <path
-          fill-rule="evenodd"
-          clip-rule="evenodd"
-          d="M265.892 235.436C268.715 235.436 271.004 233.147 271.004 230.323C271.004 227.5 268.715 225.211 265.892 225.211C263.068 225.211 260.779 227.5 260.779 230.323C260.779 233.147 263.068 235.436 265.892 235.436ZM265.892 237.842C270.044 237.842 273.41 234.475 273.41 230.323C273.41 226.171 270.044 222.805 265.892 222.805C261.739 222.805 258.373 226.171 258.373 230.323C258.373 234.475 261.739 237.842 265.892 237.842Z"
-          fill="#4BA9E2"
-        />
+
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg x="22%" y="26%">
+            <WindmillXs />
+          </svg>
+        </g>
+
+        {/* <svg x="13%" y="20%">
+          <WindmillXs />  
+          // Waiting on content for third windmill
+        </svg> */}
+
         <path
           d="M488.533 548.02L456.918 548.988C441.143 523.997 456.806 523.67 462.779 529.761C460.048 519.319 457.21 497.668 467.698 494.594C484.677 491.018 488.171 516.482 487.796 529.661C488.871 523.89 495.657 522.713 496.945 524.772C502.788 534.105 493.312 544.412 488.533 548.02Z"
           fill="#004C5E"
@@ -253,15 +253,16 @@ export default function SvgBgDesktop() {
           stroke-linecap="round"
         />
         <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
-        <svg x="13%" y="44%" className="" clip-path="url(#clip0_228_650)">
+        <svg x="13%" y="44%" clip-path="url(#clip0_228_650)">
           <Billboard />
         </svg>
-        <Cloud1 cssClass={"animate-cloud1"} />
-        <Cloud2 cssClass={"animate-cloud2"} />
-        <Cloud3 cssClass={"animate-cloud3"} />
-        <Cloud4 cssClass={"animate-cloud4"} />
+
+        <Cloud1 cssClass={'animate-cloud1'} />
+        <Cloud2 cssClass={'animate-cloud2'} />
+        <Cloud3 cssClass={'animate-cloud3'} />
+        <Cloud4 cssClass={'animate-cloud4'} />
         {/* the moon */}
-        <Moon cssClass={"animate-moon"} />
+        <Moon cssClass={'animate-moon'} />
         <path
           d="M-3.23441 619.903C-20.6887 627.903 4.64086 671.569 13.5498 688.478C20.111 700.931 39.3678 719.75 40.4587 727.023L63.0038 726.841C59.6066 723.781 49.8766 695.751 44.6403 678.296C30.0951 626.115 14.2199 611.903 -3.23441 619.903Z"
           fill="#004A59"
@@ -463,6 +464,7 @@ export default function SvgBgDesktop() {
           transform="rotate(38.1499 0.560468 701.575)"
           fill="#3E6D87"
         />
+
         <path
           d="M58.0794 683.853C66.2132 692.646 63.1738 702.516 60.6374 706.352C65.6836 709.633 69.3381 706.928 69.3381 706.928C62.9001 697.661 100.651 674.364 96.7907 667.865C90.4166 655.815 70.9834 683.977 70.8669 684.851C67.8103 676.925 95.9062 653.078 90.9924 647.114C82.8809 636.68 71.2019 659.219 66.3763 671.793C65.0653 653.758 89.9373 634.299 76.7612 626.314C64.5783 619.904 61.4595 643.58 61.423 656.219C60.5452 651.212 59.2651 639.887 61.1669 634.641C63.5441 628.083 62.2314 613.055 55.1192 612.997C41.6619 613.39 50.454 642.646 56.5323 657.224C56.1894 658.723 53.8708 657.944 47.3395 642.834C40.8083 627.725 35.7936 629.062 34.1027 631.619C24.6592 642.244 44.024 657.512 54.8868 663.818C61.4797 670.54 51.5358 666.318 45.7398 663.367C36.2948 654.099 28.1408 649.883 26.6294 655.236C22.9483 664.444 47.9122 672.863 58.0794 683.853Z"
           fill="#072A66"
@@ -566,20 +568,37 @@ export default function SvgBgDesktop() {
           d="M1058.26 610.561C1058.19 609.608 1058.9 608.774 1059.85 608.678C1064.53 608.209 1077.84 606.759 1087.58 604.569C1096.79 602.498 1110.65 598.007 1116.71 595.991C1118.25 595.481 1119.85 596.551 1119.97 598.164V598.164C1120.06 599.308 1119.35 600.357 1118.25 600.693C1113.41 602.171 1100.2 606.149 1090.91 608.369C1081.33 610.658 1065.31 611.833 1060.09 612.17C1059.14 612.231 1058.33 611.512 1058.26 610.561V610.561Z"
           fill="#FEFFFF"
         />
-        <Building />
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="0%" y="90%" className="" clip-path="url(#clip0_228_646)">
+
+        <g ref={bike1}>
+          <Bikers />
+        </g>
+        {/* <g
+          ref={bike1}
+          className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker1 />
           </svg>
         </g>
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="32%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g
+          ref={bike2}
+          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker2 />
           </svg>
         </g>
-        <g className="animate-bike cursor-pointer hover:[animation-play-state:paused] duration-300">
-          <svg x="54%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <g
+          ref={bike3}
+          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
+        >
+          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker3 />
+          </svg>
+        </g> */}
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.005] hidden dark:inline">
+          <svg x="80%" y="32%" className="">
+            <Building />
           </svg>
         </g>
       </g>
@@ -622,5 +641,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  );
+  )
 }
