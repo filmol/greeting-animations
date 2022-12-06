@@ -29,11 +29,14 @@ a {
   }
 }
 
-.windmill {
-  transform-origin: 358px 283px;
+.transFormSm {
+  transform-origin: 88px 94.5px;
 }
-.windmill2 {
-  transform-origin: 69px 46px;
+.transFormXs {
+  transform-origin: 71px 71px;
+}
+.transFormMd {
+  transform-origin: 68px 76px;
 }
 
 .testAnimation {
