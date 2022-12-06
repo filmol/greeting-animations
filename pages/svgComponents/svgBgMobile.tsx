@@ -1,11 +1,11 @@
-import React from "react";
-import MobileBiker from "./svgComponentsMobile/mobileBiker";
-import MobileBuilding from "./svgComponentsMobile/mobileBuilding";
-import MobileCloud1 from "./svgComponentsMobile/mobileCloud1";
-import MobileCloud2 from "./svgComponentsMobile/mobileCloud2";
-import MobileCloud3 from "./svgComponentsMobile/mobileCloud3";
-import MobileCloud4 from "./svgComponentsMobile/mobileCloud4";
-import MobileMoon from "./svgComponentsMobile/mobileMoon";
+import React from 'react'
+import MobileBiker from './svgComponentsMobile/mobileBiker'
+import MobileBuilding from './svgComponentsMobile/mobileBuilding'
+import MobileCloud1 from './svgComponentsMobile/mobileCloud1'
+import MobileCloud2 from './svgComponentsMobile/mobileCloud2'
+import MobileCloud3 from './svgComponentsMobile/mobileCloud3'
+import MobileCloud4 from './svgComponentsMobile/mobileCloud4'
+import MobileMoon from './svgComponentsMobile/mobileMoon'
 
 export default function SvgBgMobile() {
   return (
@@ -15,7 +15,7 @@ export default function SvgBgMobile() {
       xmlns="http://www.w3.org/2000/svg"
       xmlnsXlink="http://www.w3.org/1999/xlink"
       className="w-screen h-screen"
-      preserveAspectRatio="xMaxYMax slice"
+      preserveAspectRatio="xMaxYMid slice"
     >
       <g clip-path="url(#clip0_272_9961)">
         <rect width="375" height="667" fill="#223B6C" />
@@ -163,7 +163,7 @@ export default function SvgBgMobile() {
           fill="#477091"
         />
         {/* the moon */}
-        <MobileMoon cssClass={"animate-moon"} />
+        <MobileMoon cssClass={'animate-moon'} />
         <path
           d="M168.775 478.353L164.29 478.321C163.585 478.321 163.009 478.868 163.009 479.608L162.977 482.826C162.977 483.534 163.521 484.113 164.258 484.113H165.219L165.187 485.722L166.821 484.145L168.742 484.178C169.447 484.178 170.024 483.631 170.024 482.891L170.056 479.673C170.024 478.933 169.479 478.353 168.775 478.353Z"
           fill="#EDEEEF"
@@ -10884,7 +10884,7 @@ export default function SvgBgMobile() {
           d="M342.292 538.727C342.267 538.378 342.525 538.072 342.873 538.037C344.589 537.865 349.469 537.334 353.039 536.531C356.414 535.772 361.493 534.126 363.715 533.387C364.277 533.2 364.865 533.593 364.909 534.184V534.184C364.94 534.603 364.68 534.988 364.278 535.111C362.505 535.652 357.664 537.11 354.258 537.924C350.746 538.763 344.876 539.194 342.962 539.317C342.614 539.339 342.318 539.076 342.292 538.727V538.727Z"
           fill="#FEFFFF"
         />
-        <MobileBiker cssClass={"animate-mobileBiker"} />
+        <MobileBiker cssClass={'animate-mobileBiker'} />
         {/* removed the biker */}
         <path
           d="M15.7823 546.779C14.6663 547.986 15.0833 549.34 15.4313 549.866C14.7389 550.316 14.2375 549.945 14.2375 549.945C15.1209 548.674 9.94102 545.477 10.4707 544.585C11.3453 542.932 14.0117 546.796 14.0277 546.916C14.4471 545.828 10.5921 542.556 11.2663 541.738C12.3793 540.306 13.9818 543.399 14.6439 545.124C14.8238 542.65 11.4111 539.98 13.219 538.884C14.8906 538.005 15.3185 541.253 15.3235 542.987C15.444 542.3 15.6196 540.746 15.3587 540.027C15.0325 539.127 15.2126 537.065 16.1885 537.057C18.0349 537.111 16.8286 541.125 15.9946 543.125C16.0416 543.331 16.3598 543.224 17.2559 541.151C18.1521 539.078 18.8401 539.261 19.0721 539.612C20.3679 541.07 17.7108 543.165 16.2203 544.03C15.3157 544.952 16.6801 544.373 17.4754 543.968C18.7714 542.697 19.8902 542.118 20.0975 542.852C20.6026 544.116 17.1773 545.271 15.7823 546.779Z"
@@ -10927,11 +10927,11 @@ export default function SvgBgMobile() {
           stroke-linecap="round"
         />
       </g>
-      <MobileCloud1 cssClass={""} />
-      <MobileCloud2 cssClass={""} />
-      <MobileCloud3 cssClass={""} />
-      <MobileCloud4 cssClass={""} />
-      <MobileBuilding cssClass={""} />
+      <MobileCloud1 cssClass={''} />
+      <MobileCloud2 cssClass={''} />
+      <MobileCloud3 cssClass={''} />
+      <MobileCloud4 cssClass={''} />
+      <MobileBuilding cssClass={''} />
 
       <defs>
         <pattern
@@ -11156,5 +11156,5 @@ export default function SvgBgMobile() {
         />
       </defs>
     </svg>
-  );
+  )
 }
