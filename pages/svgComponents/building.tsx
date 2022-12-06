@@ -53,7 +53,7 @@ export default function Building() {
           x2="93.1879"
           y2="41.0909"
           stroke="#233A6D"
-          stroke-width="7.37592"
+          strokeWidth="7.37592"
         />
         <line
           opacity="0.5"
@@ -62,7 +62,7 @@ export default function Building() {
           x2="145.66"
           y2="127.06"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -71,7 +71,7 @@ export default function Building() {
           x2="145.66"
           y2="152.349"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -80,7 +80,7 @@ export default function Building() {
           x2="145.66"
           y2="177.638"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -89,7 +89,7 @@ export default function Building() {
           x2="145.66"
           y2="202.926"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -98,7 +98,7 @@ export default function Building() {
           x2="145.66"
           y2="228.215"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -107,7 +107,7 @@ export default function Building() {
           x2="145.66"
           y2="253.504"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -116,7 +116,7 @@ export default function Building() {
           x2="145.66"
           y2="278.793"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -125,7 +125,7 @@ export default function Building() {
           x2="145.66"
           y2="304.083"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -134,7 +134,7 @@ export default function Building() {
           x2="145.66"
           y2="329.371"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -143,7 +143,7 @@ export default function Building() {
           x2="145.66"
           y2="354.66"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <line
           opacity="0.5"
@@ -152,7 +152,7 @@ export default function Building() {
           x2="145.66"
           y2="379.949"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <path
           d="M117.043 90.3789C115.47 90.3789 113.896 90.8447 113.896 94.1928C113.896 95.503 114.097 96.3473 114.497 96.8713C114.955 97.4827 115.727 97.7447 116.871 97.7447C117.558 97.7447 118.731 97.6574 119.417 97.5409L119.531 97.5118V96.4346H117.215C115.87 96.4346 115.384 96.0561 115.384 94.9498V94.5422H119.017C119.56 94.5422 119.932 94.1637 119.932 93.5814V93.1447C119.961 91.3397 118.988 90.3789 117.043 90.3789ZM118.502 93.465H115.384V93.1738C115.384 92.4751 115.613 91.6599 116.757 91.6599H117.3C118.301 91.6599 118.502 92.2713 118.502 93.203V93.465Z"
@@ -236,7 +236,7 @@ export default function Building() {
           x2="145.28"
           y2="63.4194"
           stroke="#F8485E"
-          stroke-width="3.16111"
+          strokeWidth="3.16111"
         />
         <path
           d="M115.814 205.85L163.758 156.659L214.336 204.269V392.355L115.814 391.301V205.85Z"

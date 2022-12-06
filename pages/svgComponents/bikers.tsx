@@ -22,7 +22,7 @@ export default function Bikers() {
           setModalOpen(!modalOpen)
         }}
       >
-        <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
+        <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
           <Biker1 />
         </svg>
       </g>

@@ -1,9 +1,9 @@
-import { useState } from "react";
-import MyModal from "../../components/modal";
+import { useState } from 'react'
+import MyModal from '../../components/modal'
 
 const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
@@ -15,7 +15,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         height="196"
         viewBox="0 0 165 196"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         fill="none"
@@ -49,7 +49,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="44.9621"
           y2="20.0022"
           stroke="#233A6D"
-          stroke-width="3.56722"
+          strokeWidth="3.56722"
         />
         <line
           opacity="0.5"
@@ -58,7 +58,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="61.5793"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -67,7 +67,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="73.8098"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -76,7 +76,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="86.0403"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -85,7 +85,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="98.2708"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -94,7 +94,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="110.501"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -103,7 +103,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="122.732"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -112,7 +112,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="134.962"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -121,7 +121,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="147.193"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -130,7 +130,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="159.423"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -139,7 +139,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="171.654"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <line
           opacity="0.5"
@@ -148,7 +148,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.3394"
           y2="183.884"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <path
           d="M56.4992 43.8389C55.7383 43.8389 54.9774 44.0642 54.9774 45.6834C54.9774 46.317 55.0743 46.7253 55.2679 46.9788C55.4893 47.2745 55.8628 47.4012 56.4162 47.4012C56.7482 47.4012 57.3154 47.359 57.6474 47.3026L57.7027 47.2886V46.7676H56.5822C55.932 46.7676 55.6968 46.5845 55.6968 46.0495V45.8524H57.4537C57.7165 45.8524 57.8964 45.6693 57.8964 45.3877V45.1765C57.9102 44.3035 57.4399 43.8389 56.4992 43.8389ZM57.2047 45.3314H55.6968V45.1906C55.6968 44.8527 55.8075 44.4584 56.3608 44.4584H56.6237C57.1079 44.4584 57.2047 44.7541 57.2047 45.2047V45.3314Z"
@@ -193,7 +193,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           x2="70.1555"
           y2="30.801"
           stroke="#F8485E"
-          stroke-width="1.52881"
+          strokeWidth="1.52881"
         />
         <path
           d="M55.905 99.6845L79.092 75.8945L103.553 98.9201V189.884L55.905 189.375V99.6845Z"
@@ -388,6 +388,6 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         </defs>
       </svg>
     </>
-  );
-};
-export default MobileBuilding;
+  )
+}
+export default MobileBuilding
