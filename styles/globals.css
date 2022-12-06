@@ -39,10 +39,24 @@ a {
   transform-origin: 68px 76px;
 }
 
-.testAnimation {
+.turbineSpin {
   -webkit-animation: testSpin 5s linear infinite;
   animation: testSpin 5s linear infinite;
   transition-timing-function: ease-in-out;
+}
+
+@media (prefers-reduced-motion) {
+  .turbineSpin {
+    -webkit-animation: testSpin 20s linear infinite;
+    animation: testSpin 20s linear infinite;
+    transition-timing-function: ease-in-out;
+  }
+}
+
+@media (prefers-reduced-motion) {
+  .reduceAnimations {
+    animation: none;
+  }
 }
 
 @keyframes testSpin {

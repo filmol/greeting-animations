@@ -30,7 +30,7 @@ export default function WindmillXs() {
           d="M58.6437 242.992L84.0341 243.33L83.357 213.878L79.6331 213.539L74.8936 77.4473H67.7842L62.3676 213.201L58.9822 213.539L58.6437 242.992Z"
           fill="#329ad9"
         />
-        <g className="transFormXs testAnimation will-change-transform group-hover:[animation-play-state:paused]">
+        <g className="transFormXs turbineSpin will-change-transform group-hover:[animation-play-state:paused]">
           <path
             d="M117.329 93.3142L79.7511 71.9863C72.9803 79.0956 73.6578 79.4342 73.6578 79.4342C74.9931 96.6995 90.9044 98.0537 105.123 101.101C131.529 106.179 123.423 96.361 117.329 93.3142Z"
             fill="#4BA9E2"

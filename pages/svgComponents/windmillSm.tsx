@@ -29,7 +29,7 @@ export default function WindmillMd() {
           d="M72.2019 307.35L103.655 307.769L102.817 271.284L98.2034 270.864L92.3321 102.275H83.5251L76.8151 270.445L72.6213 270.864L72.2019 307.35Z"
           fill="#329ad9"
         />
-        <g className="transFormSm testAnimation will-change-transform group-hover:[animation-play-state:paused]">
+        <g className="transFormSm turbineSpin will-change-transform group-hover:[animation-play-state:paused]">
           <path
             d="M144.901 121.931L98.3497 95.5107C89.9622 104.318 90.8014 104.737 90.8014 104.737C92.4556 126.125 112.166 127.803 129.78 131.577C162.492 137.868 152.45 125.706 144.901 121.931Z"
             fill="#4BA9E2"
