@@ -568,11 +568,6 @@ export default function SvgBgDesktop() {
           fill="#FEFFFF"
         />
 
-        <g className="duration-300 cursor-pointer hover:scale-y-[1.01] hidden dark:inline">
-          <svg x="60%" y="26%" className="">
-            <BuildingSVG />
-          </svg>
-        </g>
         <g
           ref={bike1}
           className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
@@ -595,6 +590,11 @@ export default function SvgBgDesktop() {
         >
           <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
             <Biker3 />
+          </svg>
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.005] hidden dark:inline">
+          <svg x="80%" y="32%" className="">
+            <Building />
           </svg>
         </g>
       </g>
