@@ -278,8 +278,8 @@ export default function SvgBgDesktop() {
               </svg>
             </g>
 
-            <svg x="0.45%" y="0.6%">
-              <image href="../2023-greetings.jpg" height="25.35%"></image>
+            <svg x="0.46%" y="0.6%">
+              <image href="../2023-greetings.jpg" height="25.36%"></image>
             </svg>
           </g>
         </svg>
