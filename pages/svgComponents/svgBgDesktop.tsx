@@ -1,33 +1,34 @@
-import React, { useEffect, useRef } from 'react'
-import Biker1 from './Bicycle1.svg'
-import Biker3 from './Bicycle3.svg'
-import Biker2 from './Bicycle2.svg'
-import Billboard from './Billboard.svg'
-import BuildingSVG from './Building.svg'
-import Building from './building'
-import Cloud1 from './cloud1'
-import Cloud2 from './cloud2'
-import Cloud3 from './cloud3'
-import Cloud4 from './cloud4'
-import Moon from './moon'
-import WindmillXs from './windmillXs'
-import WindmillMd from './windmillMd'
-import WindmillSm from './windmillSm'
-import Bikers from './bikers'
+import React, { useEffect, useRef, useState } from "react";
+import Biker1 from "./Bicycle1.svg";
+import Biker3 from "./Bicycle3.svg";
+import Biker2 from "./Bicycle2.svg";
+import Billboard from "./Billboard.svg";
+import BuildingSVG from "./Building.svg";
+import Building from "./building";
+import Cloud1 from "./cloud1";
+import Cloud2 from "./cloud2";
+import Cloud3 from "./cloud3";
+import Cloud4 from "./cloud4";
+import Moon from "./moon";
+import WindmillXs from "./windmillXs";
+import WindmillMd from "./windmillMd";
+import WindmillSm from "./windmillSm";
+import Bikers from "./bikers";
+import Sun from "./sun";
 
 export default function SvgBgDesktop() {
-  const bike1 = useRef<SVGGraphicsElement>(null)
-  const bike2 = useRef<SVGGraphicsElement>(null)
-  const bike3 = useRef<SVGGraphicsElement>(null)
+  const bike1 = useRef<SVGGraphicsElement>(null);
+  const bike2 = useRef<SVGGraphicsElement>(null);
+  const bike3 = useRef<SVGGraphicsElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
-      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
-    }, 5000)
+      bike3.current?.classList.add("animate-bike", "xl:animate-slowerBike");
+    }, 5000);
     setTimeout(() => {
-      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
-    }, 10000)
-  }, [])
+      bike2.current?.classList.add("animate-bike", "xl:animate-slowerBike");
+    }, 10000);
+  }, []);
 
   return (
     <svg
@@ -39,22 +40,26 @@ export default function SvgBgDesktop() {
       xmlnsXlink="http://www.w3.org/1999/xlink"
     >
       <g clip-path="url(#clip0_220_24344)">
-        <rect width="1440" height="768" fill="#223B6C" />
+        <rect
+          width="1440"
+          height="768"
+          className="fill-[#F0D6DB] dark:fill-[#223B6C]"
+        />
         <path
           d="M269.686 59.7244C123.878 50.649 30.1134 129.081 1.41803 169.952C-126.176 285.876 -146.063 500.222 -140.057 592.904L1470.89 596C1470.89 596 1484.6 494.214 1483 409.5C1481.4 324.786 1488.24 243.17 1384 179C1295.77 124.688 1225.18 83.8757 1101.85 86.3528C978.528 88.8298 904.381 228.862 772 244.5C564.414 269.021 598.015 80.1602 269.686 59.7244Z"
-          fill="#1E2F55"
+          className="fill-[#F9C8D4] dark:fill-[#1E2F55]"
         />
         <path
           d="M2.42115 411.506C39.1302 338.014 130.97 190.659 204.655 189.173C296.761 187.315 330.8 343.068 451.606 346.165C572.413 349.262 531.699 272.16 647.166 270.922C762.632 269.683 753.955 454.858 883.438 456.096C1012.92 457.335 976.88 181.122 1155.75 189.173C1298.85 195.613 1454.88 408.203 1455.99 511.834C1456.69 577.64 1460.54 594.833 1463.25 598.618C1464.17 598.591 1465.09 598.565 1466 598.538C1466 598.538 1464.81 600.793 1463.25 598.618C990.29 612.295 -53.9126 593.012 -54.9785 553.947C-56.0464 514.807 -17.157 442.678 2.42115 411.506Z"
-          fill="#182641"
+          className="fill-[#FAAEC0] dark:fill-[#182641]"
         />
         <path
           d="M912.5 626C980.5 450 1308.5 404 1440 405.5V626.5L912.5 626Z"
-          fill="#326FB3"
+          className="fill-[#D688B6] dark:fill-[#326FB3]"
         />
         <path
           d="M1492 536.5L991.5 536C1007.33 496.5 1057.8 418.9 1133 424.5C1208.2 430.1 1220 475.5 1216.5 497.5C1234.1 487.1 1241.5 504.167 1243 514C1261.4 495.2 1283.67 514.167 1292.5 526C1306.1 502.8 1325.5 510.667 1333.5 517.5C1333 488 1354.5 455 1387 451.5C1413 448.7 1423.5 469 1425.5 479.5C1480.7 456.7 1492.83 509 1492 536.5Z"
-          fill="#1F3560"
+          className="fill-[#763D4D] dark:fill-[#1F3560]"
         />
         <path
           d="M1265.77 536L1242.53 535.779C1231.68 516.966 1243.19 517.187 1247.4 521.835C1245.7 514.089 1244.25 498.109 1252.04 496.161C1264.61 494.036 1266.43 512.834 1265.77 522.499C1266.72 518.294 1271.74 517.63 1272.63 519.179C1276.64 526.204 1269.38 533.491 1265.77 536Z"
@@ -105,11 +110,11 @@ export default function SvgBgDesktop() {
         />
         <path
           d="M755 627.5C423.5 350.5 186.5 289 0.5 314.5L-1.5 629.5L755 627.5Z"
-          fill="#326FB3"
+          className="fill-[#D688B6] dark:fill-[#326FB3]"
         />
         <path
           d="M27 466C5 463.6 -10.8333 476.667 -16 483.5L-52.5 533.5L351.5 533C341.5 476.2 287 472 261 477C264.5 471.5 266.5 456.1 246.5 438.5C226.5 420.9 204.167 435.833 195.5 445.5C190.167 423.5 169.1 379.4 127.5 379C34.3 379.4 21.6667 437.167 27 466Z"
-          fill="#1F3560"
+          className="fill-[#763D4D] dark:fill-[#1F3560]"
         />
 
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
@@ -120,6 +125,7 @@ export default function SvgBgDesktop() {
         <path
           d="M554.378 461C581.472 462.635 613.11 489.098 611.972 497.5C654.472 502 651.972 533.5 651.972 533.5L390.972 533.207C418.472 506 460.81 497.422 476.063 500.355C476.063 500.355 475.043 488.245 489.472 480C496.472 476 509.403 476.206 514.487 481.876C522.972 461 554.378 461 554.378 461Z"
           fill="#1E3E7C"
+          className="fill-[#763D4D] dark:fill-[#1E3E7C]"
         />
         <path
           d="M373.61 532.875L397.226 532.675C399.895 528.339 405.432 522.068 402.029 517.665C399.468 516.064 396.159 520.067 394.824 522.268C399.027 514.863 393.423 493.248 383.016 495.85C374.691 497.931 377.012 513.395 379.214 520.867C378.28 518.666 375.771 515.063 373.209 518.265C370.648 521.467 372.409 529.34 373.61 532.875Z"
@@ -252,17 +258,21 @@ export default function SvgBgDesktop() {
           stroke-width="1.20488"
           stroke-linecap="round"
         />
-        <path d="M-1 531H1440V809H-1V531Z" fill="#4A8CCA" />
+        <path
+          d="M-1 531H1440V809H-1V531Z"
+          className="fill-[#9481B9] dark:fill-[#4A8CCA]"
+        />
         <svg x="13%" y="44%" clip-path="url(#clip0_228_650)">
           <Billboard />
         </svg>
 
-        <Cloud1 cssClass={'animate-cloud1'} />
-        <Cloud2 cssClass={'animate-cloud2'} />
-        <Cloud3 cssClass={'animate-cloud3'} />
-        <Cloud4 cssClass={'animate-cloud4'} />
+        <Cloud1 cssClass={"animate-cloud1"} />
+        <Cloud2 cssClass={"animate-cloud2"} />
+        <Cloud3 cssClass={"animate-cloud3"} />
+        <Cloud4 cssClass={"animate-cloud4"} />
         {/* the moon */}
-        <Moon cssClass={'animate-moon'} />
+        <Moon cssClass={`animate-moon  dark:block hidden`} />
+        <Sun cssClass={`animate-moon dark:hidden block`} />
         <path
           d="M-3.23441 619.903C-20.6887 627.903 4.64086 671.569 13.5498 688.478C20.111 700.931 39.3678 719.75 40.4587 727.023L63.0038 726.841C59.6066 723.781 49.8766 695.751 44.6403 678.296C30.0951 626.115 14.2199 611.903 -3.23441 619.903Z"
           fill="#004A59"
@@ -641,5 +651,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  )
+  );
 }

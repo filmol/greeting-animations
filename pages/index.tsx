@@ -1,13 +1,13 @@
-import Head from 'next/head'
-import dynamic from 'next/dynamic'
-import SvgBgDesktop from './svgComponents/svgBgDesktop'
-import SvgBgMobile from './svgComponents/svgBgMobile'
+import Head from "next/head";
+import dynamic from "next/dynamic";
+import SvgBgDesktop from "./svgComponents/svgBgDesktop";
+import SvgBgMobile from "./svgComponents/svgBgMobile";
 const LazyLoadSnowfall = dynamic(
-  () => import('./components/lazyLoadSnowfall'),
+  () => import("./components/lazyLoadSnowfall"),
   {
     loading: () => <header />,
   }
-)
+);
 
 export default function Home() {
   return (
@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main id="main" className="dark">
-        <LazyLoadSnowfall />
+        {/* <LazyLoadSnowfall /> */}
 
         <div className=" lg:hidden">
           <SvgBgMobile />
@@ -34,5 +34,5 @@ export default function Home() {
         </div>
       </main>
     </div>
-  )
+  );
 }

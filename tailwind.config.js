@@ -8,6 +8,7 @@ module.exports = {
   theme: {
     extend: {
       animation: {
+        pinging: `pinging 1s infinite`,
         bike: `bike 10s linear infinite`,
         mobileBiker: "mobileBiker 9s linear infinite",
         slowerBike: `bike 35s linear infinite`,
@@ -20,6 +21,17 @@ module.exports = {
         "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
+        pinging: {
+          "0%": {
+            opacity: 100,
+          },
+          "50%": {
+            opacity: 0,
+          },
+          "100%": {
+            opacity: 100,
+          },
+        },
         bike: {
           "0%": {
             transform: "translate(0vw, 0vh)",

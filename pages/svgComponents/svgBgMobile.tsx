@@ -6,6 +6,7 @@ import MobileCloud2 from "./svgComponentsMobile/mobileCloud2";
 import MobileCloud3 from "./svgComponentsMobile/mobileCloud3";
 import MobileCloud4 from "./svgComponentsMobile/mobileCloud4";
 import MobileMoon from "./svgComponentsMobile/mobileMoon";
+import MobileSun from "./svgComponentsMobile/mobileSun";
 
 export default function SvgBgMobile() {
   return (
@@ -162,8 +163,6 @@ export default function SvgBgMobile() {
           ry="2.78534"
           fill="#477091"
         />
-        {/* the moon */}
-        <MobileMoon cssClass={"animate-moon"} />
         <path
           d="M168.775 478.353L164.29 478.321C163.585 478.321 163.009 478.868 163.009 479.608L162.977 482.826C162.977 483.534 163.521 484.113 164.258 484.113H165.219L165.187 485.722L166.821 484.145L168.742 484.178C169.447 484.178 170.024 483.631 170.024 482.891L170.056 479.673C170.024 478.933 169.479 478.353 168.775 478.353Z"
           fill="#EDEEEF"
@@ -10229,6 +10228,9 @@ export default function SvgBgMobile() {
           stroke-linecap="round"
           stroke-linejoin="round"
         />
+        {/* the moon */}
+        <MobileMoon cssClass={"animate-moon dark:block hidden"} />
+        <MobileSun cssClass={"animate-moon dark:hidden block"} />
         <rect
           x="156.541"
           y="499.88"
