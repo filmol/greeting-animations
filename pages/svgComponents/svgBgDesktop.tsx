@@ -68,20 +68,20 @@ export default function SvgBgDesktop() {
         <path
           d="M1252.93 500.924C1254.92 507.195 1258.06 522.658 1254.7 534.344"
           stroke="#003960"
-          stroke-width="0.885308"
-          stroke-linecap="round"
+          strokeWidth="0.885308"
+          strokeLinecap="round"
         />
         <path
           d="M1271.3 523.057C1270.63 524.753 1267.62 529.475 1260.9 534.787"
           stroke="#003960"
-          stroke-width="0.885308"
-          stroke-linecap="round"
+          strokeWidth="0.885308"
+          strokeLinecap="round"
         />
         <path
           d="M1242.75 522.613C1242.75 524.827 1243.81 530.315 1248.06 534.565"
           stroke="#003960"
-          stroke-width="0.885308"
-          stroke-linecap="round"
+          strokeWidth="0.885308"
+          strokeLinecap="round"
         />
         <path
           d="M1247.44 536.04L1212.66 535.745C1208.73 529.358 1200.57 520.121 1205.58 513.636C1209.35 511.277 1214.23 517.173 1216.19 520.416C1210 509.509 1218.26 477.671 1233.59 481.504C1245.85 484.57 1242.43 507.347 1239.19 518.352C1240.56 515.11 1244.26 509.804 1248.03 514.52C1251.8 519.237 1249.21 530.832 1247.44 536.04Z"
@@ -90,23 +90,23 @@ export default function SvgBgDesktop() {
         <path
           d="M1232.89 486.516C1232.59 486.81 1225.81 487.695 1225.81 531.913"
           stroke="#00627B"
-          stroke-width="1.76874"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.76874"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M1246.15 517.763C1244.39 519.04 1240.32 523.894 1238.2 533.092"
           stroke="#00627B"
-          stroke-width="1.76874"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.76874"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M1208.42 517.173C1208.81 520.022 1210.96 527.019 1216.38 532.207"
           stroke="#00627B"
-          stroke-width="1.76874"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.76874"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M755 627.5C423.5 350.5 186.5 289 0.5 314.5L-1.5 629.5L755 627.5Z"
@@ -134,23 +134,23 @@ export default function SvgBgDesktop() {
         <path
           d="M383.489 499.252C383.689 499.452 388.293 500.053 388.293 530.073"
           stroke="#003960"
-          stroke-width="1.20083"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.20083"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M374.483 520.467C375.684 521.334 378.446 524.63 379.887 530.874"
           stroke="#003960"
-          stroke-width="1.20083"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.20083"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M400.101 520.066C399.834 522.001 398.38 526.751 394.697 530.273"
           stroke="#003960"
-          stroke-width="1.20083"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.20083"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M449.352 532.875L404.408 532.494C399.329 524.242 388.791 512.307 395.266 503.928C400.142 500.881 406.439 508.499 408.978 512.688C400.98 498.595 411.644 457.46 431.451 462.411C447.296 466.372 442.877 495.802 438.687 510.022C440.465 505.832 445.239 498.976 450.114 505.071C454.989 511.165 451.638 526.146 449.352 532.875Z"
@@ -159,23 +159,23 @@ export default function SvgBgDesktop() {
         <path
           d="M430.55 468.886C430.169 469.267 421.409 470.409 421.409 527.542"
           stroke="#00627B"
-          stroke-width="2.28533"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.28533"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M447.69 509.261C445.405 510.911 440.149 517.183 437.406 529.067"
           stroke="#00627B"
-          stroke-width="2.28533"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.28533"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M398.937 508.498C399.444 512.18 402.212 521.22 409.221 527.923"
           stroke="#00627B"
-          stroke-width="2.28533"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="2.28533"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M49.0143 533.248L72.1995 533.052C74.8193 528.795 80.2553 522.638 76.9152 518.315C74.4002 516.744 71.1516 520.673 69.8417 522.835C73.9679 515.565 68.4663 494.344 58.2491 496.899C50.0754 498.942 52.3546 514.124 54.5159 521.459C53.599 519.298 51.1364 515.761 48.6214 518.905C46.1064 522.049 47.8354 529.777 49.0143 533.248Z"
@@ -184,23 +184,23 @@ export default function SvgBgDesktop() {
         <path
           d="M58.7134 500.239C58.9099 500.436 63.4291 501.025 63.4291 530.498"
           stroke="#00627B"
-          stroke-width="1.17891"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.17891"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M49.8717 521.066C51.0506 521.918 53.7621 525.153 55.1768 531.284"
           stroke="#00627B"
-          stroke-width="1.17891"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.17891"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M75.0217 520.673C74.7597 522.572 73.3319 527.235 69.7166 530.694"
           stroke="#00627B"
-          stroke-width="1.17891"
-          stroke-linecap="round"
-          stroke-linejoin="round"
+          strokeWidth="1.17891"
+          strokeLinecap="round"
+          strokeLinejoin="round"
         />
         <path
           d="M31.9004 533.548L48.9614 533.385C56.9232 519.574 48.4739 519.737 45.3867 523.149C46.6324 517.462 47.694 505.73 41.9745 504.301C32.7453 502.741 31.4129 516.541 31.9004 523.636C31.1963 520.549 27.5133 520.062 26.8633 521.199C23.9162 526.356 29.2464 531.706 31.9004 533.548Z"
@@ -209,20 +209,20 @@ export default function SvgBgDesktop() {
         <path
           d="M41.3247 507.062C39.8623 511.666 37.555 523.019 40.0248 531.598"
           stroke="#003960"
-          stroke-width="0.649943"
-          stroke-linecap="round"
+          strokeWidth="0.649943"
+          strokeLinecap="round"
         />
         <path
           d="M27.8382 523.312C28.3256 524.557 30.5355 528.024 35.4752 531.923"
           stroke="#003960"
-          stroke-width="0.649943"
-          stroke-linecap="round"
+          strokeWidth="0.649943"
+          strokeLinecap="round"
         />
         <path
           d="M48.7989 522.986C48.7989 524.611 48.0189 528.641 44.8991 531.761"
           stroke="#003960"
-          stroke-width="0.649943"
-          stroke-linecap="round"
+          strokeWidth="0.649943"
+          strokeLinecap="round"
         />
 
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
@@ -243,20 +243,20 @@ export default function SvgBgDesktop() {
         <path
           d="M469.107 499.662C472.158 508.081 477.276 528.938 473.339 545.013"
           stroke="#003960"
-          stroke-width="1.20488"
-          stroke-linecap="round"
+          strokeWidth="1.20488"
+          strokeLinecap="round"
         />
         <path
           d="M495.297 528.757C494.486 531.101 490.651 537.686 481.791 545.277"
           stroke="#003960"
-          stroke-width="1.20488"
-          stroke-linecap="round"
+          strokeWidth="1.20488"
+          strokeLinecap="round"
         />
         <path
           d="M456.446 529.714C456.567 532.724 458.311 540.13 464.322 545.677"
           stroke="#003960"
-          stroke-width="1.20488"
-          stroke-linecap="round"
+          strokeWidth="1.20488"
+          strokeLinecap="round"
         />
         <path
           d="M-1 531H1440V809H-1V531Z"
@@ -266,11 +266,10 @@ export default function SvgBgDesktop() {
           <Billboard />
         </svg>
 
-        <Cloud1 cssClass={"animate-cloud1"} />
-        <Cloud2 cssClass={"animate-cloud2"} />
-        <Cloud3 cssClass={"animate-cloud3"} />
-        <Cloud4 cssClass={"animate-cloud4"} />
-        {/* the moon */}
+        <Cloud1 />
+        <Cloud2 />
+        <Cloud3 />
+        <Cloud4 />
         <Moon cssClass={`animate-moon  dark:block hidden`} />
         <Sun cssClass={`animate-moon dark:hidden block`} />
         <path
@@ -280,7 +279,7 @@ export default function SvgBgDesktop() {
         <path
           d="M10.6407 637.752C20.9594 654.653 17.9133 684.842 45.9129 714.115"
           stroke="#93AFB5"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
         <ellipse
           cx="3.20038"
@@ -432,7 +431,7 @@ export default function SvgBgDesktop() {
         <path
           d="M-14.0148 687.641C5.77654 694.444 12.1389 704.848 23.7124 725.368"
           stroke="#2E978F"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
         <ellipse
           cx="2.03159"
@@ -482,7 +481,7 @@ export default function SvgBgDesktop() {
         <path
           d="M63.771 685.349C60.1783 667.47 53.4202 630.486 55.129 625.582"
           stroke="#2E978F"
-          stroke-linecap="round"
+          strokeLinecap="round"
         />
         <path
           d="M134.104 627.531C130.898 630.996 132.096 634.885 133.096 636.397C131.107 637.69 129.667 636.624 129.667 636.624C132.204 632.972 117.327 623.791 118.848 621.23C121.36 616.481 129.019 627.579 129.064 627.924C130.269 624.8 119.197 615.402 121.133 613.052C124.33 608.94 128.932 617.823 130.834 622.778C131.351 615.67 121.549 608.002 126.742 604.855C131.543 602.329 132.772 611.659 132.786 616.64C133.132 614.667 133.637 610.204 132.887 608.137C131.95 605.552 132.468 599.63 135.27 599.607C140.574 599.762 137.109 611.291 134.714 617.037C134.849 617.627 135.762 617.32 138.336 611.366C140.91 605.411 142.886 605.938 143.553 606.946C147.274 611.133 139.643 617.15 135.362 619.635C132.764 622.284 136.683 620.62 138.967 619.457C142.689 615.805 145.902 614.143 146.498 616.253C147.949 619.882 138.111 623.2 134.104 627.531Z"
@@ -491,8 +490,8 @@ export default function SvgBgDesktop() {
         <path
           d="M131.861 628.12C133.277 621.074 135.94 606.499 135.267 604.566"
           stroke="#2E978F"
-          stroke-width="0.387357"
-          stroke-linecap="round"
+          strokeWidth="0.387357"
+          strokeLinecap="round"
         />
         <path
           d="M145.883 601.429C151.855 607.885 149.624 615.132 147.761 617.948C151.466 620.357 154.15 618.371 154.15 618.371C149.423 611.568 177.141 594.461 174.307 589.69C169.626 580.842 155.358 601.52 155.272 602.162C153.028 596.342 173.657 578.833 170.049 574.454C164.093 566.792 155.518 583.342 151.975 592.574C151.012 579.331 169.275 565.044 159.6 559.181C150.655 554.475 148.365 571.858 148.338 581.138C147.694 577.462 146.754 569.147 148.15 565.295C149.896 560.48 148.932 549.446 143.71 549.404C133.829 549.692 140.284 571.173 144.747 581.877C144.495 582.978 142.793 582.405 137.997 571.311C133.202 560.217 129.52 561.199 128.278 563.076C121.345 570.878 135.563 582.088 143.539 586.718C148.38 591.653 141.079 588.554 136.823 586.387C129.888 579.582 123.901 576.486 122.791 580.417C120.088 587.178 138.418 593.359 145.883 601.429Z"
@@ -501,8 +500,8 @@ export default function SvgBgDesktop() {
         <path
           d="M150.062 602.527C147.424 589.399 142.462 562.244 143.717 558.644"
           stroke="#2E978F"
-          stroke-width="0.721697"
-          stroke-linecap="round"
+          strokeWidth="0.721697"
+          strokeLinecap="round"
         />
         <path
           d="M182.345 610.213C179.14 613.678 180.338 617.568 181.337 619.08C179.348 620.373 177.908 619.307 177.908 619.307C180.445 615.655 165.568 606.474 167.089 603.913C169.601 599.164 177.26 610.262 177.306 610.607C178.51 607.483 167.438 598.085 169.374 595.735C172.571 591.623 177.174 600.505 179.075 605.461C179.592 598.353 169.79 590.685 174.983 587.538C179.784 585.012 181.013 594.342 181.027 599.323C181.373 597.35 181.878 592.887 181.128 590.819C180.192 588.235 180.709 582.312 183.512 582.29C188.815 582.444 185.35 593.974 182.955 599.719C183.09 600.31 184.004 600.003 186.578 594.048C189.152 588.094 191.128 588.62 191.794 589.628C195.516 593.815 187.884 599.833 183.603 602.318C181.005 604.967 184.924 603.303 187.208 602.14C190.93 598.487 194.144 596.826 194.739 598.936C196.19 602.564 186.352 605.882 182.345 610.213Z"
@@ -511,8 +510,8 @@ export default function SvgBgDesktop() {
         <path
           d="M180.102 610.803C181.518 603.757 184.181 589.181 183.508 587.249"
           stroke="#2E978F"
-          stroke-width="0.387357"
-          stroke-linecap="round"
+          strokeWidth="0.387357"
+          strokeLinecap="round"
         />
         <path
           d="M200.288 620.04C202.824 622.782 201.877 625.859 201.086 627.055C202.659 628.078 203.799 627.235 203.799 627.235C201.791 624.346 213.562 617.081 212.359 615.055C210.371 611.297 204.312 620.079 204.275 620.351C203.322 617.88 212.083 610.444 210.551 608.585C208.021 605.331 204.38 612.359 202.875 616.28C202.466 610.656 210.222 604.589 206.113 602.099C202.315 600.1 201.342 607.482 201.331 611.423C201.057 609.862 200.658 606.331 201.251 604.695C201.992 602.651 201.583 597.965 199.365 597.947C195.169 598.069 197.911 607.191 199.806 611.737C199.699 612.204 198.976 611.961 196.939 607.25C194.903 602.539 193.339 602.956 192.812 603.753C189.867 607.066 195.906 611.827 199.293 613.793C201.348 615.889 198.248 614.572 196.441 613.652C193.496 610.763 190.953 609.448 190.482 611.117C189.334 613.988 197.118 616.613 200.288 620.04Z"
@@ -521,8 +520,8 @@ export default function SvgBgDesktop() {
         <path
           d="M202.063 620.507C200.943 614.932 198.835 603.4 199.368 601.871"
           stroke="#2E978F"
-          stroke-width="0.30648"
-          stroke-linecap="round"
+          strokeWidth="0.30648"
+          strokeLinecap="round"
         />
         <path
           d="M-66.4 845.776C-45.7987 903.656 27.465 864.389 48.55 850.526C83.2251 827.726 84.1749 834.376 116.475 815.851C148.775 797.326 174.425 788.301 211.475 774.051C243.948 761.561 323.721 740.969 368.7 734.626C462.263 721.431 829.906 683.371 1115.88 634.401C1409.9 584.051 1214.47 569.323 1091.57 584.124C973.85 598.301 866.025 607.326 781.95 614.926C697.875 622.526 601.925 627.751 561.55 631.076C469.267 638.676 399.575 641.526 316.925 653.401C254.348 662.392 208.625 669.076 149.25 691.876C66.1437 723.789 37.6251 735.101 -0.374934 756.951C-57.765 789.95 -76.3749 817.751 -66.4 845.776Z"
@@ -586,7 +585,7 @@ export default function SvgBgDesktop() {
           ref={bike1}
           className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
         >
-          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
+          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
             <Biker1 />
           </svg>
         </g>
@@ -594,7 +593,7 @@ export default function SvgBgDesktop() {
           ref={bike2}
           className="cursor-pointer hover:[animation-play-state:paused] duration-300"
         >
-          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
+          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
             <Biker2 />
           </svg>
         </g>
@@ -602,11 +601,11 @@ export default function SvgBgDesktop() {
           ref={bike3}
           className="cursor-pointer hover:[animation-play-state:paused] duration-300"
         >
-          <svg x="-10%" y="90%" className="" clip-path="url(#clip0_228_646)">
+          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
             <Biker3 />
           </svg>
         </g> */}
-        <g className="duration-300 cursor-pointer hover:scale-y-[1.005] hidden dark:inline">
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />
           </svg>

@@ -1,13 +1,20 @@
-import { useState } from "react";
-import MyModal from "../../components/modal";
+import { useState } from 'react'
+import MyModal from '../../components/modal'
 
 const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      <MyModal
+        content={{
+          title: '',
+          didYouKnow: '',
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <g className="animate-cloud1">
         <svg
           x="120"
@@ -17,7 +24,7 @@ const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
           viewBox="0 0 55 25"
           fill="none"
           onClick={() => {
-            setModalOpen(!modalOpen);
+            setModalOpen(!modalOpen)
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300 fill-[#FFFCFC] dark:fill-[#CFDEFC]`}
           xmlns="http://www.w3.org/2000/svg"
@@ -26,6 +33,6 @@ const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
         </svg>
       </g>
     </>
-  );
-};
-export default MobileCloud1;
+  )
+}
+export default MobileCloud1

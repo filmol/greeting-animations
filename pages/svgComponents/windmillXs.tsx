@@ -30,7 +30,7 @@ export default function WindmillXs() {
           d="M58.6437 242.992L84.0341 243.33L83.357 213.878L79.6331 213.539L74.8936 77.4473H67.7842L62.3676 213.201L58.9822 213.539L58.6437 242.992Z"
           className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
         />
-        <g className="transFormXs testAnimation will-change-transform group-hover:[animation-play-state:paused]">
+        <g className="transFormXs turbineSpin will-change-transform group-hover:[animation-play-state:paused]">
           <path
             d="M117.329 93.3142L79.7511 71.9863C72.9803 79.0956 73.6578 79.4342 73.6578 79.4342C74.9931 96.6995 90.9044 98.0537 105.123 101.101C131.529 106.179 123.423 96.361 117.329 93.3142Z"
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
@@ -44,8 +44,8 @@ export default function WindmillXs() {
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M71.6098 77.0301C74.7883 77.0301 77.365 74.4534 77.365 71.2749C77.365 68.0965 74.7883 65.5198 71.6098 65.5198C68.4313 65.5198 65.8547 68.0965 65.8547 71.2749C65.8547 74.4534 68.4313 77.0301 71.6098 77.0301ZM71.6098 79.7384C76.2841 79.7384 80.0733 75.9492 80.0733 71.2749C80.0733 66.6007 76.2841 62.8115 71.6098 62.8115C66.9356 62.8115 63.1464 66.6007 63.1464 71.2749C63.1464 75.9492 66.9356 79.7384 71.6098 79.7384Z"
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
           />

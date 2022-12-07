@@ -29,7 +29,7 @@ export default function WindmillMd() {
           d="M72.2019 307.35L103.655 307.769L102.817 271.284L98.2034 270.864L92.3321 102.275H83.5251L76.8151 270.445L72.6213 270.864L72.2019 307.35Z"
           className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
         />
-        <g className="transFormSm testAnimation will-change-transform group-hover:[animation-play-state:paused]">
+        <g className="transFormSm turbineSpin will-change-transform group-hover:[animation-play-state:paused]">
           <path
             d="M144.901 121.931L98.3497 95.5107C89.9622 104.318 90.8014 104.737 90.8014 104.737C92.4556 126.125 112.166 127.803 129.78 131.577C162.492 137.868 152.45 125.706 144.901 121.931Z"
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
@@ -43,8 +43,8 @@ export default function WindmillMd() {
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
           />
           <path
-            fill-rule="evenodd"
-            clip-rule="evenodd"
+            fillRule="evenodd"
+            clipRule="evenodd"
             d="M88.2642 101.759C92.2017 101.759 95.3937 98.5673 95.3937 94.6299C95.3937 90.6924 92.2017 87.5005 88.2642 87.5005C84.3268 87.5005 81.1348 90.6924 81.1348 94.6299C81.1348 98.5673 84.3268 101.759 88.2642 101.759ZM88.2642 105.114C94.0546 105.114 98.7487 100.42 98.7487 94.6299C98.7487 88.8395 94.0546 84.1455 88.2642 84.1455C82.4738 84.1455 77.7798 88.8395 77.7798 94.6299C77.7798 100.42 82.4738 105.114 88.2642 105.114Z"
             className="fill-[#6D6BB2] dark:fill-[#4BA9E2]"
           />
