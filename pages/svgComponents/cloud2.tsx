@@ -9,8 +9,10 @@ const Cloud2 = () => {
       <Modal
         content={{
           title: 'AWS',
+          link: 'https://www.devoteam.com/partner/aws/',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
           didYouKnow:
-            'Did you know that 48% of organizations use AWS. And 21% of organizations quote AWS as is their primarily cloud provider',
+            '...that 48% of organizations use AWS. And 21% of organizations quote AWS as is their primarily cloud provider',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
