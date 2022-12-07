@@ -1,24 +1,24 @@
-import React, { useState } from 'react'
-import Modal from '../components/modal'
+import React, { useState } from "react";
+import Modal from "../components/modal";
 
 export default function Building() {
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Modal
         content={{
-          title: 'Devoteam brand',
-          link: 'https://www.devoteam.com/our-offices/',
+          title: "Devoteam brand",
+          link: "https://www.devoteam.com/our-offices/",
           didYouKnow:
-            '... that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
+            "... that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{' '}
+      />{" "}
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
         width="341"
         height="405"
@@ -26,6 +26,7 @@ export default function Building() {
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
+        className="group"
       >
         <ellipse
           cx="170.414"
@@ -39,14 +40,14 @@ export default function Building() {
           y="61.2803"
           width="108"
           height="330.48"
-          className="fill-[#aecb2b] dark:fill-[#233A6D]"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <rect
           x="59.2602"
           y="38.9609"
           width="66.24"
           height="25.2"
-          className="fill-[#aecb2b] dark:fill-[#233A6D]"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <line
           x1="92.8613"
@@ -241,11 +242,11 @@ export default function Building() {
         />
         <path
           d="M115.814 205.85L163.758 156.659L214.336 204.269V392.355L115.814 391.301V205.85Z"
-          fill="#55C8F4"
+          className="fill-[#FDDADE] dark:fill-[#55C8F4]"
         />
         <path
           d="M293.363 204.269H214.335V392.355L293.363 389.72V204.269Z"
-          className="fill-[#aecb2b] dark:fill-[#233A6D]"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <path
           d="M244.366 156.853H163.758L214.336 204.269L293.363 203.742L244.366 156.853Z"
@@ -264,146 +265,152 @@ export default function Building() {
           cy="195.313"
           rx="8.95648"
           ry="8.95648"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="127.932"
           y="223.235"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="158.489"
           y="223.235"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <path
           d="M248.111 223.763H234.94V236.934H248.111V223.763Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
         <path
           d="M277.298 223.763H265.18V236.934H277.298V223.763Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
-        <path d="M248.111 257.4H234.94V270.572H248.111V257.4Z" fill="#1A2857" />
-        <path d="M277.298 257.4H265.18V270.572H277.298V257.4Z" fill="#1A2857" />
+        <path
+          d="M248.111 257.4H234.94V270.572H248.111V257.4Z"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
+        />
+        <path
+          d="M277.298 257.4H265.18V270.572H277.298V257.4Z"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
+        />
         <path
           d="M248.111 290.521H234.94V303.692H248.111V290.521Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <path
           d="M277.558 287.512H265.44V300.683H277.558V287.512Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
         <path
           d="M248.581 320.176H235.41V333.347H248.581V320.176Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
         <path
           d="M277.558 320.176H265.44V333.347H277.558V320.176Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <path
           d="M248.581 353.896H235.41V367.067H248.581V353.896Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
         <path
           d="M277.558 353.896H265.44V367.067H277.558V353.896Z"
-          fill="#1A2857"
+          className="fill-[#C7515C] dark:fill-[#1A2857] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="187.993"
           y="223.235"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4] "
         />
         <rect
           x="127.932"
           y="255.9"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="158.489"
           y="255.9"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="187.993"
           y="255.9"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="127.932"
           y="288.565"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="158.489"
           y="288.565"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="187.993"
           y="288.565"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="127.932"
           y="320.177"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="158.489"
           y="320.177"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="187.993"
           y="320.177"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4]"
         />
         <rect
           x="127.932"
           y="352.841"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:hover:fill-[#F4F9B4] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="158.489"
           y="352.841"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] dark:group-hover:fill-[#F4F9B4] duration-300"
         />
         <rect
           x="187.993"
           y="352.841"
           width="14.7518"
           height="14.7518"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <defs>
           <pattern
@@ -426,5 +433,5 @@ export default function Building() {
         </defs>
       </svg>
     </>
-  )
+  );
 }
