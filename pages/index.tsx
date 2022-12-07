@@ -19,7 +19,7 @@ export default function Home() {
       </Head>
 
       <main id="main" className="dark">
-        {/* <LazyLoadSnowfall /> */}
+        <LazyLoadSnowfall />
 
         <div className=" lg:hidden">
           <SvgBgMobile />
