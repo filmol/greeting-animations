@@ -1,34 +1,35 @@
-import React, { useEffect, useRef, useState } from "react";
-import Biker1 from "./Bicycle1.svg";
-import Biker3 from "./Bicycle3.svg";
-import Biker2 from "./Bicycle2.svg";
-import Billboard from "./Billboard.svg";
-import BuildingSVG from "./Building.svg";
-import Building from "./building";
-import Cloud1 from "./cloud1";
-import Cloud2 from "./cloud2";
-import Cloud3 from "./cloud3";
-import Cloud4 from "./cloud4";
-import Moon from "./moon";
-import WindmillXs from "./windmillXs";
-import WindmillMd from "./windmillMd";
-import WindmillSm from "./windmillSm";
-import Bikers from "./bikers";
-import Sun from "./sun";
+import React, { useEffect, useRef, useState } from 'react'
+import Biker1 from './Bicycle1.svg'
+import Biker3 from './Bicycle3.svg'
+import Biker2 from './Bicycle2.svg'
+import Billboard from './Billboard.svg'
+import BillboardSlider from './Billboard.svg'
+import BuildingSVG from './Building.svg'
+import Building from './building'
+import Cloud1 from './cloud1'
+import Cloud2 from './cloud2'
+import Cloud3 from './cloud3'
+import Cloud4 from './cloud4'
+import Moon from './moon'
+import WindmillXs from './windmillXs'
+import WindmillMd from './windmillMd'
+import WindmillSm from './windmillSm'
+import Bikers from './bikers'
+import Sun from './sun'
 
 export default function SvgBgDesktop() {
-  const bike1 = useRef<SVGGraphicsElement>(null);
-  const bike2 = useRef<SVGGraphicsElement>(null);
-  const bike3 = useRef<SVGGraphicsElement>(null);
+  const bike1 = useRef<SVGGraphicsElement>(null)
+  const bike2 = useRef<SVGGraphicsElement>(null)
+  const bike3 = useRef<SVGGraphicsElement>(null)
 
   useEffect(() => {
     setTimeout(() => {
-      bike3.current?.classList.add("animate-bike", "xl:animate-slowerBike");
-    }, 5000);
+      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 5000)
     setTimeout(() => {
-      bike2.current?.classList.add("animate-bike", "xl:animate-slowerBike");
-    }, 10000);
-  }, []);
+      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 10000)
+  }, [])
 
   return (
     <svg
@@ -262,8 +263,26 @@ export default function SvgBgDesktop() {
           d="M-1 531H1440V809H-1V531Z"
           className="fill-[#9481B9] dark:fill-[#4A8CCA]"
         />
-        <svg x="13%" y="44%" clip-path="url(#clip0_228_650)">
-          <Billboard />
+        <svg
+          x="13%"
+          y="44%"
+          clip-path="url(#clip0_228_650)"
+          className="overflow-hidden"
+        >
+          <g className="overflow-hidden">
+            {/* <Billboard /> */}
+            <BillboardSlider />
+            {/* className="overflow-hidden duration-1000 hover:translate-y-full" */}
+            <g>
+              <svg x="0.45%" y="0.58%">
+                <image href="../tech-radar.jpg" height="25.37%"></image>
+              </svg>
+            </g>
+
+            <svg x="0.45%" y="0.6%">
+              <image href="../2023-greetings.jpg" height="25.35%"></image>
+            </svg>
+          </g>
         </svg>
 
         <Cloud1 />
@@ -650,5 +669,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  );
+  )
 }
