@@ -1,16 +1,16 @@
-import { useState } from 'react'
-import MyModal from '../../components/modal'
+import { useState } from "react";
+import MyModal from "../../components/modal";
 
 const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <MyModal
         content={{
-          title: '',
-          didYouKnow: '',
+          title: "",
+          didYouKnow: "",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
@@ -22,9 +22,9 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         height="196"
         viewBox="0 0 165 196"
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
-        className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
+        className={`${cssClass} absolute cursor-pointer group`}
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
         xmlnsXlink="http://www.w3.org/1999/xlink"
@@ -204,7 +204,7 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         />
         <path
           d="M55.905 99.6845L79.092 75.8945L103.553 98.9201V189.884L55.905 189.375V99.6845Z"
-          fill="#55C8F4"
+          className="fill-[#FDDADE] dark:fill-[#55C8F4]"
         />
         <path
           d="M141.773 98.9199H103.553V189.884L141.773 188.61V98.9199Z"
@@ -227,21 +227,21 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           cy="94.5885"
           rx="4.33163"
           ry="4.33163"
-          fill="#F4F9B4"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="61.7654"
           y="108.093"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="76.5438"
           y="108.093"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <path
           d="M119.888 108.348H113.518V114.718H119.888V108.348Z"
@@ -288,77 +288,77 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           y="108.093"
           width="7.13445"
           height="7.13445"
-          fill="#F4F9B4"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4]"
         />
         <rect
           x="61.7655"
           y="123.891"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="76.5439"
           y="123.891"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="90.8127"
           y="123.891"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="61.7654"
           y="139.688"
           width="7.13445"
           height="7.13445"
-          fill="#F4F9B4"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="76.5438"
           y="139.688"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="90.8127"
           y="139.688"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="61.7654"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="76.5438"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="90.8127"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="61.7655"
           y="170.774"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="76.5439"
@@ -366,13 +366,14 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           width="7.13445"
           height="7.13445"
           fill="#F4F9B4"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <rect
           x="90.8127"
           y="170.774"
           width="7.13445"
           height="7.13445"
-          fill="#314791"
+          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
         />
         <defs>
           <pattern
@@ -395,6 +396,6 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         </defs>
       </svg>
     </>
-  )
-}
-export default MobileBuilding
+  );
+};
+export default MobileBuilding;

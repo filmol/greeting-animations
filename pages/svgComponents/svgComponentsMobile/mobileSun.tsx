@@ -16,7 +16,7 @@ const Sun = ({ cssClass }: { cssClass: string }) => {
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         width="74"
         height="74"
-        x="65"
+        x="70"
         y="40"
         viewBox="0 0 74 74"
         fill="none"
