@@ -9,9 +9,11 @@ export default function Bikers() {
     <>
       <Modal
         content={{
-          title: 'BIKING',
+          title: 'Data Driven',
+          link: 'https://www.devoteam.com/expertise/data-driven/',
+          src: 'https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN',
           didYouKnow:
-            'Did you know that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
+            '... that 82% of organisations are spending more than 10% of their IT budgets on data technologies?',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

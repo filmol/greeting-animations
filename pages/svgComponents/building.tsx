@@ -8,9 +8,10 @@ export default function Building() {
     <>
       <Modal
         content={{
-          title: 'Devoteam',
+          title: 'Devoteam brand',
+          link: 'https://www.devoteam.com/our-offices/',
           didYouKnow:
-            'Did you know that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
+            '... that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

@@ -7,7 +7,13 @@ export default function Windmill({ hideOnMobile }: { hideOnMobile?: boolean }) {
   return (
     <>
       <Modal
-        content={{ title: 'AWS', description: 'hej', didYouKnow: 'hehehe' }}
+        content={{
+          title: 'Sustainability Enabled by Digital',
+          link: 'https://www.devoteam.com/news-and-pr/cloud-a-catalyst-for-sustainable-development/',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
+          didYouKnow:
+            '...that for 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?',
+        }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
       />{' '}

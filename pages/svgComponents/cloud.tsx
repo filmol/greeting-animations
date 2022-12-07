@@ -15,8 +15,11 @@ const AwsClouldSVG = ({
     <>
       <Modal
         content={{
-          title: 'Cloud Services',
-          didYouKnow: 'Did you know that 54% of organisations use multi cloud?',
+          title: 'Cloud',
+          didYouKnow:
+            '...that today 54% of companies use multiple Cloud providers?',
+          link: 'https://www.devoteam.com/expertise/data-driven/',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
