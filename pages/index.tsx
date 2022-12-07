@@ -18,7 +18,7 @@ export default function Home() {
         <link rel="icon" href="/favicon.ico" />
       </Head>
 
-      <main id="main" className="dark">
+      <main id="main" className="font-main dark">
         <LazyLoadSnowfall />
 
         <div className=" lg:hidden">

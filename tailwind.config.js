@@ -6,6 +6,9 @@ module.exports = {
     './components/**/*.{js,ts,jsx,tsx}',
   ],
   theme: {
+    fontFamily: {
+      main: ['Montserrat', 'Calibri', 'sans-serif'],
+    },
     extend: {
       animation: {
         pinging: `pinging 1s infinite`,
