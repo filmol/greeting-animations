@@ -33,7 +33,7 @@ export default function Building() {
           cy="391.969"
           rx="169.646"
           ry="11.0639"
-          fill="#223B6C"
+          className="fill-[#694A67] dark:fill-[#223B6C]"
         />
         <rect
           x="37.6601"
@@ -54,7 +54,7 @@ export default function Building() {
           y1="0.770909"
           x2="93.1879"
           y2="41.0909"
-          stroke="#233A6D"
+          className="stroke-[#FCA2AE] dark:stroke-[#233A6D]"
           strokeWidth="7.37592"
         />
         <line

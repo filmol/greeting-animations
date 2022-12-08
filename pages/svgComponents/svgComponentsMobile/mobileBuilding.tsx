@@ -1,6 +1,5 @@
 import { useState } from "react";
 import MyModal from "../../components/modal";
-
 const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
@@ -34,28 +33,28 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           cy="189.698"
           rx="82.0461"
           ry="5.35084"
-          fill="#223B6C"
+          className="fill-[#694A67] dark:fill-[#223B6C]"
         />
         <rect
           x="18.1072"
           y="29.7666"
           width="52.2321"
           height="159.83"
-          fill="#233A6D"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <rect
           x="28.5537"
           y="18.9717"
           width="32.0357"
           height="12.1875"
-          fill="#233A6D"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <line
           x1="44.8042"
           y1="0.502154"
           x2="44.9621"
           y2="20.0022"
-          stroke="#233A6D"
+          className="stroke-[#FCA2AE] dark:stroke-[#233A6D]"
           strokeWidth="3.56722"
         />
         <line
@@ -189,10 +188,31 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           d="M65.2976 43.8389C64.9656 43.8389 64.5367 43.8952 64.1494 43.9797C63.9142 43.8529 63.6237 43.8389 63.347 43.8389C62.7106 43.8389 61.9359 43.9797 61.9359 43.9797V47.3449H62.6553V44.4725H63.3193C63.8035 44.4725 63.9418 44.6274 63.9418 45.1765V47.3308H64.6612V44.9935C64.6612 44.7823 64.6335 44.6274 64.592 44.4866H65.2007C65.7403 44.4866 65.9201 44.6555 65.9201 45.1906V47.3308H66.6256V45.0216C66.6118 43.8389 65.7264 43.8389 65.2976 43.8389Z"
           fill="white"
         />
-        <path
+        <svg
+          x="13.8%"
+          y="19.6%"
+          width="13"
+          height="13"
+          viewBox="0 0 27 27"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <ellipse
+            cx="13.3373"
+            cy="13.4384"
+            rx="12.5226"
+            ry="12.8281"
+            fill="#D9D9D9"
+          />
+          <path
+            d="M13.5204 1.5363e-05C10.8495 -0.00401316 8.23737 0.784322 6.01463 2.26527C3.79189 3.74622 2.05839 5.85322 1.03349 8.31966C0.00858006 10.7861 -0.261672 13.5011 0.256927 16.1212C0.775525 18.7413 2.05967 21.1487 3.94686 23.0387C5.83406 24.9288 8.23949 26.2166 10.8588 26.7391C13.4781 27.2617 16.1935 26.9955 18.6615 25.9743C21.1295 24.9531 23.2391 23.2228 24.7234 21.0023C26.2077 18.7818 27 16.1709 27 13.5C26.9989 9.92345 25.5791 6.49338 23.052 3.96245C20.5248 1.43153 17.0969 0.00648667 13.5204 1.5363e-05M22.5 12.4819H17.3281V21.9095H11.1991C7.8801 21.9095 4.88688 19.8937 4.88688 15.5973C4.88688 12.4005 6.55657 9.28508 11.1991 9.28508H12.6244C12.9905 10.3368 13.2564 11.4209 13.4186 12.5226H11.2805C9.36652 12.5226 8.28733 13.5611 8.28733 15.6177C8.28733 17.552 9.30543 18.7127 11.2805 18.7127H14.0091V4.50002H17.3281V9.30544H22.5V12.4819Z"
+            fill="#F8485E"
+          />
+        </svg>
+        {/* <path
           d="M29.6059 39.1133C26.0491 39.1133 23.1731 42.0405 23.1731 45.6607C23.1731 49.2808 26.0491 52.2081 29.6059 52.2081C33.1627 52.2081 36.0387 49.2808 36.0387 45.6607C36.0387 42.0405 33.1627 39.1133 29.6059 39.1133Z"
           fill="url(#pattern0)"
-        />
+        /> */}
         <line
           opacity="0.5"
           x1="18.2716"
@@ -208,11 +228,11 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         />
         <path
           d="M141.773 98.9199H103.553V189.884L141.773 188.61V98.9199Z"
-          fill="#233A6D"
+          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
         />
         <path
           d="M118.077 75.9883H79.0919L103.553 98.9204L141.773 98.6656L118.077 75.9883Z"
-          fill="#818CB0"
+          className="fill-[#742234] dark:fill-[#818CB0]"
         />
         <path
           d="M99.4152 83.3477C91.7471 85.6031 93.415 85.4186 89.5064 83.11C84.5246 80.1676 93.8239 76.9658 93.8239 76.9658L107.109 77.6301L122.054 81.7815L132.67 90.6602C130.456 89.3317 122.906 86.0327 121.179 86.8298C117.522 88.2227 112.423 88.9221 110.928 88.9221C103.942 88.3968 102.238 82.5174 99.4152 83.3477Z"
@@ -245,43 +265,43 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
         />
         <path
           d="M119.888 108.348H113.518V114.718H119.888V108.348Z"
-          fill="#F4F9B4"
+          className="fill-[#7E213A] dark:fill-[#F4F9B4]"
         />
         <path
           d="M134.003 108.348H128.143V114.718H134.003V108.348Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M119.888 124.616H113.518V130.986H119.888V124.616Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M134.003 124.616H128.143V130.986H134.003V124.616Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M119.888 140.634H113.518V147.004H119.888V140.634Z"
-          fill="#F4F9B4"
+          className="fill-[#7E213A] dark:fill-[#F4F9B4]"
         />
         <path
           d="M134.129 139.179H128.269V145.549H134.129V139.179Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M120.115 154.977H113.745V161.347H120.115V154.977Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M134.129 154.977H128.269V161.347H134.129V154.977Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M120.115 171.284H113.745V177.654H120.115V171.284Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <path
           d="M134.129 171.284H128.269V177.654H134.129V171.284Z"
-          fill="#1A2857"
+          className="fill-[#7E213A] dark:fill-[#1A2857]"
         />
         <rect
           x="90.8127"
@@ -323,42 +343,42 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           y="139.688"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="90.8127"
           y="139.688"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="61.7654"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="76.5438"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="90.8127"
           y="154.977"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="61.7655"
           y="170.774"
           width="7.13445"
           height="7.13445"
-          className="fill-[#C7515C] dark:fill-[#F4F9B4] "
+          className="fill-[#C7515C] dark:fill-[#314791] "
         />
         <rect
           x="76.5439"
