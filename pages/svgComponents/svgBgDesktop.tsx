@@ -1,35 +1,36 @@
-import React, { useEffect, useRef, useState } from 'react'
-import Biker1 from './Bicycle1.svg'
-import Biker3 from './Bicycle3.svg'
-import Biker2 from './Bicycle2.svg'
-import Billboard from './Billboard.svg'
-import BillboardSlider from './Billboard.svg'
-import BuildingSVG from './Building.svg'
-import Building from './building'
-import Cloud1 from './cloud1'
-import Cloud2 from './cloud2'
-import Cloud3 from './cloud3'
-import Cloud4 from './cloud4'
-import Moon from './moon'
-import WindmillXs from './windmillXs'
-import WindmillMd from './windmillMd'
-import WindmillSm from './windmillSm'
-import Bikers from './bikers'
-import Sun from './sun'
+import React, { useEffect, useRef, useState } from "react";
+import BillboardSlider from "./Billboard.svg";
+import Building from "./building";
+import Cloud1 from "./cloud1";
+import Cloud2 from "./cloud2";
+import Cloud3 from "./cloud3";
+import Cloud4 from "./cloud4";
+import Moon from "./moon";
+import WindmillXs from "./windmillXs";
+import WindmillMd from "./windmillMd";
+import WindmillSm from "./windmillSm";
+import Bikers from "./bikers";
+import Sun from "./sun";
+import SmallTree from "./smallTree";
+import FrontPeople from "./FrontPeople";
+import ChristmasTree from "./christmasTree";
+import Stall from "./stall";
+import TreeWithSnow from "./TreeWithSnow";
+import Sliding from "./sliding";
 
 export default function SvgBgDesktop() {
-  const bike1 = useRef<SVGGraphicsElement>(null)
-  const bike2 = useRef<SVGGraphicsElement>(null)
-  const bike3 = useRef<SVGGraphicsElement>(null)
+  const bike1 = useRef<SVGGraphicsElement>(null);
+  const bike2 = useRef<SVGGraphicsElement>(null);
+  const bike3 = useRef<SVGGraphicsElement>(null);
 
   useEffect(() => {
     setTimeout(() => {
-      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
-    }, 5000)
+      bike3.current?.classList.add("animate-bike", "xl:animate-slowerBike");
+    }, 5000);
     setTimeout(() => {
-      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
-    }, 10000)
-  }, [])
+      bike2.current?.classList.add("animate-bike", "xl:animate-slowerBike");
+    }, 10000);
+  }, []);
 
   return (
     <svg
@@ -117,12 +118,45 @@ export default function SvgBgDesktop() {
           d="M27 466C5 463.6 -10.8333 476.667 -16 483.5L-52.5 533.5L351.5 533C341.5 476.2 287 472 261 477C264.5 471.5 266.5 456.1 246.5 438.5C226.5 420.9 204.167 435.833 195.5 445.5C190.167 423.5 169.1 379.4 127.5 379C34.3 379.4 21.6667 437.167 27 466Z"
           className="fill-[#763D4D] dark:fill-[#1F3560]"
         />
-
+        <svg
+          width="50"
+          height="72"
+          viewBox="0 0 50 72"
+          x="20"
+          y="280"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <SmallTree cssClass={""} />
+        </svg>
+        <svg
+          width="40"
+          height="62"
+          viewBox="0 0 50 72"
+          x="100"
+          y="265"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <SmallTree cssClass={""} />
+        </svg>
+        <svg
+          width="30"
+          height="42"
+          viewBox="0 0 50 72"
+          x="1139"
+          y="395"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <SmallTree cssClass={""} />
+        </svg>
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
           <svg x="31%" y="30%">
             <WindmillSm />
           </svg>
         </g>
+
         <path
           d="M554.378 461C581.472 462.635 613.11 489.098 611.972 497.5C654.472 502 651.972 533.5 651.972 533.5L390.972 533.207C418.472 506 460.81 497.422 476.063 500.355C476.063 500.355 475.043 488.245 489.472 480C496.472 476 509.403 476.206 514.487 481.876C522.972 461 554.378 461 554.378 461Z"
           className="fill-[#763D4D] dark:fill-[#1E3E7C]"
@@ -230,7 +264,17 @@ export default function SvgBgDesktop() {
             <WindmillXs />
           </svg>
         </g>
-
+        <svg
+          width="79"
+          height="75"
+          viewBox="0 0 79 75"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="1070"
+          y="417"
+        >
+          <Sliding />
+        </svg>
         {/* <svg x="13%" y="20%">
           <WindmillXs />  
           // Waiting on content for third windmill
@@ -283,7 +327,17 @@ export default function SvgBgDesktop() {
             </svg>
           </g>
         </svg>
-
+        <svg
+          width="139"
+          height="203"
+          viewBox="0 0 149 223"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="370"
+          y="400"
+        >
+          <ChristmasTree />
+        </svg>
         <Cloud1 />
         <Cloud2 />
         <Cloud3 />
@@ -511,6 +565,17 @@ export default function SvgBgDesktop() {
           strokeWidth="0.387357"
           strokeLinecap="round"
         />
+        <svg
+          width="109"
+          height="157"
+          viewBox="0 0 109 157"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="50"
+          y="420"
+        >
+          <TreeWithSnow cssClass={""} />
+        </svg>
         <path
           d="M145.883 601.429C151.855 607.885 149.624 615.132 147.761 617.948C151.466 620.357 154.15 618.371 154.15 618.371C149.423 611.568 177.141 594.461 174.307 589.69C169.626 580.842 155.358 601.52 155.272 602.162C153.028 596.342 173.657 578.833 170.049 574.454C164.093 566.792 155.518 583.342 151.975 592.574C151.012 579.331 169.275 565.044 159.6 559.181C150.655 554.475 148.365 571.858 148.338 581.138C147.694 577.462 146.754 569.147 148.15 565.295C149.896 560.48 148.932 549.446 143.71 549.404C133.829 549.692 140.284 571.173 144.747 581.877C144.495 582.978 142.793 582.405 137.997 571.311C133.202 560.217 129.52 561.199 128.278 563.076C121.345 570.878 135.563 582.088 143.539 586.718C148.38 591.653 141.079 588.554 136.823 586.387C129.888 579.582 123.901 576.486 122.791 580.417C120.088 587.178 138.418 593.359 145.883 601.429Z"
           fill="#072A66"
@@ -595,6 +660,17 @@ export default function SvgBgDesktop() {
           d="M1058.26 610.561C1058.19 609.608 1058.9 608.774 1059.85 608.678C1064.53 608.209 1077.84 606.759 1087.58 604.569C1096.79 602.498 1110.65 598.007 1116.71 595.991C1118.25 595.481 1119.85 596.551 1119.97 598.164V598.164C1120.06 599.308 1119.35 600.357 1118.25 600.693C1113.41 602.171 1100.2 606.149 1090.91 608.369C1081.33 610.658 1065.31 611.833 1060.09 612.17C1059.14 612.231 1058.33 611.512 1058.26 610.561V610.561Z"
           fill="#FEFFFF"
         />
+        <svg
+          width="216"
+          height="140"
+          viewBox="0 0 216 140"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="670"
+          y="440"
+        >
+          <Stall />
+        </svg>
 
         <g ref={bike1}>
           <Bikers />
@@ -629,6 +705,18 @@ export default function SvgBgDesktop() {
           </svg>
         </g>
       </g>
+      <svg
+        width="507"
+        height="129"
+        x="935"
+        y="640"
+        viewBox="0 0 687 159"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+        className="cursor-pointer"
+      >
+        <FrontPeople />
+      </svg>
       <defs>
         <pattern
           id="pattern0"
@@ -668,5 +756,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  )
+  );
 }
