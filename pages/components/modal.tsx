@@ -63,7 +63,7 @@ export default function Modal({
                 <Dialog.Panel>
                   <div
                     className={`h-auto px-6 py-3 overflow-hidden align-middle transition-all transform bg-white shadow-xl rounded-2xl  ${
-                      content?.video ? 'max-w-3xl' : 'max-w-lg '
+                      content?.video ? 'max-w-3xl' : 'max-w-md '
                     }`}
                   >
                     <div className="flex">

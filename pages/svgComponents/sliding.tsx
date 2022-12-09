@@ -9,11 +9,12 @@ const Sliding = () => {
     <>
       <Modal
         content={{
-          title: 'Cloud Microsoft',
+          title: 'Infinite possibilities',
           didYouKnow:
-            ' 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?',
-          link: 'https://www.devoteam.com/partner/microsoft/',
-          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam. ',
+            'Devoteam ambition to offer infinite possibilities for people to become digital leaders thanks to learning, career evolution and collaboration with most talented experts?',
+          video: '7oiaf1Qoboo',
+          buttonText: 'See our offices',
+          link: 'https://www.devoteam.com/our-offices/',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
