@@ -1,4 +1,5 @@
 import { Dialog, Transition } from '@headlessui/react'
+import Image from 'next/image'
 import { Fragment, useEffect, useState } from 'react'
 import CloseSVG from '../../public/close.svg'
 export default function Modal({
@@ -12,6 +13,7 @@ export default function Modal({
     didYouKnow?: string
     link?: string
     src?: string
+    img?: string
   }
   isModalOpen: boolean
   setModalOpen: any
@@ -72,6 +74,16 @@ export default function Modal({
                       />
                     </div>
                     <hr className="h-px mt-2 bg-[#EFEEEE] border-none"></hr>
+
+                    {content?.img && (
+                      <Image
+                        className="mt-4"
+                        width={500}
+                        height={500}
+                        src={content?.img}
+                        alt={content.title}
+                      />
+                    )}
 
                     <div className="mt-4">
                       {content?.description && (
