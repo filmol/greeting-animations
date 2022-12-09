@@ -1,24 +1,26 @@
-import React, { useState } from "react";
-import Modal from "../components/modal";
+import React, { useState } from 'react'
+import Modal from '../components/modal'
 
 export default function Building() {
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Devoteam brand",
-          link: "https://www.devoteam.com/our-offices/",
+          title: 'Devoteam',
+          link: 'https://www.devoteam.com/our-offices/',
+          buttonText: 'See our offices',
+          video: 'LAir1pXU9lI',
           didYouKnow:
-            "... that Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?",
+            'Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />{' '}
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
         width="341"
         height="405"
@@ -433,5 +435,5 @@ export default function Building() {
         </defs>
       </svg>
     </>
-  );
+  )
 }

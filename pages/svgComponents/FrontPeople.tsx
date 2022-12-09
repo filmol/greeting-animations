@@ -1,20 +1,20 @@
-import { title } from "process";
-import { useState } from "react";
-import Modal from "../components/modal";
+import { title } from 'process'
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const FrontPeople = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "People",
-          didYouKnow:
-            "...that today 54% of companies use multiple Cloud providers?",
-          link: "https://www.devoteam.com/expertise/data-driven/",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+          title: 'Social network',
+          link: 'https://www.linkedin.com/company/4160/admin/',
+          src: 'https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN',
+          video: '/NmQ7vkr-HTU',
+          didYouKnow: 'That Devoteam is now followed by 414 000 tech lovers?',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
@@ -22,7 +22,7 @@ const FrontPeople = () => {
 
       <g
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <path
@@ -1327,6 +1327,6 @@ const FrontPeople = () => {
         />
       </g>
     </>
-  );
-};
-export default FrontPeople;
+  )
+}
+export default FrontPeople

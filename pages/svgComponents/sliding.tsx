@@ -1,27 +1,27 @@
-import { useState } from "react";
-import Modal from "../components/modal";
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const Sliding = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Cloud Microsoft",
+          title: 'Cloud Microsoft',
           didYouKnow:
-            "...that 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?",
-          link: "https://www.devoteam.com/partner/microsoft/",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam. ",
+            ' 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?',
+          link: 'https://www.devoteam.com/partner/microsoft/',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam. ',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />{' '}
       <g
         className="absolute cursor-pointer"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <path
@@ -868,6 +868,6 @@ const Sliding = () => {
         />
       </g>
     </>
-  );
-};
-export default Sliding;
+  )
+}
+export default Sliding

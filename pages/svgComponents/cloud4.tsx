@@ -11,10 +11,10 @@ const Cloud4 = () => {
         content={{
           title: 'Cloud Microsoft',
           didYouKnow:
-            '...that 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?',
+            ' 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?',
           link: 'https://www.devoteam.com/partner/microsoft/',
           src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam. ',
-          img: '/aCloud.svg',
+          img: '/microsoftCloud.svg',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
