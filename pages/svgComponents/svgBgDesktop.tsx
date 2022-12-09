@@ -17,6 +17,7 @@ import ChristmasTree from "./christmasTree";
 import Stall from "./stall";
 import TreeWithSnow from "./TreeWithSnow";
 import Sliding from "./sliding";
+import Plane from "./plane";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -344,6 +345,19 @@ export default function SvgBgDesktop() {
         <Cloud4 />
         <Moon cssClass={`animate-moon  dark:block hidden`} />
         <Sun cssClass={`animate-moon dark:hidden block`} />
+        <g className="animate-plane">
+          <svg
+            width="406"
+            height="72"
+            viewBox="0 0 476 72"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="110%"
+            y="17%"
+          >
+            <Plane />
+          </svg>
+        </g>
         <path
           d="M-3.23441 619.903C-20.6887 627.903 4.64086 671.569 13.5498 688.478C20.111 700.931 39.3678 719.75 40.4587 727.023L63.0038 726.841C59.6066 723.781 49.8766 695.751 44.6403 678.296C30.0951 626.115 14.2199 611.903 -3.23441 619.903Z"
           fill="#004A59"

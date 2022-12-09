@@ -1,6 +1,7 @@
 import React from "react";
 import ChristmasTree from "./christmasTree";
 import FrontPeople from "./FrontPeople";
+import Plane from "./plane";
 import Sliding from "./sliding";
 import SmallTree from "./smallTree";
 import Stall from "./stall";
@@ -10304,6 +10305,19 @@ export default function SvgBgMobile() {
       <MobileCloud3 cssClass={""} />
       <MobileCloud4 cssClass={""} />
       <MobileBuilding cssClass={""} />
+      <g className="animate-mobilePlane">
+        <svg
+          width="200"
+          height="52"
+          viewBox="0 0 476 72"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="102%"
+          y="34%"
+        >
+          <Plane />
+        </svg>
+      </g>
       <svg
         width="60"
         height="32"

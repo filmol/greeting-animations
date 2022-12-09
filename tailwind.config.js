@@ -12,6 +12,8 @@ module.exports = {
     extend: {
       animation: {
         pinging: `pinging 1s infinite`,
+        plane: `plane 40s infinite`,
+        mobilePlane: `mobilePlane 40s infinite`,
         bike: `bike 10s linear infinite`,
         mobileBiker: "mobileBiker 9s linear infinite",
         slowerBike: `bike 35s linear infinite`,
@@ -33,6 +35,22 @@ module.exports = {
           },
           "100%": {
             opacity: 100,
+          },
+        },
+        plane: {
+          "0%": {
+            transform: "translate(0vw, 0vh)",
+          },
+          "100%": {
+            transform: "translate(-100vw, 0vw)",
+          },
+        },
+        mobilePlane: {
+          "0%": {
+            transform: "translate(0vw, 0vh)",
+          },
+          "100%": {
+            transform: "translate(-180vw, 0vw)",
           },
         },
         bike: {
