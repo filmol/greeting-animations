@@ -81,14 +81,14 @@ export default function Modal({
                     <hr className="h-px mt-2 bg-[#EFEEEE] border-none"></hr>
                     <div
                       className={` ${
-                        content?.video ? 'grid grid-cols-10 gap-8 py-4' : ' '
+                        content?.video ? 'grid grid-cols-10 gap-12 py-4' : ' '
                       }`}
                     >
                       <iframe
-                        width="260"
-                        height="248"
                         className={`${
-                          content?.video ? 'col-span-3 my-auto' : 'hidden'
+                          content?.video
+                            ? 'col-span-5 my-auto aspect-video min-h-[200px]'
+                            : 'hidden'
                         }`}
                         src={`https://www.youtube-nocookie.com/embed/${content?.video}`}
                         title="YouTube video player"
@@ -96,8 +96,8 @@ export default function Modal({
                         allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
                         allowFullScreen
                       ></iframe>
-                      <div className="col-span-1"></div>
-                      <div className="flex flex-col justify-center col-span-6 my-auto">
+                      {/* <div className="col-span-1"></div>  */}
+                      <div className="flex flex-col justify-center col-span-5 my-auto">
                         {content?.img && (
                           <div className="w-full mt-6">
                             <Image
