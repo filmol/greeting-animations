@@ -1,21 +1,14 @@
 import React, { useState } from 'react'
 import Modal from '../components/modal'
+import PrizeModal from '../components/prizeModal'
+import Prize from '../components/prize.svg'
+import CloseSVG from '../../public/close.svg'
 
 export default function WindmillMd() {
   let [modalOpen, setModalOpen] = useState(false)
   return (
     <>
-      <Modal
-        content={{
-          title: 'Sustainability Enabled by Digital',
-          link: 'https://www.devoteam.com/news-and-pr/cloud-a-catalyst-for-sustainable-development/',
-          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
-          didYouKnow:
-            ' for 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?',
-        }}
-        isModalOpen={modalOpen}
-        setModalOpen={setModalOpen}
-      />{' '}
+      <PrizeModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />{' '}
       <svg
         onClick={() => {
           setModalOpen(!modalOpen)
