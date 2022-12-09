@@ -21,8 +21,8 @@ export default function WindmillXs() {
         onClick={() => {
           setModalOpen(!modalOpen);
         }}
-        width="144"
-        height="244"
+        width="132"
+        height="240"
         viewBox="0 0 144 244"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

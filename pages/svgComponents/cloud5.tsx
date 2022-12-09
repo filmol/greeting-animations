@@ -19,23 +19,24 @@ const Cloud3 = () => {
         setModalOpen={setModalOpen}
       />{" "}
       <g
-        className="animate-cloud3 absolute cursor-pointer hover:[animation-play-state:paused] duration-300"
+        className="animate-cloud5 absolute cursor-pointer hover:[animation-play-state:paused] duration-300"
         onClick={() => {
           setModalOpen(!modalOpen);
         }}
       >
         <svg
-          width="88"
-          height="53"
-          viewBox="0 0 88 53"
+          width="80"
+          height="36"
+          viewBox="0 0 85 36"
           fill="none"
+          x="70%"
+          y="12%"
           xmlns="http://www.w3.org/2000/svg"
-          x="60%"
-          y="200"
         >
           <path
-            d="M68.7892 51.1308L25.8638 52.7528C15.2328 53.1545 -0.986222 51.1577 0.217861 40.5875C0.978156 33.9131 13.9517 32.607 22.5187 41.9192C14.9149 -6.96711 52.9162 -16.0394 52.5296 33.2388C57.7973 18.1626 68.4123 30.4574 66.3875 38.1659C83.0013 24.455 89.2604 33.4349 87.6284 41.8009C86.1257 49.5043 76.6323 50.8345 68.7892 51.1308Z"
             className="fill-white dark:fill-[#CFDEFC]"
+            d="M2.26909 30.2106C6.55302 33.8364 49.2859 34.976 69.4501 35.3135C75.9492 35.4223 82.4264 32.1305 83.6128 25.7396C84.9913 18.3144 83.4193 9.32515 72.9648 3.35579C57.0458 -5.7337 43.6749 7.43333 38.9793 15.153C32.8234 -4.98813 14.1108 7.83941 17.7769 23.116C3.2437 6.48009 -3.3587 25.4474 2.26909 30.2106Z"
+            fill="#CFDEFC"
           />
         </svg>
       </g>

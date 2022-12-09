@@ -1,20 +1,14 @@
-import { useState } from "react";
-import MyModal from "../components/modal";
-
 const Sun = ({ cssClass }: { cssClass: string }) => {
-  //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
-
   return (
     <>
-      <MyModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
+      {" "}
       <svg
         onClick={() => {
           document?.getElementById("main")?.classList.toggle("dark");
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
-        x="255"
-        y="40"
+        x="20%"
+        y="6%"
         width="135"
         height="135"
         viewBox="0 0 135 135"

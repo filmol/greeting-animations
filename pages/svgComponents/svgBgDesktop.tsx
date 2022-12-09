@@ -18,6 +18,7 @@ import Stall from "./stall";
 import TreeWithSnow from "./TreeWithSnow";
 import Sliding from "./sliding";
 import Plane from "./plane";
+import Cloud5 from "./cloud5";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -62,7 +63,7 @@ export default function SvgBgDesktop() {
         />
         <path
           d="M1492 536.5L991.5 536C1007.33 496.5 1057.8 418.9 1133 424.5C1208.2 430.1 1220 475.5 1216.5 497.5C1234.1 487.1 1241.5 504.167 1243 514C1261.4 495.2 1283.67 514.167 1292.5 526C1306.1 502.8 1325.5 510.667 1333.5 517.5C1333 488 1354.5 455 1387 451.5C1413 448.7 1423.5 469 1425.5 479.5C1480.7 456.7 1492.83 509 1492 536.5Z"
-          className="fill-[#763D4D] dark:fill-[#1F3560]"
+          className="fill-[#D688B6] dark:fill-[#326FB3]"
         />
         <path
           d="M1265.77 536L1242.53 535.779C1231.68 516.966 1243.19 517.187 1247.4 521.835C1245.7 514.089 1244.25 498.109 1252.04 496.161C1264.61 494.036 1266.43 512.834 1265.77 522.499C1266.72 518.294 1271.74 517.63 1272.63 519.179C1276.64 526.204 1269.38 533.491 1265.77 536Z"
@@ -265,17 +266,19 @@ export default function SvgBgDesktop() {
             <WindmillXs />
           </svg>
         </g>
-        <svg
-          width="79"
-          height="75"
-          viewBox="0 0 79 75"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          x="1070"
-          y="417"
-        >
-          <Sliding />
-        </svg>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg
+            width="79"
+            height="75"
+            viewBox="0 0 79 75"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="1070"
+            y="417"
+          >
+            <Sliding />
+          </svg>
+        </g>
         {/* <svg x="13%" y="20%">
           <WindmillXs />  
           // Waiting on content for third windmill
@@ -328,21 +331,34 @@ export default function SvgBgDesktop() {
             </svg>
           </g>
         </svg>
-        <svg
-          width="139"
-          height="203"
-          viewBox="0 0 149 223"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          x="370"
-          y="400"
-        >
-          <ChristmasTree />
-        </svg>
-        <Cloud1 />
-        <Cloud2 />
-        <Cloud3 />
-        <Cloud4 />
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg
+            width="139"
+            height="203"
+            viewBox="0 0 149 223"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="370"
+            y="400"
+          >
+            <ChristmasTree />
+          </svg>
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
+          <Cloud1 />
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
+          <Cloud2 />
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
+          <Cloud3 />
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
+          <Cloud4 />
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
+          <Cloud5 />
+        </g>
         <Moon cssClass={`animate-moon  dark:block hidden`} />
         <Sun cssClass={`animate-moon dark:hidden block`} />
         <g className="animate-plane">
@@ -674,18 +690,19 @@ export default function SvgBgDesktop() {
           d="M1058.26 610.561C1058.19 609.608 1058.9 608.774 1059.85 608.678C1064.53 608.209 1077.84 606.759 1087.58 604.569C1096.79 602.498 1110.65 598.007 1116.71 595.991C1118.25 595.481 1119.85 596.551 1119.97 598.164V598.164C1120.06 599.308 1119.35 600.357 1118.25 600.693C1113.41 602.171 1100.2 606.149 1090.91 608.369C1081.33 610.658 1065.31 611.833 1060.09 612.17C1059.14 612.231 1058.33 611.512 1058.26 610.561V610.561Z"
           fill="#FEFFFF"
         />
-        <svg
-          width="216"
-          height="140"
-          viewBox="0 0 216 140"
-          fill="none"
-          xmlns="http://www.w3.org/2000/svg"
-          x="670"
-          y="440"
-        >
-          <Stall />
-        </svg>
-
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg
+            width="216"
+            height="140"
+            viewBox="0 0 216 140"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="670"
+            y="440"
+          >
+            <Stall />
+          </svg>
+        </g>
         <g ref={bike1}>
           <Bikers />
         </g>
@@ -719,18 +736,20 @@ export default function SvgBgDesktop() {
           </svg>
         </g>
       </g>
-      <svg
-        width="507"
-        height="129"
-        x="935"
-        y="640"
-        viewBox="0 0 687 159"
-        fill="none"
-        xmlns="http://www.w3.org/2000/svg"
-        className="cursor-pointer"
-      >
-        <FrontPeople />
-      </svg>
+      <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+        <svg
+          width="507"
+          height="129"
+          x="935"
+          y="640"
+          viewBox="0 0 687 159"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          className="cursor-pointer"
+        >
+          <FrontPeople />
+        </svg>
+      </g>
       <defs>
         <pattern
           id="pattern0"
