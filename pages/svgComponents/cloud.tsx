@@ -16,8 +16,7 @@ const AwsClouldSVG = ({
       <Modal
         content={{
           title: 'Cloud',
-          didYouKnow:
-            '...that today 54% of companies use multiple Cloud providers?',
+          didYouKnow: ' today 54% of companies use multiple Cloud providers?',
           link: 'https://www.devoteam.com/expertise/data-driven/',
           src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
         }}

@@ -1,27 +1,27 @@
-import { title } from "process";
-import { useState } from "react";
-import Modal from "../components/modal";
+import { title } from 'process'
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const ChristmasTree = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Cloud",
+          title: 'Devoteam foundation',
           didYouKnow:
-            "...that today 54% of companies use multiple Cloud providers?",
-          link: "https://www.devoteam.com/expertise/data-driven/",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+            'That the Devoteam foundation has supported more than 50 associations/social entrepreneurs?',
+          link: 'https://www.devoteam.com/devoteam-foundation/',
+          img: '/devoFoundation.jpg',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
       />
       <g
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
         className={`absolute cursor-pointer`}
       >
@@ -296,6 +296,6 @@ const ChristmasTree = () => {
         />
       </g>
     </>
-  );
-};
-export default ChristmasTree;
+  )
+}
+export default ChristmasTree

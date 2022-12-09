@@ -1,27 +1,28 @@
-import { useState } from "react";
-import Modal from "../components/modal";
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const Cloud3 = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Cloud Google Cloud",
+          title: 'Google Cloud',
           didYouKnow:
-            "...that 48% of organizations use Google Cloud, and 30% of companies quote Google Cloud as is their primarily cloud provider?",
-          link: "https://www.devoteam.com/partner/google-cloud/",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+            ' 48% of organizations use Google Cloud, and 30% of companies quote Google Cloud as is their primarily cloud provider?',
+          link: 'https://www.devoteam.com/partner/google-cloud/',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
+          img: '/googleCloud.svg',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />{' '}
       <g
         className="animate-cloud3 absolute cursor-pointer hover:[animation-play-state:paused] duration-300"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <svg
@@ -40,6 +41,6 @@ const Cloud3 = () => {
         </svg>
       </g>
     </>
-  );
-};
-export default Cloud3;
+  )
+}
+export default Cloud3

@@ -1,27 +1,24 @@
-import { useState } from "react";
-import Modal from "../components/modal";
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const Stall = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Cloud Microsoft",
-          didYouKnow:
-            "...that 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?",
-          link: "https://www.devoteam.com/partner/microsoft/",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam. ",
+          title: 'Devoteam 5 values',
+          link: 'https://www.devoteam.com/join-us/values/',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />{' '}
       <g
         className="absolute cursor-pointer"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <path
@@ -1153,6 +1150,6 @@ const Stall = () => {
         />
       </g>
     </>
-  );
-};
-export default Stall;
+  )
+}
+export default Stall
