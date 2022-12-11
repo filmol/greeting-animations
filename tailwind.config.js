@@ -43,7 +43,7 @@ module.exports = {
             transform: "translate(0vw, 0vh)",
           },
           "100%": {
-            transform: "translate(-100vw, 0vw)",
+            transform: "translate(-110vw, 0vw)",
           },
         },
         mobilePlane: {

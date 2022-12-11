@@ -19,6 +19,8 @@ import TreeWithSnow from "./TreeWithSnow";
 import Sliding from "./sliding";
 import Plane from "./plane";
 import Cloud5 from "./cloud5";
+import FrontPlant from "./frontPlants";
+import ClueTree from "./clueTree";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -368,8 +370,8 @@ export default function SvgBgDesktop() {
             viewBox="0 0 476 72"
             fill="none"
             xmlns="http://www.w3.org/2000/svg"
-            x="110%"
-            y="17%"
+            x="1480"
+            y="145"
           >
             <Plane />
           </svg>
@@ -700,36 +702,25 @@ export default function SvgBgDesktop() {
             x="670"
             y="440"
           >
+            <ClueTree />
+          </svg>
+        </g>
+        <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+          <svg
+            width="216"
+            height="140"
+            viewBox="0 0 216 140"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="670"
+            y="440"
+          >
             <Stall />
           </svg>
         </g>
-        <g ref={bike1}>
+        <g className="cursor-pointer">
           <Bikers />
         </g>
-        {/* <g
-          ref={bike1}
-          className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300"
-        >
-          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
-            <Biker1 />
-          </svg>
-        </g>
-        <g
-          ref={bike2}
-          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
-        >
-          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
-            <Biker2 />
-          </svg>
-        </g>
-        <g
-          ref={bike3}
-          className="cursor-pointer hover:[animation-play-state:paused] duration-300"
-        >
-          <svg x="-10%" y="90%" className="" clipPath="url(#clip0_228_646)">
-            <Biker3 />
-          </svg>
-        </g> */}
         <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />
@@ -745,11 +736,21 @@ export default function SvgBgDesktop() {
           viewBox="0 0 687 159"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
-          className="cursor-pointer"
         >
           <FrontPeople />
         </svg>
       </g>
+      <svg
+        width="507"
+        height="129"
+        x="935"
+        y="640"
+        viewBox="0 0 687 159"
+        fill="none"
+        xmlns="http://www.w3.org/2000/svg"
+      >
+        <FrontPlant />
+      </svg>
       <defs>
         <pattern
           id="pattern0"
