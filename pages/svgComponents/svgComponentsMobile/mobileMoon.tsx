@@ -1,22 +1,9 @@
-import { useState } from "react";
-import MyModal from "../../components/modal";
-
 const MobileMoon = ({ cssClass }: { cssClass: string }) => {
-  let [modalOpen, setModalOpen] = useState(false);
-
   return (
     <>
-      <MyModal
-        content={{
-          title: "",
-          didYouKnow: "",
-        }}
-        isModalOpen={modalOpen}
-        setModalOpen={setModalOpen}
-      />
       <path
         onClick={() =>
-          document?.getElementById("main")?.classList.toggle("dark")
+          document?.getElementById('main')?.classList.toggle('dark')
         }
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         fillRule="evenodd"
@@ -25,6 +12,6 @@ const MobileMoon = ({ cssClass }: { cssClass: string }) => {
         fill="#EFF0F1"
       />
     </>
-  );
-};
-export default MobileMoon;
+  )
+}
+export default MobileMoon

@@ -2,7 +2,6 @@ import { useState } from 'react'
 import Modal from '../components/modal'
 
 const Sliding = () => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false)
 
   return (
