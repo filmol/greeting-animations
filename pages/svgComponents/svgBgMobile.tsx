@@ -16,6 +16,7 @@ import MobileCloud5 from "./svgComponentsMobile/mobileCloud5";
 import MobileMoon from "./svgComponentsMobile/mobileMoon";
 import MobileSun from "./svgComponentsMobile/mobileSun";
 import MobileWindmillSm from "./svgComponentsMobile/mobileWindmillSm";
+import MobileWindmillXs from "./svgComponentsMobile/mobileWindmillXs";
 
 export default function SvgBgMobile() {
   return (
@@ -10105,7 +10106,7 @@ export default function SvgBgMobile() {
           className="fill-[#763D4D] dark:fill-[#1F3560]"
         />
         <svg x="17%" y="40%">
-          <MobileWindmillSm />
+          <MobileWindmillXs />
         </svg>
         <svg x="33%" y="47%">
           <MobileWindmillSm />
