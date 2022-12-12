@@ -3,7 +3,6 @@ import { useState } from "react";
 import Modal from "../components/modal";
 
 const Moon = ({ cssClass }: { cssClass: string }) => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
   return (

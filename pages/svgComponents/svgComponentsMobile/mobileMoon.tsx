@@ -1,10 +1,24 @@
+import { useState } from "react";
+import Modal from "../../components/modal";
 const MobileMoon = ({ cssClass }: { cssClass: string }) => {
+  let [modalOpen, setModalOpen] = useState(false);
+
   return (
     <>
+      <Modal
+        content={{
+          title: "Cyber Trust",
+          link: "https://www.devoteam.com/expertise/cyber-trust/",
+          src: "https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN",
+          video: "/S8xkJvVNmmQ",
+        }}
+        isModalOpen={modalOpen}
+        setModalOpen={setModalOpen}
+      />
       <path
-        onClick={() =>
-          document?.getElementById('main')?.classList.toggle('dark')
-        }
+        onClick={() => {
+          setModalOpen(!modalOpen);
+        }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         fillRule="evenodd"
         clipRule="evenodd"
@@ -12,6 +26,6 @@ const MobileMoon = ({ cssClass }: { cssClass: string }) => {
         fill="#EFF0F1"
       />
     </>
-  )
-}
-export default MobileMoon
+  );
+};
+export default MobileMoon;

@@ -12,7 +12,7 @@ module.exports = {
     extend: {
       animation: {
         pinging: `pinging 1s infinite`,
-        plane: `plane 40s infinite`,
+        plane: `plane 48s infinite`,
         mobilePlane: `mobilePlane 40s infinite`,
         bike: `bike 10s linear infinite`,
         bike1: `bike1 10s linear infinite`,
@@ -25,7 +25,7 @@ module.exports = {
         cloud3: "cloud3 45s infinite ",
         cloud4: "cloud4 32s infinite ",
         cloud5: "cloud5 32s infinite ",
-        moon: "moon 2s infinite ",
+        moon: "moon 40s infinite ",
         "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
@@ -102,13 +102,13 @@ module.exports = {
         },
         cloud2: {
           "0%": {
-            transform: "translate(0vw, -4vh)",
+            transform: "translate(0vw, -2vh)",
           },
           "50%": {
-            transform: "translate(6vw, -5vh)",
+            transform: "translate(3vw, -3vh)",
           },
           "100%": {
-            transform: "translate(0vw, -4vh)",
+            transform: "translate(0vw, -2vh)",
           },
         },
         cloud3: {
@@ -116,10 +116,10 @@ module.exports = {
             transform: "translate(0vw,0vh)",
           },
           "25%": {
-            transform: "translate(5vw,0vh)",
+            transform: "translate(3vw,0vh)",
           },
           "75%": {
-            transform: "translate(-5vw,-1vh)",
+            transform: "translate(-3vw,-1vh)",
           },
           "100%": {
             transform: "translate(0vw, 0vh)",
@@ -152,7 +152,7 @@ module.exports = {
             transform: "translate(0vw,0vh)",
           },
           "50%": {
-            transform: "translate(0.22vw,0vh)",
+            transform: "translate(2vw,0vh)",
           },
           "100%": {
             transform: "translate(0vw, 0vh)",

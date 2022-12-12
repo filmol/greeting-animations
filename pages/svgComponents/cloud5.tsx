@@ -30,7 +30,7 @@ const Cloud5 = () => {
           viewBox="0 0 85 36"
           fill="none"
           x="70%"
-          y="12%"
+          y="16%"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

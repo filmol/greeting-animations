@@ -347,7 +347,8 @@ export default function SvgBgDesktop() {
             <ChristmasTree />
           </svg>
         </g>
-
+        <Moon cssClass={`animate-moon dark:block hidden`} />
+        <Sun cssClass={`animate-moon dark:hidden block`} />
         <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
           <Cloud1 />
         </g>
@@ -363,10 +364,9 @@ export default function SvgBgDesktop() {
         <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
           <Cloud5 />
         </g>
-        <Moon cssClass={`animate-moon dark:block hidden`} />
-        <Sun cssClass={`animate-moon dark:hidden block`} />
+
         <svg
-          x="650"
+          x="49%"
           y="70"
           width="200"
           height="54"
