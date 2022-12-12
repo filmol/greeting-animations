@@ -52,18 +52,18 @@ export default function Modal({
               >
                 <Dialog.Panel>
                   <div
-                    className={`h-auto px-6 py-3 align-middle transition-all transform bg-white shadow-xl rounded-2xl min-w-[500px] min-h-[25vh] max-w-lg`}
+                    className={`h-auto px-6 py-3 align-middle transition-all transform bg-white shadow-xl rounded-2xl lg:min-w-[500px] min-h-[25vh] max-w-lg`}
                   >
                     <div className="w-full mt-6">
                       <Image
-                        className="absolute mx-auto -top-44 left-24"
+                        className="absolute w-48 mx-auto -top-32 lg:w-72 lg:-top-44 left-[50%] -ml-24 lg:-ml-[150px]"
                         width={300}
                         height={300}
                         src="/presents.svg"
                         alt="presents"
                       />
                     </div>
-                    <div className="text-center mt-28">
+                    <div className="mt-16 text-center lg:mt-28">
                       <h1 className="text-3xl font-bold text-[#F8485E]">
                         Congratulations!{' '}
                       </h1>

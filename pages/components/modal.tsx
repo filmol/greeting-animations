@@ -83,11 +83,11 @@ export default function Modal({
                     <hr className="h-px mt-2 bg-[#EFEEEE] border-none"></hr>
                     <div
                       className={`${content?.video && 'pt-4 justify-center'} ${
-                        content?.didYouKnow && 'flex'
+                        content?.didYouKnow && 'lg:flex'
                       } ${
                         content?.video &&
                         content?.didYouKnow &&
-                        'pb-4 space-x-8'
+                        'pb-4 lg:space-x-8'
                       }`}
                     >
                       <iframe
