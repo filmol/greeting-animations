@@ -25,7 +25,7 @@ module.exports = {
         cloud3: "cloud3 45s infinite ",
         cloud4: "cloud4 32s infinite ",
         cloud5: "cloud5 32s infinite ",
-        moon: "moon 110s infinite ",
+        moon: "moon 2s infinite ",
         "spin-slow": "spin 5s linear infinite",
       },
       keyframes: {
@@ -152,7 +152,7 @@ module.exports = {
             transform: "translate(0vw,0vh)",
           },
           "50%": {
-            transform: "translate(2vw,0vh)",
+            transform: "translate(0.22vw,0vh)",
           },
           "100%": {
             transform: "translate(0vw, 0vh)",

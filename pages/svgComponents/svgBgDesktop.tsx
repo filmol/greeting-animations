@@ -26,6 +26,11 @@ export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
   const bike2 = useRef<SVGGraphicsElement>(null);
   const bike3 = useRef<SVGGraphicsElement>(null);
+  const [showWiggle, setShowWiggle] = useState<boolean>(false);
+  const wiggle = () => {
+    setShowWiggle(!showWiggle);
+  };
+  setInterval(wiggle, 16000);
 
   useEffect(() => {
     setTimeout(() => {
@@ -361,7 +366,11 @@ export default function SvgBgDesktop() {
         <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
           <Cloud5 />
         </g>
-        <Moon cssClass={`animate-moon  dark:block hidden`} />
+        <Moon
+          cssClass={`${
+            showWiggle ? "animate-moon" : "animation-play-state:paused"
+          }  dark:block hidden`}
+        />
         <Sun cssClass={`animate-moon dark:hidden block`} />
         <g className="animate-plane">
           <svg
