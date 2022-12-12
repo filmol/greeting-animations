@@ -21,6 +21,7 @@ import Cloud5 from "./cloud5";
 import FrontPlant from "./frontPlants";
 import ClueTree from "./clueTree";
 import Bikers1 from "./Bikers1";
+import DayNightButton from "./dayNightButton";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -346,6 +347,7 @@ export default function SvgBgDesktop() {
             <ChristmasTree />
           </svg>
         </g>
+
         <g className="duration-300 cursor-pointer hover:scale-y-[1.02]">
           <Cloud1 />
         </g>
@@ -363,6 +365,17 @@ export default function SvgBgDesktop() {
         </g>
         <Moon cssClass={`animate-moon dark:block hidden`} />
         <Sun cssClass={`animate-moon dark:hidden block`} />
+        <svg
+          x="650"
+          y="70"
+          width="200"
+          height="54"
+          viewBox="0 0 219 54"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
+          <DayNightButton />
+        </svg>
         <g className="animate-plane">
           <svg
             width="406"
