@@ -1,27 +1,27 @@
-import { useState } from "react";
-import Modal from "../components/modal";
+import { useState } from 'react'
+import Modal from '../components/modal'
 
 const Cloud5 = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
       <Modal
         content={{
-          title: "Cloud ",
+          title: 'Cloud ',
           didYouKnow:
-            "... that today 54% of companies use multiple Cloud providers?",
-          video: "1Ydcei2jUzI",
-          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+            'That today 54% of companies use multiple Cloud providers?',
+          video: '1Ydcei2jUzI',
+          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />{' '}
       <g
         className="animate-cloud5 absolute cursor-pointer hover:[animation-play-state:paused] duration-300"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <svg
@@ -41,6 +41,6 @@ const Cloud5 = () => {
         </svg>
       </g>
     </>
-  );
-};
-export default Cloud5;
+  )
+}
+export default Cloud5
