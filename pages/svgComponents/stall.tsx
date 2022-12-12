@@ -1,24 +1,17 @@
-import { useState } from "react";
-import Modal from "../components/modal";
+import { useState } from 'react'
+import FiveValuesModal from '../components/fiveValuesModal'
 
 const Stall = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false);
+  let [modalOpen, setModalOpen] = useState(false)
 
   return (
     <>
-      <Modal
-        content={{
-          title: "Devoteam 5 values",
-          link: "https://www.devoteam.com/join-us/values/",
-        }}
-        isModalOpen={modalOpen}
-        setModalOpen={setModalOpen}
-      />{" "}
+      <FiveValuesModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />
       <g
         className="absolute cursor-pointer"
         onClick={() => {
-          setModalOpen(!modalOpen);
+          setModalOpen(!modalOpen)
         }}
       >
         <path
@@ -1106,6 +1099,6 @@ const Stall = () => {
         />
       </g>
     </>
-  );
-};
-export default Stall;
+  )
+}
+export default Stall

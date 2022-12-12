@@ -133,8 +133,8 @@ export default function Modal({
                               </>
                             )}
                           </div>
-                          <div className="mt-8 mb-4">
-                            {content?.link && (
+                          {content?.link && (
+                            <div className="mt-8 mb-4">
                               <button
                                 type="button"
                                 className="inline-flex text-lg justify-center px-5 py-1 font-medium group hover:text-black duration-300 hover:bg-[#FDDADE] border border-transparent text-white rounded-[56px] bg-[#F8485E] focus:outline-none "
@@ -180,8 +180,8 @@ export default function Modal({
                                   </svg>
                                 </a>
                               </button>
-                            )}
-                          </div>
+                            </div>
+                          )}
                         </div>
                       ) : (
                         <div className="mt-4 mb-4">
