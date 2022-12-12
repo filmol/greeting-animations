@@ -1,38 +1,38 @@
-import { Dialog, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import { Fragment, useEffect, useState } from 'react'
-import CloseSVG from '../../public/close.svg'
+import { Dialog, Transition } from "@headlessui/react";
+import Image from "next/image";
+import { Fragment, useEffect, useState } from "react";
+import CloseSVG from "../../public/close.svg";
 export default function Modal({
   content,
   isModalOpen,
   setModalOpen,
 }: {
   content: {
-    title: string
-    description?: string
-    didYouKnow?: string
-    link?: string
-    src?: string
-    img?: string
-    video?: string
-    buttonText?: string
-  }
-  isModalOpen: boolean
-  setModalOpen: any
+    title: string;
+    description?: string;
+    didYouKnow?: any;
+    link?: string;
+    src?: string;
+    img?: string;
+    video?: string;
+    buttonText?: string;
+  };
+  isModalOpen: boolean;
+  setModalOpen: any;
 }) {
-  let [isOpen, setIsOpen] = useState(isModalOpen)
+  let [isOpen, setIsOpen] = useState(isModalOpen);
 
   function closeModal() {
-    setModalOpen(!isModalOpen)
-    setIsOpen(false)
+    setModalOpen(!isModalOpen);
+    setIsOpen(false);
   }
 
   function openModal() {
-    setIsOpen(true)
+    setIsOpen(true);
   }
   useEffect(() => {
-    setIsOpen(isModalOpen)
-  }, [isModalOpen])
+    setIsOpen(isModalOpen);
+  }, [isModalOpen]);
   return (
     <>
       <Transition appear show={isOpen ? isOpen : false} as={Fragment}>
@@ -64,8 +64,8 @@ export default function Modal({
                   <div
                     className={`h-auto px-6 py-3 overflow-hidden align-middle transition-all transform bg-white shadow-xl rounded-2xl  ${
                       content?.video && content?.didYouKnow
-                        ? 'max-w-3xl'
-                        : 'max-w-md '
+                        ? "max-w-3xl"
+                        : "max-w-md "
                     }`}
                   >
                     <div className="flex">
@@ -82,19 +82,19 @@ export default function Modal({
                     </div>
                     <hr className="h-px mt-2 bg-[#EFEEEE] border-none"></hr>
                     <div
-                      className={`${content?.video && 'pt-4 justify-center'} ${
-                        content?.didYouKnow && 'lg:flex'
+                      className={`${content?.video && "pt-4 justify-center"} ${
+                        content?.didYouKnow && "lg:flex"
                       } ${
                         content?.video &&
                         content?.didYouKnow &&
-                        'pb-4 lg:space-x-8'
+                        "pb-4 lg:space-x-8"
                       }`}
                     >
                       <iframe
                         className={`${
                           content?.video
-                            ? 'col-span-5 m-auto aspect-video w-full min-h-[200px]'
-                            : 'hidden'
+                            ? "col-span-5 m-auto aspect-video w-full min-h-[200px]"
+                            : "hidden"
                         }`}
                         src={`https://www.youtube-nocookie.com/embed/${content?.video}`}
                         title="YouTube video player"
@@ -147,7 +147,7 @@ export default function Modal({
                                 >
                                   {content.buttonText
                                     ? content.buttonText
-                                    : 'Read more'}
+                                    : "Read more"}
                                   <svg
                                     width="22"
                                     height="22"
@@ -198,7 +198,7 @@ export default function Modal({
                               >
                                 {content.buttonText
                                   ? content.buttonText
-                                  : 'Read more'}
+                                  : "Read more"}
                                 <svg
                                   width="22"
                                   height="22"
@@ -251,5 +251,5 @@ export default function Modal({
         </Dialog>
       </Transition>
     </>
-  )
+  );
 }
