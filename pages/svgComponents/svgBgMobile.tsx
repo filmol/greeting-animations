@@ -1,5 +1,6 @@
 import React from "react";
 import ChristmasTree from "./christmasTree";
+import ClueTree from "./clueTree";
 import FrontPeople from "./FrontPeople";
 import Plane from "./plane";
 import Sliding from "./sliding";
@@ -11,6 +12,7 @@ import MobileCloud1 from "./svgComponentsMobile/mobileCloud1";
 import MobileCloud2 from "./svgComponentsMobile/mobileCloud2";
 import MobileCloud3 from "./svgComponentsMobile/mobileCloud3";
 import MobileCloud4 from "./svgComponentsMobile/mobileCloud4";
+import MobileCloud5 from "./svgComponentsMobile/mobileCloud5";
 import MobileMoon from "./svgComponentsMobile/mobileMoon";
 import MobileSun from "./svgComponentsMobile/mobileSun";
 import MobileWindmillSm from "./svgComponentsMobile/mobileWindmillSm";
@@ -10185,8 +10187,10 @@ export default function SvgBgMobile() {
           strokeLinecap="round"
         />
         {/* the moon */}
-        <MobileMoon cssClass={"animate-moon dark:block hidden"} />
-        <MobileSun cssClass={"animate-moon dark:hidden block"} />
+        <svg x="60" y="100">
+          <MobileMoon cssClass={"animate-moon dark:block hidden"} />
+          <MobileSun cssClass={"animate-moon dark:hidden block"} />
+        </svg>
         <path
           d="M-69.8875 624.932C-62.3373 646.145 -35.4867 631.754 -27.7592 626.673C-15.0511 618.317 -14.7029 620.754 -2.86522 613.965C8.97251 607.176 18.373 603.868 31.9515 598.646C43.8526 594.068 73.089 586.521 89.5733 584.197C123.864 579.361 258.602 565.412 363.407 547.465C471.165 529.012 399.54 523.614 354.499 529.039C311.356 534.235 271.839 537.542 241.026 540.328C210.214 543.113 175.048 545.028 160.251 546.246C126.43 549.032 100.889 550.076 70.5982 554.428C47.6641 557.724 30.9071 560.173 9.14656 568.529C-21.3112 580.225 -31.7631 584.371 -45.6898 592.379C-66.7229 604.473 -73.5432 614.661 -69.8875 624.932Z"
           fill="#2D6497"
@@ -10278,7 +10282,7 @@ export default function SvgBgMobile() {
         />
       </g>
       <svg
-        width="50"
+        width="45"
         height="143"
         viewBox="0 0 149 223"
         fill="none"
@@ -10288,13 +10292,26 @@ export default function SvgBgMobile() {
       >
         <ChristmasTree />
       </svg>
+      <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
+        <svg
+          width="116"
+          height="90"
+          viewBox="0 0 216 140"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="125"
+          y="430"
+        >
+          <ClueTree />
+        </svg>
+      </g>
       <svg
-        width="80"
+        width="105"
         height="110"
         viewBox="0 0 216 140"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"
-        x="155"
+        x="135"
         y="430"
       >
         <Stall />
@@ -10304,6 +10321,7 @@ export default function SvgBgMobile() {
       <MobileCloud2 cssClass={""} />
       <MobileCloud3 cssClass={""} />
       <MobileCloud4 cssClass={""} />
+      <MobileCloud5 />
       <MobileBuilding cssClass={""} />
       <g className="animate-mobilePlane">
         <svg

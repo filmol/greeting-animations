@@ -1,25 +1,30 @@
-import { useState } from 'react'
-import MyModal from '../../components/modal'
+import { useState } from "react";
+import Modal from "../../components/modal";
+import MyModal from "../../components/modal";
 
 const MobileCloud4 = ({ cssClass }: { cssClass: string }) => {
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
-          title: '',
-          didYouKnow: '',
+          title: "Cloud Microsoft",
+          didYouKnow:
+            " 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?",
+          link: "https://www.devoteam.com/partner/microsoft/",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam. ",
+          img: "/microsoftCloud.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />
+      />{" "}
       <g className="animate-cloud4">
         <svg
           x="100"
           y="120"
           onClick={() => {
-            setModalOpen(!modalOpen)
+            setModalOpen(!modalOpen);
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300 fill-[#FFFCFC] dark:fill-[#CFDEFC]`}
           width="40"
@@ -32,6 +37,6 @@ const MobileCloud4 = ({ cssClass }: { cssClass: string }) => {
         </svg>
       </g>
     </>
-  )
-}
-export default MobileCloud4
+  );
+};
+export default MobileCloud4;

@@ -1,5 +1,5 @@
 import { useState } from "react";
-import Modal from "../components/modal";
+import Modal from "../../components/modal";
 
 const Cloud5 = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
@@ -25,12 +25,12 @@ const Cloud5 = () => {
         }}
       >
         <svg
-          width="80"
-          height="36"
+          width="50"
+          height="30"
           viewBox="0 0 85 36"
           fill="none"
           x="70%"
-          y="12%"
+          y="20%"
           xmlns="http://www.w3.org/2000/svg"
         >
           <path

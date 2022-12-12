@@ -1,26 +1,26 @@
-import React, { useState } from 'react'
-import Modal from '../components/modal'
+import React, { useState } from "react";
+import Modal from "../components/modal";
 
 export default function Building() {
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Modal
         content={{
-          title: 'Devoteam',
-          link: 'https://www.devoteam.com/our-offices/',
-          buttonText: 'See our offices',
-          video: 'LAir1pXU9lI',
+          title: "Devoteam",
+          link: "https://www.devoteam.com/our-offices/",
+          buttonText: "See our offices",
+          video: "LAir1pXU9lI",
           didYouKnow:
-            'Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?',
+            "Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{' '}
+      />{" "}
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
         width="341"
         height="405"
@@ -190,24 +190,6 @@ export default function Building() {
           d="M135.236 90.3789C134.549 90.3789 133.662 90.4954 132.861 90.67C132.375 90.408 131.774 90.3789 131.202 90.3789C129.886 90.3789 128.285 90.67 128.285 90.67V97.6283H129.772V91.689H131.145C132.146 91.689 132.432 92.0093 132.432 93.1447V97.5992H133.92V92.7662C133.92 92.3295 133.862 92.0093 133.777 91.7181H135.035C136.151 91.7181 136.523 92.0675 136.523 93.1738V97.5992H137.982V92.8245C137.953 90.3789 136.122 90.3789 135.236 90.3789Z"
           fill="white"
         />
-        {/* <path
-          d="M61.4359 80.6064C54.0815 80.6064 48.1348 86.6591 48.1348 94.1444C48.1348 101.63 54.0815 107.682 61.4359 107.682C68.7902 107.682 74.7369 101.63 74.7369 94.1444C74.7369 86.6591 68.7902 80.6064 61.4359 80.6064Z"
-          fill="url(#pattern0)"
-        /> */}
-        {/* <svg
-          width="15"
-          height="15"
-          x="17.5%"
-          y="21.2%"
-          viewBox="0 0 133 133"
-          xmlns="http://www.w3.org/2000/svg"
-        >
-          <ellipse cx="65.5" cy="66" rx="61.5" ry="63" fill="#D9D9D9" />
-          <path
-            d="M66.4 7.54493e-05C53.2829 -0.0197091 40.4546 3.8519 29.5385 11.125C18.6224 18.3981 10.109 28.7458 5.07557 40.8588C0.0421376 52.9718 -1.2851 66.3056 1.2618 79.1732C3.80869 92.0407 10.1153 103.864 19.3835 113.146C28.6517 122.428 40.4651 128.752 53.3287 131.319C66.1924 133.885 79.5282 132.578 91.6488 127.563C103.769 122.548 114.13 114.05 121.419 103.145C128.709 92.2396 132.6 79.4172 132.6 66.3001C132.595 48.7352 125.622 31.8897 113.211 19.4601C100.8 7.03041 83.9649 0.0318568 66.4 7.54493e-05M110.5 61.3001H85.1V107.6H55C38.7 107.6 24 97.7001 24 76.6001C24 60.9001 32.2 45.6001 55 45.6001H62C63.7979 50.7654 65.1037 56.0891 65.9 61.5001H55.4C46 61.5001 40.7 66.6001 40.7 76.7001C40.7 86.2001 45.7 91.9001 55.4 91.9001H68.8V22.1001H85.1V45.7001H110.5V61.3001Z"
-            fill="#F8485E"
-          />
-        </svg> */}
         <svg
           x="13.8%"
           y="19.6%"
@@ -435,5 +417,5 @@ export default function Building() {
         </defs>
       </svg>
     </>
-  )
+  );
 }

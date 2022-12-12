@@ -1,19 +1,23 @@
 import { useState } from "react";
-import MyModal from "../../components/modal";
+import Modal from "../../components/modal";
 const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
-          title: "",
-          didYouKnow: "",
+          title: "Devoteam",
+          link: "https://www.devoteam.com/our-offices/",
+          buttonText: "See our offices",
+          video: "LAir1pXU9lI",
+          didYouKnow:
+            "Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />
+      />{" "}
       <svg
         x="240"
         y="375"

@@ -1,7 +1,7 @@
 import React, { useState } from "react";
-import Modal from "../components/modal";
+import Modal from "../../components/modal";
 
-export default function WindmillMd() {
+export default function MobileWindmillXs() {
   let [modalOpen, setModalOpen] = useState(false);
   return (
     <>
@@ -10,9 +10,8 @@ export default function WindmillMd() {
           title: "Sustainability Enabled by Digital",
           link: "https://www.devoteam.com/news-and-pr/cloud-a-catalyst-for-sustainable-development/",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
-          video: "kokQP1UTpRE",
           didYouKnow:
-            "For 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?",
+            " for 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
@@ -21,8 +20,8 @@ export default function WindmillMd() {
         onClick={() => {
           setModalOpen(!modalOpen);
         }}
-        width="134"
-        height="278"
+        width="80"
+        height="180"
         viewBox="0 0 174 308"
         fill="none"
         xmlns="http://www.w3.org/2000/svg"

@@ -1,23 +1,28 @@
-import { useState } from 'react'
-import MyModal from '../../components/modal'
+import { useState } from "react";
+import Modal from "../../components/modal";
+import MyModal from "../../components/modal";
 
 const MobileBiker = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
-          title: '',
-          didYouKnow: '',
+          title: "Data-driven",
+          link: "https://www.devoteam.com/expertise/data-driven/",
+          src: "https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN",
+          video: "ZXLMbvmHcDA",
+          didYouKnow:
+            "82% of organisations are spending more than 10% of their IT budgets on data technologies?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />
+      />{" "}
       <g
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
         className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
         clipPath="url(#clip13_272_9961)"
@@ -608,6 +613,6 @@ const MobileBiker = ({ cssClass }: { cssClass: string }) => {
         />
       </g>
     </>
-  )
-}
-export default MobileBiker
+  );
+};
+export default MobileBiker;

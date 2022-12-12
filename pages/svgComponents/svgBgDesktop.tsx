@@ -7,7 +7,6 @@ import Cloud3 from "./cloud3";
 import Cloud4 from "./cloud4";
 import Moon from "./moon";
 import WindmillXs from "./windmillXs";
-import WindmillMd from "./windmillMd";
 import WindmillSm from "./windmillSm";
 import Bikers from "./bikers";
 import Sun from "./sun";
@@ -21,6 +20,7 @@ import Plane from "./plane";
 import Cloud5 from "./cloud5";
 import FrontPlant from "./frontPlants";
 import ClueTree from "./clueTree";
+import Bikers1 from "./Bikers1";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -335,7 +335,7 @@ export default function SvgBgDesktop() {
         </svg>
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
           <svg
-            width="139"
+            width="110"
             height="203"
             viewBox="0 0 149 223"
             fill="none"
@@ -721,12 +721,16 @@ export default function SvgBgDesktop() {
         <g className="cursor-pointer">
           <Bikers />
         </g>
+        <g className="cursor-pointer">
+          <Bikers1 />
+        </g>
         <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />
           </svg>
         </g>
       </g>
+
       <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
         <svg
           width="507"

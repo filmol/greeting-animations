@@ -1,28 +1,33 @@
-import { useState } from 'react'
-import MyModal from '../../components/modal'
+import { useState } from "react";
+import Modal from "../../components/modal";
+import MyModal from "../../components/modal";
 
 const MobileCloud2 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <MyModal
+      <Modal
         content={{
-          title: '',
-          didYouKnow: '',
+          title: "Cloud AWS",
+          link: "https://www.devoteam.com/partner/aws/",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+          didYouKnow:
+            "48% of organizations use AWS, and 21% of companies quote AWS as is their primarily cloud provider?",
+          img: "/aCloud.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />
+      />{" "}
       <g className="animate-cloud2">
         <svg
           onClick={() => {
-            setModalOpen(!modalOpen)
+            setModalOpen(!modalOpen);
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300 fill-[#FFFCFC] dark:fill-[#CFDEFC]`}
           x="180"
-          y="120"
+          y="140"
           width="50"
           height="23"
           viewBox="0 0 50 23"
@@ -33,6 +38,6 @@ const MobileCloud2 = ({ cssClass }: { cssClass: string }) => {
         </svg>
       </g>
     </>
-  )
-}
-export default MobileCloud2
+  );
+};
+export default MobileCloud2;

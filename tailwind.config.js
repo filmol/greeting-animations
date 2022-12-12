@@ -15,8 +15,10 @@ module.exports = {
         plane: `plane 40s infinite`,
         mobilePlane: `mobilePlane 40s infinite`,
         bike: `bike 10s linear infinite`,
+        bike1: `bike1 10s linear infinite`,
         mobileBiker: "mobileBiker 9s linear infinite",
         slowerBike: `bike 35s linear infinite`,
+        slowerBike1: `bike1 35s linear infinite`,
         bikeScale: "bikeScale 20s infinite",
         cloud1: "cloud1 30s infinite ",
         cloud2: "cloud2 30s infinite ",
@@ -43,7 +45,7 @@ module.exports = {
             transform: "translate(0vw, 0vh)",
           },
           "100%": {
-            transform: "translate(-110vw, 0vw)",
+            transform: "translate(-120vw, 0vw)",
           },
         },
         mobilePlane: {
@@ -60,6 +62,14 @@ module.exports = {
           },
           "100%": {
             transform: "translate(150vw, -18vw)",
+          },
+        },
+        bike1: {
+          "0%": {
+            transform: "translate(-10vw, 5vh)",
+          },
+          "100%": {
+            transform: "translate(150vw, -20vw)",
           },
         },
         bikeScale: {

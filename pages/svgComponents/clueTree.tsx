@@ -1,5 +1,6 @@
 import { useState } from "react";
 import Modal from "../components/modal";
+import PrizeModal from "../components/prizeModal";
 
 const ClueTree = () => {
   //   const [cssClass, setCssClass] = useState<string>("");
@@ -7,14 +8,7 @@ const ClueTree = () => {
 
   return (
     <>
-      <Modal
-        content={{
-          title: "Devoteam 5 values",
-          link: "https://www.devoteam.com/join-us/values/",
-        }}
-        isModalOpen={modalOpen}
-        setModalOpen={setModalOpen}
-      />{" "}
+      <PrizeModal isModalOpen={modalOpen} setModalOpen={setModalOpen} />{" "}
       <g
         className="absolute cursor-pointer"
         onClick={() => {

@@ -1,24 +1,24 @@
-import React, { useState } from 'react'
-import Modal from '../../components/modal'
+import React, { useState } from "react";
+import Modal from "../../components/modal";
 
-export default function WindmillMd() {
-  let [modalOpen, setModalOpen] = useState(false)
+export default function MobileWindmillSm() {
+  let [modalOpen, setModalOpen] = useState(false);
   return (
     <>
       <Modal
         content={{
-          title: 'Sustainability Enabled by Digital',
-          link: 'https://www.devoteam.com/news-and-pr/cloud-a-catalyst-for-sustainable-development/',
-          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
+          title: "Sustainability Enabled by Digital",
+          link: "https://www.devoteam.com/news-and-pr/cloud-a-catalyst-for-sustainable-development/",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
           didYouKnow:
-            ' for 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?',
+            " for 1/5 of CIOs, sustainability is a Key cloud priority in the next 3 years, and for 1/4, sustainable offers are a main benefice of cloud?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{' '}
+      />{" "}
       <svg
         onClick={() => {
-          setModalOpen(!modalOpen)
+          setModalOpen(!modalOpen);
         }}
         width="80"
         height="180"
@@ -53,5 +53,5 @@ export default function WindmillMd() {
         </g>
       </svg>
     </>
-  )
+  );
 }
