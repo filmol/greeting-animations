@@ -10194,7 +10194,7 @@ export default function SvgBgMobile() {
           <MobileSun cssClass={"animate-moon dark:hidden block"} />
         </svg>
         <svg
-          x="50%"
+          x="45%"
           y="170"
           width="100"
           height="34"
