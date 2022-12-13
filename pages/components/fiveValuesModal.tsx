@@ -112,7 +112,7 @@ export default function FiveValuesModal({
                               onClick={() => {
                                 changeCurrentValue(false);
                               }}
-                              className="relative focus:outline-none group overflow-visible w-0"
+                              className="relative focus:outline-none group overflow-visible -mr-9 "
                             >
                               <LeftSVG className="duration-300 cursor-pointer group-hover:scale-125" />
                             </button>
@@ -128,7 +128,7 @@ export default function FiveValuesModal({
                               onClick={() => {
                                 changeCurrentValue(true);
                               }}
-                              className="relative focus:outline-none group overflow-visible w-0 right-10"
+                              className="relative focus:outline-none group overflow-visible -ml-9"
                             >
                               <RightSVG className="duration-300 cursor-pointer group-hover:scale-125" />
                             </button>
