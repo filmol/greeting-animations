@@ -366,7 +366,7 @@ export default function SvgBgDesktop() {
         </g>
 
         <svg
-          x="49%"
+          x="680"
           y="70"
           width="200"
           height="54"
