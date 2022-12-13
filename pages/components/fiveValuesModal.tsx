@@ -1,67 +1,67 @@
-import { Dialog, Transition } from '@headlessui/react'
-import Image from 'next/image'
-import { Fragment, useEffect, useState } from 'react'
-import CloseSVG from '../../public/close.svg'
-import RightSVG from '../../public/right.svg'
-import LeftSVG from '../../public/left.svg'
+import { Dialog, Transition } from "@headlessui/react";
+import Image from "next/image";
+import { Fragment, useEffect, useState } from "react";
+import CloseSVG from "../../public/close.svg";
+import RightSVG from "../../public/right.svg";
+import LeftSVG from "../../public/left.svg";
 
 export default function FiveValuesModal({
   isModalOpen,
   setModalOpen,
 }: {
-  isModalOpen: boolean
-  setModalOpen: any
+  isModalOpen: boolean;
+  setModalOpen: any;
 }) {
   const values = [
     {
-      title: 'Respect',
-      content: 'It is the foundation of the relations between Devoteamers.',
-      image: '/respect.jpg',
+      title: "Respect",
+      content: "It is the foundation of the relations between Devoteamers.",
+      image: "/respect.jpg",
     },
     {
-      title: 'Frankness',
-      content: 'We make bold decisions without fear of disrupting habits.',
-      image: '/frankness.jpg',
+      title: "Frankness",
+      content: "We make bold decisions without fear of disrupting habits.",
+      image: "/frankness.jpg",
     },
     {
-      title: 'Ambition',
+      title: "Ambition",
       content:
-        'We work as one team & family, to add value and become a leader in the market.',
-      image: '/ambition.jpg',
+        "We work as one team & family, to add value and become a leader in the market.",
+      image: "/ambition.jpg",
     },
     {
-      title: 'Entrepreneurship',
-      content: 'We are self-disciplined, and continuously fight bureaucracy.',
-      image: '/entrepreneurship.jpg',
+      title: "Entrepreneurship",
+      content: "We are self-disciplined, and continuously fight bureaucracy.",
+      image: "/entrepreneurship.jpg",
     },
     {
-      title: 'Collaboration',
-      content: 'Everybody is sort of an expert in their own fields.',
-      image: '/collaboration.jpg',
+      title: "Collaboration",
+      content: "Everybody is sort of an expert in their own fields.",
+      image: "/collaboration.jpg",
     },
-  ]
-  let [isOpen, setIsOpen] = useState(isModalOpen)
-  let [currentValue, setCurrentValue] = useState<number>(0)
+  ];
+  let [isOpen, setIsOpen] = useState(isModalOpen);
+  let [currentValue, setCurrentValue] = useState<number>(0);
 
   function changeCurrentValue(increase: boolean) {
     if (increase) {
-      currentValue != 4 && setCurrentValue(currentValue + 1)
+      currentValue != 4 && setCurrentValue(currentValue + 1);
     } else {
-      currentValue != 0 && setCurrentValue(currentValue - 1)
+      currentValue != 0 && setCurrentValue(currentValue - 1);
     }
   }
 
   function closeModal() {
-    setModalOpen(!isModalOpen)
-    setIsOpen(false)
+    setModalOpen(!isModalOpen);
+    setIsOpen(false);
   }
 
   function openModal() {
-    setIsOpen(true)
+    setIsOpen(true);
   }
   useEffect(() => {
-    setIsOpen(isModalOpen)
-  }, [isModalOpen])
+    setIsOpen(isModalOpen);
+  }, [isModalOpen]);
   return (
     <>
       <Transition appear show={isOpen ? isOpen : false} as={Fragment}>
@@ -107,30 +107,32 @@ export default function FiveValuesModal({
                     <div>
                       <div className="flex flex-col justify-center pb-6 my-auto">
                         <div className="relative w-full mt-6">
-                          <Image
-                            className="object-cover mx-auto md:w-full focus:outline-none min-h-[200px]"
-                            width={500}
-                            height={200}
-                            src={values[currentValue].image}
-                            alt="5Values "
-                          />
-                          <button
-                            onClick={() => {
-                              changeCurrentValue(false)
-                            }}
-                            className="absolute focus:outline-none py-auto py-[20%] group top-0 left-0"
-                          >
-                            <LeftSVG className="duration-300 cursor-pointer group-hover:scale-125" />
-                          </button>
+                          <div className="flex items-center">
+                            <button
+                              onClick={() => {
+                                changeCurrentValue(false);
+                              }}
+                              className="relative focus:outline-none group overflow-visible -mr-9 "
+                            >
+                              <LeftSVG className="duration-300 cursor-pointer group-hover:scale-125" />
+                            </button>
+                            <Image
+                              className="object-cover mx-auto md:w-full focus:outline-none min-h-[200px]"
+                              width={500}
+                              height={200}
+                              src={values[currentValue].image}
+                              alt="5Values "
+                            />
 
-                          <button
-                            onClick={() => {
-                              changeCurrentValue(true)
-                            }}
-                            className="absolute focus:outline-none py-auto py-[20%] group top-0 right-0"
-                          >
-                            <RightSVG className="duration-300 cursor-pointer group-hover:scale-125" />
-                          </button>
+                            <button
+                              onClick={() => {
+                                changeCurrentValue(true);
+                              }}
+                              className="relative focus:outline-none group overflow-visible -ml-9"
+                            >
+                              <RightSVG className="duration-300 cursor-pointer group-hover:scale-125" />
+                            </button>
+                          </div>
                         </div>
 
                         <div className="flex flex-col mt-4 lg:flex-row">
@@ -198,5 +200,5 @@ export default function FiveValuesModal({
         </Dialog>
       </Transition>
     </>
-  )
+  );
 }

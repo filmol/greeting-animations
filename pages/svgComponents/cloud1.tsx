@@ -1,21 +1,19 @@
-import { title } from 'process'
-import { useState } from 'react'
-import Modal from '../components/modal'
+import { useState } from "react";
+import Modal from "../components/modal";
 
 const Cloud1 = () => {
-  //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Modal
         content={{
-          title: 'Innovative Tech',
+          title: "Innovative Tech",
           didYouKnow:
-            'That By 2024, 80% of companies that miss out on Cloud adoption will overspend by 20-50%.',
-          link: 'https://www.devoteam.com/expertise/innovative-tech/',
-          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
-          img: '/innovativeCloud.svg',
+            "That By 2024, 80% of companies that miss out on Cloud adoption will overspend by 20-50%.",
+          link: "https://www.devoteam.com/expertise/innovative-tech/",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+          img: "/innovativeCloud.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
@@ -23,17 +21,25 @@ const Cloud1 = () => {
       <g
         className={`animate-cloud1 absolute cursor-pointer hover:[animation-play-state:paused] duration-300`}
       >
-        <svg x="50%" y="15%">
+        <svg
+          onClick={() => {
+            setModalOpen(!modalOpen);
+          }}
+          width="118"
+          height="53"
+          x="50%"
+          y="15%"
+          viewBox="0 0 118 53"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+        >
           <path
-            onClick={() => {
-              setModalOpen(!modalOpen)
-            }}
-            d="M98.8955 52.9275L19.5873 56.1589C14.0708 56.3836 8.1273 55.87 4.64574 51.5849C0.793115 46.8431 -1.18235 40.0769 2.42658 36.4411C12.7892 26.0014 26.7738 34.6484 32.6134 40.4155C26.5561 -0.171611 64.7851 4.67608 66.9612 28.6074C70.0134 5.26372 98.187 -10.6965 119.017 9.27206C127.625 17.5242 129.147 26.649 127.638 34.5941C125.263 47.1009 111.615 52.4092 98.8955 52.9275Z"
-            className="fill-white dark:fill-[#CFDEFC]"
+            d="M87.4443 48.7893L19.0155 51.5774C14.0506 51.7797 8.70144 51.3174 5.56803 47.4608C2.10065 43.1932 0.322724 37.1036 3.57077 33.8314C12.8972 24.4356 25.4833 32.218 30.739 37.4083C25.2874 0.879827 59.2786 11.4464 61.237 32.9846C63.984 11.9753 83.7371 9.13373 96.7871 23.9842C98.0975 25.4753 99.5944 27.3094 101.08 29.3054C108.946 39.8693 100.604 48.2531 87.4443 48.7893Z"
+            fill="#CFDEFC"
           />
         </svg>
       </g>
     </>
-  )
-}
-export default Cloud1
+  );
+};
+export default Cloud1;
