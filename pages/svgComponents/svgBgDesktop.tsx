@@ -369,7 +369,7 @@ export default function SvgBgDesktop() {
 
         <svg
           x="680"
-          y="70"
+          y="38"
           width="200"
           height="54"
           viewBox="0 0 219 54"
