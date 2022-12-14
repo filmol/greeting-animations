@@ -11,6 +11,7 @@ const MyBike1 = () => {
           title: "Data-driven",
           link: "https://www.devoteam.com/expertise/data-driven/",
           video: "ZXLMbvmHcDA",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
           didYouKnow:
             "82% of organisations are spending more than 10% of their IT budgets on data technologies?",
         }}
