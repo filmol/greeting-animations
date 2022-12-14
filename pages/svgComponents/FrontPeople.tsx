@@ -1,20 +1,18 @@
-import { title } from "process";
 import { useState } from "react";
 import Modal from "../components/modal";
 
 const FrontPeople = () => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Modal
         content={{
-          title: "Social network",
+          title: "Devoteam Linkedin",
           link: "https://www.linkedin.com/company/4160/admin/",
-          src: "https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN",
           video: "/NmQ7vkr-HTU",
           didYouKnow: "That Devoteam is now followed by 414 000 tech lovers?",
+          buttonText: "Follow us",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

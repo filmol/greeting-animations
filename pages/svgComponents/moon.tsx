@@ -11,7 +11,6 @@ const Moon = ({ cssClass }: { cssClass: string }) => {
         content={{
           title: "Cyber Trust",
           link: "https://www.devoteam.com/expertise/cyber-trust/",
-          src: "https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN",
           video: "/S8xkJvVNmmQ",
         }}
         isModalOpen={modalOpen}
