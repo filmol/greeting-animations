@@ -1,9 +1,7 @@
 import { useState } from "react";
 import Modal from "../../components/modal";
-import MyModal from "../../components/modal";
 
 const MobileBiker = ({ cssClass }: { cssClass: string }) => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
   return (

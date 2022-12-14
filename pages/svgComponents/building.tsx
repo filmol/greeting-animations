@@ -55,21 +55,21 @@ export default function Building() {
           y="61.2803"
           width="108"
           height="330.48"
-          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
+          className="fill-[#FCA2AE] dark:fill-[#1B3060]"
         />
         <rect
           x="59.2602"
           y="38.9609"
           width="66.24"
           height="25.2"
-          className="fill-[#FCA2AE] dark:fill-[#233A6D]"
+          className="fill-[#FCA2AE] dark:fill-[#1B3060]"
         />
         <line
           x1="92.8613"
           y1="0.770909"
           x2="93.1879"
           y2="41.0909"
-          className="stroke-[#FCA2AE] dark:stroke-[#233A6D]"
+          className="stroke-[#FCA2AE] dark:stroke-[#1B3060]"
           strokeWidth="7.37592"
         />
         <line

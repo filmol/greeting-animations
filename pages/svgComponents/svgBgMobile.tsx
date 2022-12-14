@@ -3,11 +3,13 @@ import ChristmasTree from "./christmasTree";
 import ClueTree from "./clueTree";
 import DayNightButton from "./dayNightButton";
 import FrontPeople from "./FrontPeople";
+import MyBike2 from "./myBike2";
 import Plane from "./plane";
 import Sliding from "./sliding";
 import SmallTree from "./smallTree";
 import Stall from "./stall";
 import MobileBiker from "./svgComponentsMobile/mobileBiker";
+import MobileBiker1 from "./svgComponentsMobile/MobileBiker1";
 import MobileBuilding from "./svgComponentsMobile/mobileBuilding";
 import MobileCloud1 from "./svgComponentsMobile/mobileCloud1";
 import MobileCloud2 from "./svgComponentsMobile/mobileCloud2";
@@ -10335,6 +10337,19 @@ export default function SvgBgMobile() {
       <MobileCloud3 cssClass={""} />
       <MobileCloud4 cssClass={""} />
       <MobileCloud5 />
+      <g className="animate-mobileBiker1  cursor-pointer hover:[animation-play-state:paused] duration-300 ">
+        <svg
+          width="60"
+          height="110"
+          viewBox="0 0 100 97"
+          fill="none"
+          xmlns="http://www.w3.org/2000/svg"
+          x="5%"
+          y="73%"
+        >
+          <MobileBiker1 />
+        </svg>
+      </g>
       <MobileBuilding cssClass={""} />
       <g className="animate-mobilePlane">
         <svg
