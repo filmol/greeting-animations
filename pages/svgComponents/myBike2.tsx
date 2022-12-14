@@ -10,7 +10,6 @@ const MyBike2 = () => {
         content={{
           title: "Creative tech",
           link: "https://www.devoteam.com/playground/sustainability-enabled-by-digital/",
-          src: "https://drive.google.com/file/d/1FXSDYY6tzZvwNLYmFdqNvKCTZRwczj3u/view?usp=sharing",
           video: "1Ydcei2jUzI",
           didYouKnow:
             "That there are more than 1000 creative technologists in our teams",

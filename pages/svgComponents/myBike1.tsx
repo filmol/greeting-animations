@@ -10,7 +10,6 @@ const MyBike1 = () => {
         content={{
           title: "Data-driven",
           link: "https://www.devoteam.com/expertise/data-driven/",
-          src: "https://drive.google.com/drive/folders/1KRA7Et-S7uj3AjsOQu8ZMtKzFiOfC5LN",
           video: "ZXLMbvmHcDA",
           didYouKnow:
             "82% of organisations are spending more than 10% of their IT budgets on data technologies?",

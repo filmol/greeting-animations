@@ -24,6 +24,7 @@ import Bikers1 from "./Bikers1";
 import DayNightButton from "./dayNightButton";
 import MyBike1 from "./myBike1";
 import MyBike2 from "./myBike2";
+import MyBillboard from "./myBillboard";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -323,16 +324,17 @@ export default function SvgBgDesktop() {
         >
           <g className="overflow-hidden">
             {/* <Billboard /> */}
-            <BillboardSlider />
+            {/* <BillboardSlider /> */}
             {/* className="overflow-hidden duration-1000 hover:translate-y-full" */}
-            <g>
+            <MyBillboard />
+            {/* <g>
               <svg x="0.45%" y="0.58%">
                 <image href="../tech-radar.jpg" height="25.37%"></image>
               </svg>
-            </g>
+            </g> */}
 
-            <svg x="0.46%" y="0.6%">
-              <image href="../2023-greetings.jpg" height="25.36%"></image>
+            <svg x="0.88%" y="1.91%" className="overflow-hidden">
+              <image href="../2023-greetings.jpg" height="25.1%"></image>
             </svg>
           </g>
         </svg>
