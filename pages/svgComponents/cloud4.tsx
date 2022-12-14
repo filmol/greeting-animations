@@ -22,7 +22,7 @@ const Cloud4 = () => {
       <g className="animate-cloud2 absolute cursor-pointer hover:[animation-play-state:paused] duration-300">
         <svg
           x="8%"
-          y="19%"
+          y="20%"
           width="79"
           height="44"
           viewBox="0 0 79 44"

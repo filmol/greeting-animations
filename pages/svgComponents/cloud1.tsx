@@ -27,8 +27,8 @@ const Cloud1 = () => {
           }}
           width="118"
           height="53"
-          x="50%"
-          y="15%"
+          x="60%"
+          y="13%"
           viewBox="0 0 118 53"
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
