@@ -1,21 +1,21 @@
-import { useState } from 'react'
-import Modal from '../../components/modal'
-import MyModal from '../../components/modal'
+import { useState } from "react";
+import Modal from "../../components/modal";
+import MyModal from "../../components/modal";
 
 const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
   //   const [cssClass, setCssClass] = useState<string>("");
-  let [modalOpen, setModalOpen] = useState(false)
+  let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
       <Modal
         content={{
-          title: 'Innovative Tech',
+          title: "Innovative Tech",
           didYouKnow:
-            'That By 2024, 80% of companies that miss out on Cloud adoption will overspend by 20-50%.',
-          link: 'https://www.devoteam.com/expertise/innovative-tech/',
-          src: '2021 IDC Cloud benchmark survey, sponsored by Devoteam.',
-          img: '/innovativeCloud.svg',
+            "That By 2024, 80% of companies that miss out on Cloud adoption will overspend by 20-50%.",
+          link: "https://www.devoteam.com/expertise/innovative-tech/",
+          src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+          img: "/innovativeCloud.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
@@ -23,13 +23,13 @@ const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
       <g className="animate-cloud1">
         <svg
           x="120"
-          y="220"
+          y="190"
           width="55"
           height="25"
           viewBox="0 0 55 25"
           fill="none"
           onClick={() => {
-            setModalOpen(!modalOpen)
+            setModalOpen(!modalOpen);
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300 fill-[#FFFCFC] dark:fill-[#CFDEFC]`}
           xmlns="http://www.w3.org/2000/svg"
@@ -38,6 +38,6 @@ const MobileCloud1 = ({ cssClass }: { cssClass: string }) => {
         </svg>
       </g>
     </>
-  )
-}
-export default MobileCloud1
+  );
+};
+export default MobileCloud1;

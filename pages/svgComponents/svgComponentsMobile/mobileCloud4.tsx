@@ -22,7 +22,7 @@ const MobileCloud4 = ({ cssClass }: { cssClass: string }) => {
       <g className="animate-cloud4">
         <svg
           x="100"
-          y="120"
+          y="45"
           onClick={() => {
             setModalOpen(!modalOpen);
           }}

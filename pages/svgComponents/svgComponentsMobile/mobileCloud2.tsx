@@ -26,8 +26,8 @@ const MobileCloud2 = ({ cssClass }: { cssClass: string }) => {
             setModalOpen(!modalOpen);
           }}
           className={`${cssClass} absolute cursor-pointer hover:[animation-play-state:paused] duration-300 fill-[#FFFCFC] dark:fill-[#CFDEFC]`}
-          x="180"
-          y="140"
+          x="200"
+          y="70"
           width="50"
           height="23"
           viewBox="0 0 50 23"
