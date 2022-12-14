@@ -58,18 +58,18 @@ module.exports = {
         },
         bike: {
           "0%": {
-            transform: "translate(0vw, 0vh)",
+            transform: "translate(0vw, 3vh)",
           },
           "100%": {
-            transform: "translate(150vw, -18vw)",
+            transform: "translate(150vw, -21vw)",
           },
         },
         bike1: {
           "0%": {
-            transform: "translate(-10vw, 5vh)",
+            transform: "translate(-15vw, 5.8vh)",
           },
           "100%": {
-            transform: "translate(150vw, -20vw)",
+            transform: "translate(150vw, -17.5vw)",
           },
         },
         bikeScale: {

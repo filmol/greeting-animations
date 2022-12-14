@@ -22,6 +22,8 @@ import FrontPlant from "./frontPlants";
 import ClueTree from "./clueTree";
 import Bikers1 from "./Bikers1";
 import DayNightButton from "./dayNightButton";
+import MyBike1 from "./myBike1";
+import MyBike2 from "./myBike2";
 
 export default function SvgBgDesktop() {
   const bike1 = useRef<SVGGraphicsElement>(null);
@@ -731,12 +733,38 @@ export default function SvgBgDesktop() {
             <Stall />
           </svg>
         </g>
-        <g className="cursor-pointer">
+        <g className="animate-bike xl:animate-slowerBike cursor-pointer hover:[animation-play-state:paused] duration-300 ">
+          <svg
+            width="140"
+            height="140"
+            viewBox="0 0 210 210"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="-10%"
+            y="82%"
+          >
+            <MyBike1 />
+          </svg>
+        </g>
+        <g className="animate-bike1 xl:animate-slowerBike1 cursor-pointer hover:[animation-play-state:paused] duration-300 ">
+          <svg
+            width="300"
+            height="217"
+            viewBox="0 0 250 157"
+            fill="none"
+            xmlns="http://www.w3.org/2000/svg"
+            x="-20%"
+            y="81%"
+          >
+            <MyBike2 />
+          </svg>
+        </g>
+        {/* <g className="cursor-pointer">
           <Bikers />
         </g>
         <g className="cursor-pointer">
           <Bikers1 />
-        </g>
+        </g> */}
         <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />
