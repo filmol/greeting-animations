@@ -10,7 +10,7 @@ const Plane = () => {
           title: "Hello 2023",
           didYouKnow: `This website has been developed with the  kind support of Devoteam Creative Tech in Sweden.`,
           link: "https://www.devoteam.com/expertise/creative-tech/",
-          img: "/Jayway.png",
+          img: "/Jayway.webp",
           buttonText: "Discover Devoteam Creative tech",
         }}
         isModalOpen={modalOpen}
