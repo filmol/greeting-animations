@@ -380,7 +380,7 @@ export default function SvgBgDesktop() {
         >
           <DayNightButton />
         </svg>
-        <g className="animate-plane">
+        <g className="animate-plane cursor-pointer hover:[animation-play-state:paused] duration-300">
           <svg
             width="406"
             height="72"

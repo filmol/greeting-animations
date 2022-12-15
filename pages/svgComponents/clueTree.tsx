@@ -1,9 +1,7 @@
 import { useState } from "react";
-import Modal from "../components/modal";
 import PrizeModal from "../components/prizeModal";
 
 const ClueTree = () => {
-  //   const [cssClass, setCssClass] = useState<string>("");
   let [modalOpen, setModalOpen] = useState(false);
 
   return (

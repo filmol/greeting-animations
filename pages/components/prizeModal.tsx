@@ -100,7 +100,7 @@ export default function Modal({
                           target="_blank"
                           className="text-blue-900 outline-0 appearance-none"
                         >
-                          Click here for Terms and Conditions.
+                          *Click here for Terms and Conditions.
                         </a>
                       </p>
                     </div>
