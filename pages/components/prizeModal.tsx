@@ -68,26 +68,20 @@ export default function Modal({
                       <h1 className="text-3xl font-bold text-[#F8485E]">
                         Congratulations!{" "}
                       </h1>
-                      <h1 className="text-3xl font-bold text-[#F8485E]">
-                        You found the gift!{" "}
-                      </h1>
                       <p className="text-[#1c1c1c] text-lg mt-4">
-                        Please email{" "}
-                        <a
-                          className="cursor-pointer hello2023 tooltip "
-                          onClick={() =>
-                            navigator.clipboard?.writeText(
-                              "hello2023@devoteam.com"
-                            )
-                          }
-                        >
-                          hello2023@devoteam.com
-                          <p className="tooltiptext text-xs">
-                            Click to copy to clipboard
-                          </p>
-                        </a>{" "}
-                        to claim your prize* and start the new year in style.
+                        Please fill the form for your chance to
+                        <br /> win a special Devoteam prize*.
                       </p>
+
+                      <iframe
+                        className="customIframe mt-3"
+                        src="https://www.info.devoteam.com/l/505131/2022-12-15/jv852f"
+                        width="100%"
+                        height="260"
+                        // type="text/html"
+                        frameBorder="0"
+                        style={{ border: "0" }}
+                      />
                     </div>
 
                     <div className="mt-8">

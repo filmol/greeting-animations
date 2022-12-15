@@ -105,3 +105,8 @@ a {
 .tooltip:hover .tooltiptext {
   visibility: visible;
 }
+
+.customIframe {
+  background-color: transparent;
+  border: none;
+}
