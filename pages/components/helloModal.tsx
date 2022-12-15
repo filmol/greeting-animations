@@ -90,19 +90,7 @@ export default function HelloModal({
                         "pb-4 lg:space-x-8"
                       }`}
                     >
-                      <iframe
-                        className={`${
-                          content?.video
-                            ? "col-span-5 m-auto aspect-video w-full min-h-[200px]"
-                            : "hidden"
-                        }`}
-                        src={`https://www.youtube-nocookie.com/embed/${content?.video}`}
-                        title="YouTube video player"
-                        frameBorder="0"
-                        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
-                        allowFullScreen
-                      ></iframe>
-                      {content?.didYouKnow ? (
+                      {content?.didYouKnow && (
                         <div className="flex flex-col justify-center col-span-5 my-auto">
                           {content?.img && (
                             <div className="w-full mt-6">
@@ -178,56 +166,6 @@ export default function HelloModal({
                                 </a>
                               </button>
                             </div>
-                          )}
-                        </div>
-                      ) : (
-                        <div className="mt-4 mb-4">
-                          {content?.link && (
-                            <button
-                              type="button"
-                              className="inline-flex text-lg justify-center px-5 py-1 font-medium group hover:text-black duration-300 hover:bg-[#FDDADE] border border-transparent text-white rounded-[56px] bg-[#F8485E] focus:outline-none "
-                            >
-                              <a
-                                target="_blank"
-                                rel="noreferrer"
-                                href={content?.link}
-                                className="flex group"
-                              >
-                                {content.buttonText
-                                  ? content.buttonText
-                                  : "Read more"}
-                                <svg
-                                  width="22"
-                                  height="22"
-                                  viewBox="0 0 22 22"
-                                  className="my-auto ml-2 group"
-                                  fill="none"
-                                  xmlns="http://www.w3.org/2000/svg"
-                                >
-                                  <path
-                                    d="M9.79773 6.23438H5.34399C4.87151 6.23438 4.41838 6.42207 4.08429 6.75616C3.75019 7.09025 3.5625 7.54338 3.5625 8.01586V16.0326C3.5625 16.505 3.75019 16.9582 4.08429 17.2923C4.41838 17.6263 4.87151 17.814 5.34399 17.814H13.3607C13.8332 17.814 14.2863 17.6263 14.6204 17.2923C14.9545 16.9582 15.1422 16.505 15.1422 16.0326V11.5788"
-                                    className="duration-300 group-hover:stroke-black stroke-white"
-                                    strokeWidth="1.78149"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                  <path
-                                    d="M8.90723 12.4699L17.8147 3.5625"
-                                    className="duration-300 group-hover:stroke-black stroke-white"
-                                    strokeWidth="1.78149"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                  <path
-                                    d="M13.3615 3.5625H17.8152V8.01622"
-                                    className="duration-300 group-hover:stroke-black stroke-white"
-                                    strokeWidth="1.78149"
-                                    strokeLinecap="round"
-                                    strokeLinejoin="round"
-                                  />
-                                </svg>
-                              </a>
-                            </button>
                           )}
                         </div>
                       )}
