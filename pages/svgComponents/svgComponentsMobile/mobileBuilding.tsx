@@ -11,21 +11,8 @@ const MobileBuilding = ({ cssClass }: { cssClass: string }) => {
           link: "https://www.devoteam.com/our-offices/",
           buttonText: "See our offices",
           video: "LAir1pXU9lI",
-          didYouKnow: (
-            <div>
-              Devoteam is a leading consulting firm focused on Cloud, cyber and
-              data in more than 25 countries in EMEA?
-              <br />
-              <a
-                href={"../TermsAndConditions.pdf"}
-                rel="noopener noreferrer"
-                target="_blank"
-                className="text-blue-700"
-              >
-                Click here for Terms and Conditions.
-              </a>
-            </div>
-          ),
+          didYouKnow:
+            "Devoteam is a leading consulting firm focused on Cloud, cyber and data in more than 25 countries in EMEA?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
