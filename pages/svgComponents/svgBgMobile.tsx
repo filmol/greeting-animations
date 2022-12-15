@@ -1,6 +1,6 @@
 import React from "react";
 import ChristmasTree from "./christmasTree";
-import ClueTree from "./clueTree";
+import ClueTree from "./svgComponentsMobile/mobileClueTree";
 import DayNightButton from "./dayNightButton";
 import FrontPeople from "./FrontPeople";
 import MyBike2 from "./myBike2";

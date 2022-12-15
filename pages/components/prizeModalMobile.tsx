@@ -73,20 +73,8 @@ export default function Modal({
                       </h1>
                       <p className="text-[#1c1c1c] text-lg mt-4">
                         Please email{" "}
-                        <a
-                          className="cursor-pointer hello2023 tooltip "
-                          onClick={() =>
-                            navigator.clipboard?.writeText(
-                              "hello2023@devoteam.com"
-                            )
-                          }
-                        >
-                          hello2023@devoteam.com
-                          <p className="tooltiptext text-xs">
-                            Click to copy to clipboard
-                          </p>
-                        </a>{" "}
-                        to claim your prize* and start the new year in style.
+                        <a className="hello2023 ">hello2023@devoteam.com</a> to
+                        claim your prize* and start the new year in style.
                       </p>
                     </div>
 
