@@ -1,5 +1,4 @@
-import React, { useEffect, useRef, useState } from "react";
-import BillboardSlider from "./Billboard.svg";
+import React, { useEffect, useRef } from "react";
 import Building from "./building";
 import Cloud1 from "./cloud1";
 import Cloud2 from "./cloud2";
@@ -8,7 +7,6 @@ import Cloud4 from "./cloud4";
 import Moon from "./moon";
 import WindmillXs from "./windmillXs";
 import WindmillSm from "./windmillSm";
-import Bikers from "./bikers";
 import Sun from "./sun";
 import SmallTree from "./smallTree";
 import FrontPeople from "./FrontPeople";
@@ -20,7 +18,6 @@ import Plane from "./plane";
 import Cloud5 from "./cloud5";
 import FrontPlant from "./frontPlants";
 import ClueTree from "./clueTree";
-import Bikers1 from "./Bikers1";
 import DayNightButton from "./dayNightButton";
 import MyBike1 from "./myBike1";
 import MyBike2 from "./myBike2";
@@ -285,11 +282,6 @@ export default function SvgBgDesktop() {
             <Sliding />
           </svg>
         </g>
-        {/* <svg x="13%" y="20%">
-          <WindmillXs />  
-          // Waiting on content for third windmill
-        </svg> */}
-
         <path
           d="M488.533 548.02L456.918 548.988C441.143 523.997 456.806 523.67 462.779 529.761C460.048 519.319 457.21 497.668 467.698 494.594C484.677 491.018 488.171 516.482 487.796 529.661C488.871 523.89 495.657 522.713 496.945 524.772C502.788 534.105 493.312 544.412 488.533 548.02Z"
           fill="#004C5E"
@@ -323,16 +315,7 @@ export default function SvgBgDesktop() {
           className="overflow-hidden"
         >
           <g className="overflow-hidden">
-            {/* <Billboard /> */}
-            {/* <BillboardSlider /> */}
-            {/* className="overflow-hidden duration-1000 hover:translate-y-full" */}
             <MyBillboard />
-            {/* <g>
-              <svg x="0.45%" y="0.58%">
-                <image href="../tech-radar.jpg" height="25.37%"></image>
-              </svg>
-            </g> */}
-
             <svg x="0.88%" y="1.91%" className="overflow-hidden">
               <image href="../2023-greetings.jpg" height="25.1%"></image>
             </svg>
@@ -761,12 +744,6 @@ export default function SvgBgDesktop() {
             <MyBike2 />
           </svg>
         </g>
-        {/* <g className="cursor-pointer">
-          <Bikers />
-        </g>
-        <g className="cursor-pointer">
-          <Bikers1 />
-        </g> */}
         <g className="duration-300 cursor-pointer hover:scale-y-[1.005]">
           <svg x="80%" y="32%" className="">
             <Building />

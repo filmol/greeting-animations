@@ -11,7 +11,7 @@ const Plane = () => {
           didYouKnow: `This website has been developed with the  kind support of Devoteam Creative Tech in Sweden.`,
           link: "https://www.devoteam.com/expertise/creative-tech/",
           img: "/Jayway.png",
-          buttonText: "Discover Devoteam Creative tech",
+          buttonText: "Discover The Creative tech",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
