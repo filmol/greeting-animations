@@ -14,7 +14,7 @@ const Cloud3 = () => {
             " 48% of organizations use Google Cloud, and 30% of companies quote Google Cloud as is their primarily cloud provider?",
           link: "https://www.devoteam.com/partner/google-cloud/",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
-          img: "/googleCloud.svg",
+          img: "/googleLogo.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

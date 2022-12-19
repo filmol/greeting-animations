@@ -7,7 +7,7 @@ export default function MobileWindmillSm() {
     <>
       <Modal
         content={{
-          title: "Digital impulse",
+          title: "Digital Impulse: Next-gen consulting",
           link: "https://www.devoteam.com/expertise/digital-impulse/",
           video: "p3Y2RAheH6s",
         }}

@@ -9,11 +9,12 @@ const Cloud5 = () => {
     <>
       <Modal
         content={{
-          title: "Cloud ",
-          didYouKnow:
-            "That today 54% of companies use multiple Cloud providers?",
-          video: "1Ydcei2jUzI",
+          title: "Data driven",
+          link: "https://www.devoteam.com/expertise/data-driven/",
+          video: "ZXLMbvmHcDA",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
+          didYouKnow:
+            "82% of organisations are spending more than 10% of their IT budgets on data technologies?",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

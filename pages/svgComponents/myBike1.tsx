@@ -1,23 +1,24 @@
 import { useState } from "react";
-import Modal from "../components/modal";
+import HelloModal from "../components/helloModal";
 
 const MyBike1 = () => {
   let [modalOpen, setModalOpen] = useState(false);
 
   return (
     <>
-      <Modal
+      <HelloModal
         content={{
-          title: "Data-driven",
-          link: "https://www.devoteam.com/expertise/data-driven/",
-          video: "ZXLMbvmHcDA",
+          title: "Service Now",
+          link: "https://nplatform.devoteam.com/devoteam-n-platform-travelling-postcard-series/",
+          img: "/serviceLogo.svg",
+          buttonText: "Find more",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
           didYouKnow:
-            "82% of organisations are spending more than 10% of their IT budgets on data technologies?",
+            "Discover Devoteam N Platform’s Travelling Postcard Series",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
-      />{" "}
+      />
       <g
         className="cursor-pointer hover:[animation-play-state:paused] duration-300 "
         onClick={() => {

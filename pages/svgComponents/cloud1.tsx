@@ -8,12 +8,12 @@ const Cloud1 = () => {
     <>
       <Modal
         content={{
-          title: "Innovative Tech",
+          title: "Unleash Cloud potential with Innovative Tech",
           didYouKnow:
             "That By 2024, 80% of companies that miss out on Cloud adoption will overspend by 20-50%.",
           link: "https://www.devoteam.com/expertise/innovative-tech/",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam.",
-          img: "/innovativeCloud.svg",
+          video: "1Ydcei2jUzI",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}

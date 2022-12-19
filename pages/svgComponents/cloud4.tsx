@@ -9,12 +9,12 @@ const Cloud4 = () => {
     <>
       <Modal
         content={{
-          title: "Cloud Microsoft",
+          title: "Microsoft",
           didYouKnow:
             " 58% of organizations use Microsoft Azure, and 39% of companies quote Azure as is their primarily cloud provider?",
           link: "https://www.devoteam.com/partner/microsoft/",
           src: "2021 IDC Cloud benchmark survey, sponsored by Devoteam. ",
-          img: "/microsoftCloud.svg",
+          img: "/microsoftLogo.svg",
         }}
         isModalOpen={modalOpen}
         setModalOpen={setModalOpen}
