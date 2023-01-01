@@ -22,20 +22,21 @@ import DayNightButton from "./dayNightButton";
 import MyBike1 from "./myBike1";
 import MyBike2 from "./myBike2";
 import MyBillboard from "./myBillboard";
+import Billboard from './billboard'
 
 export default function SvgBgDesktop() {
-  const bike1 = useRef<SVGGraphicsElement>(null);
-  const bike2 = useRef<SVGGraphicsElement>(null);
-  const bike3 = useRef<SVGGraphicsElement>(null);
+  const bike1 = useRef<SVGGraphicsElement>(null)
+  const bike2 = useRef<SVGGraphicsElement>(null)
+  const bike3 = useRef<SVGGraphicsElement>(null)
 
   useEffect(() => {
     setTimeout(() => {
-      bike3.current?.classList.add("animate-bike", "xl:animate-slowerBike");
-    }, 5000);
+      bike3.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 5000)
     setTimeout(() => {
-      bike2.current?.classList.add("animate-bike", "xl:animate-slowerBike");
-    }, 10000);
-  }, []);
+      bike2.current?.classList.add('animate-bike', 'xl:animate-slowerBike')
+    }, 10000)
+  }, [])
 
   return (
     <svg
@@ -132,7 +133,7 @@ export default function SvgBgDesktop() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <SmallTree cssClass={""} />
+          <SmallTree cssClass={''} />
         </svg>
         <svg
           width="40"
@@ -143,7 +144,7 @@ export default function SvgBgDesktop() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <SmallTree cssClass={""} />
+          <SmallTree cssClass={''} />
         </svg>
         <svg
           width="30"
@@ -154,7 +155,7 @@ export default function SvgBgDesktop() {
           fill="none"
           xmlns="http://www.w3.org/2000/svg"
         >
-          <SmallTree cssClass={""} />
+          <SmallTree cssClass={''} />
         </svg>
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
           <svg x="31%" y="30%">
@@ -319,6 +320,7 @@ export default function SvgBgDesktop() {
             <svg x="0.88%" y="1.91%" className="overflow-hidden">
               <image href="../2023-greetings.jpg" height="25.1%"></image>
             </svg>
+            <Billboard />
           </g>
         </svg>
         <g className="duration-300 cursor-pointer hover:scale-y-[1.01]">
@@ -606,7 +608,7 @@ export default function SvgBgDesktop() {
           x="50"
           y="420"
         >
-          <TreeWithSnow cssClass={""} />
+          <TreeWithSnow cssClass={''} />
         </svg>
         <path
           d="M145.883 601.429C151.855 607.885 149.624 615.132 147.761 617.948C151.466 620.357 154.15 618.371 154.15 618.371C149.423 611.568 177.141 594.461 174.307 589.69C169.626 580.842 155.358 601.52 155.272 602.162C153.028 596.342 173.657 578.833 170.049 574.454C164.093 566.792 155.518 583.342 151.975 592.574C151.012 579.331 169.275 565.044 159.6 559.181C150.655 554.475 148.365 571.858 148.338 581.138C147.694 577.462 146.754 569.147 148.15 565.295C149.896 560.48 148.932 549.446 143.71 549.404C133.829 549.692 140.284 571.173 144.747 581.877C144.495 582.978 142.793 582.405 137.997 571.311C133.202 560.217 129.52 561.199 128.278 563.076C121.345 570.878 135.563 582.088 143.539 586.718C148.38 591.653 141.079 588.554 136.823 586.387C129.888 579.582 123.901 576.486 122.791 580.417C120.088 587.178 138.418 593.359 145.883 601.429Z"
@@ -814,5 +816,5 @@ export default function SvgBgDesktop() {
         />
       </defs>
     </svg>
-  );
+  )
 }
